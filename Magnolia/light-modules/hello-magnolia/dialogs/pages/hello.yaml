@@ -1,0 +1,9 @@
+# Contiene los campos y las opciones que se pueden configurar en la app de páginas.
+form:
+  properties:
+    title:
+      $type: textField
+      i18n: true
+    windowTitle:
+      $type: textField
+      i18n: true

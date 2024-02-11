@@ -1,0 +1,14 @@
+# Título que se muestra en la app de páginas y en el navegador.
+title: hello
+
+# Apunta a la plantilla FreeMarker.
+templateScript: /hello-magnolia/templates/pages/hello.ftl
+
+# Tipo de plantilla que se va a renderizar.
+renderType: freemarker
+
+# Apunta al dialogo de la página.
+dialog: hello-magnolia:pages/hello
+
+# Permite seleccionar la plantilla en la app de páginas.
+visible: true
