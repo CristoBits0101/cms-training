@@ -19,3 +19,10 @@ magnolia-community-webapp
     -> mgnl search
     -> mgnl install
     -> mgnl tab-completion
+
+# Crea los archivos JAR y WAR.
+mvn clean package
+
+# Crea los archivos JAR y WAR.
+# Agregaría los Jar y War integrados a su repositorio local de Maven.
+mvn clean install
