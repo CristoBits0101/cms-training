@@ -1,4 +1,4 @@
-# Cada Instancia pública se configura como receptor de la Instancia de Autor.
+# Cada instancia pública se configura como receptor de la instancia de Autor.
 config: /modules/publishing-core/config/receivers
 
 # Definición de suscriptor.
