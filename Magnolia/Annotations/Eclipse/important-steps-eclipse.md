@@ -11,7 +11,7 @@
         -> Add and Remove
         -> Add > training-fullstack-webapp
 
-# Para que el gestor de dependencias descargue los paquetes configurados.
+# Actualiza Maven para que descargue las dependencias configuradas.
 3. /Package Explorer/training-fullstack/project 
         -> Right Click 
         -> Maven 
