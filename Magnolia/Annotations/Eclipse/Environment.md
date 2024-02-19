@@ -13,6 +13,9 @@
 
 # Actualiza Maven para que descargue las dependencias configuradas.
 3. /Package Explorer/training-fullstack/project 
-        -> Right Click 
-        -> Maven 
+        -> Right Click
+        -> Maven
         -> Update Project
+
+# Instalar extensiones en Eclipse.
+4. 
