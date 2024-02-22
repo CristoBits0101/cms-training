@@ -6,7 +6,9 @@
         -> Apply and close
 
 # Instalar extensiones en Eclipse.
-2. FreeMarker and YAML
+2. /Help/Eclipse Marketplace.
+        -> FreeMarker
+        -> YAML
 
 # Añade un proyecto al servidor Tomcat para que lo ejecute.
 3. /Overview/Servers/Tomcat v7.0 Server at localhost 

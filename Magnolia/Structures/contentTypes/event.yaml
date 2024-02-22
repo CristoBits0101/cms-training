@@ -1,0 +1,62 @@
+# datasource:                                           # Indica que se está configurando un origen de datos.
+  workspace: events                                   # Nombre del espacio de trabajo donde se almacenarán los elementos de contenido.
+  # namespaces:                                         # Define un conjunto de espacios de nombres para el JCR.
+    # mt: https://www.magnolia-training.com/jcr/1.0/mt  # Se crea un espacio de nombre llamado "mt" con la URI asociada.
+  autoCreate: true                                      # Cuando sea necesario puedo definir comportamientos de nodos más específicos.                   
+  model:                                                # Define las características generales del modelo.
+    nodeType: event                                     # Tipo de nodo JCR donde se almacenarán los elementos.
+    properties:                                         # Lista de propiedades del contenido del modelo.
+      - name: location                                  # Definición de la propiedad "location" del tipo de contenido "event".
+      - name: description                               # Definición de la propiedad "description" del tipo de contenido "event".
+        type: richText                                  # Tipo de propiedad JCR: campo de texto enriquecido.
+        required: true                                  # Indica que esta propiedad es obligatoria.
+      - name: eventType                                 # Definición de la propiedad "eventType" del tipo de contenido "event".
+        required: true                                  # Indica que esta propiedad es obligatoria.
+        options:                                        # Opciones predefinidas para la propiedad "eventType".
+          workEvent:                                    # Opción "workEvent".
+            value: workEvent                            # Valor asociado a la opción.
+            label: Work Event                           # Etiqueta descriptiva de la opción.
+          holiday:                                      # Opción "holiday".
+            value: holiday                              # Valor asociado a la opción.
+            label: Holiday                              # Etiqueta descriptiva de la opción.
+          familyEvent:                                  # Opción "familyEvent".
+            value: familyEvent                          # Valor asociado a la opción.
+            label: Family Event                         # Etiqueta descriptiva de la opción.
+          other:                                        # Opción "other".
+            value: other                                # Valor asociado a la opción.
+            label: Other                                # Etiqueta descriptiva de la opción.
+      - name: date                                      # Definición de la propiedad "date" del tipo de contenido "event".
+        required: true                                  # Indica que esta propiedad es obligatoria.
+        type: Date                                      # Tipo de propiedad JCR: fecha.
+      - name: imageLink                                 # Definición de la propiedad "imageLink" del tipo de contenido "event".
+        required: true                                  # Indica que esta propiedad es obligatoria.
+        type: asset                                     # Tipo de propiedad JCR: campo de enlace para elegir un activo.
+      - name: contacts                                  # Definición de la propiedad "contacts" del tipo de contenido "event".
+        type: contactData                               # Tipo de contenido complejo (submodelo) llamado "contactData".
+        multiple: true                                  # Permite múltiples valores para esta propiedad.
+      - name: addresses                                 # Definición de la propiedad "addresses" del tipo de contenido "event".
+        type: addressData                               # Tipo de contenido complejo (submodelo) llamado "addressData".
+        multiple: true                                  # Permite múltiples valores para esta propiedad.
+        
+    subModels:                                          # Definición de submodelos para tipos de contenido complejos.
+      contactData:                                      # Definición del submodelo "contactData".
+        nodeType: eventContact                          # Tipo de nodo JCR donde se almacenarán los elementos del submodelo.
+        properties:
+          - name: firstName                             # Definición de la propiedad "firstName" del submodelo "contactData".
+          - name: familyName                            # Definición de la propiedad "familyName" del submodelo "contactData".
+            required: true                              # Indica que esta propiedad es obligatoria.
+          - name: email                                 # Definición de la propiedad "email" del submodelo "contactData".
+            required: true                              # Indica que esta propiedad es obligatoria.
+          - name: mobileNumber                          # Definición de la propiedad "mobileNumber" del submodelo "contactData".
+            required: true                              # Indica que esta propiedad es obligatoria.
+          - name: phoneNumber                           # Definición de la propiedad "phoneNumber" del submodelo "contactData".
+      addressData:                                      # Definición del submodelo "addressData".
+        nodeType: eventAddress                          # Tipo de nodo JCR donde se almacenarán los elementos del submodelo.
+        properties:
+          - name: street                                # Definición de la propiedad "street" del submodelo "addressData".
+            required: true                              # Indica que esta propiedad es obligatoria.
+          - name: city                                  # Definición de la propiedad "city" del submodelo "addressData".
+            required: true                              # Indica que esta propiedad es obligatoria.
+          - name: postalCode                            # Definición de la propiedad "postalCode" del submodelo "addressData".
+            required: true                              # Indica que esta propiedad es obligatoria.
+          - name: country                               # Definición de la propiedad "country" del submodelo "addressData".

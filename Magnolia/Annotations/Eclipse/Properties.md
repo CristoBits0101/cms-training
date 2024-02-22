@@ -1,10 +1,6 @@
-# magnolia.properties
+# magnolia.properties.
 
-Autor:
-/magnolia-training/magnolia-jumpstart/apache-tomcat/webapps/ magnoliaAuthor /WEB-INF/config/default/
-
-Público:
-/magnolia-training/magnolia-jumpstart/apache-tomcat/webapps/ magnoliaPublic /WEB-INF/config/default/ magnolia.properties
+/training-fullstack-webapp/src/main/webapp/WEB-INF/config/default/magnolia.properties
 
 # Cambiar el diseño de AdminCentral usando el nuevo.
 
