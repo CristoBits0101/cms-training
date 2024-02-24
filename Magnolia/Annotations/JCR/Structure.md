@@ -10,6 +10,6 @@ Grupos de Usuarios -> Grupos de Magnolia.
       Sistema mgnl -> Datos de activación hasta su activación.
       Versión mgnl -> Versionados.
           Personas -> Visitantes simulados.
-         Segmentos -> Audiencia objetivo. 
+         Segmentos -> Audiencia objetivo.
          Etiquetas -> Etiquetas.
   Flujo de trabajo -> Aprobaciones y publicaciones de páginas.
