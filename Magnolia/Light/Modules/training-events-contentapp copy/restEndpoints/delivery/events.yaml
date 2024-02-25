@@ -1,0 +1,11 @@
+type: jcrDeliveryEndpoint_v2    # Endpoint de entrega del JCR.
+workspace: events               # Workspace de eventos.
+includeSystemProperties: false  # No incluir propiedades del sistema en la respuesta.
+depth: 3                        # Acceder hasta 3 niveles de profundidad.
+nodeTypes:                      # Nodo principal de trabajo: 'event'.
+  - event                       
+childNodeTypes:                 # Define qué contenido pertenece y se servirá en una respuesta JSON única:
+  - mgnl:contentNode            # Incluye automáticamente todos los subnodos con 'mgnl:contentNode' como super-tipo.
+# - eventContact                # Desactiva la inclusión de subnodos 'eventContact'.
+  - eventAddress                # Incluye subnodos 'eventAddress' en la respuesta.
+strict: true                    # Desactivando el uso del super-tipo JCR para 'childNodeTypes'.
