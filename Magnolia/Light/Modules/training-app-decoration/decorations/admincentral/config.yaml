@@ -1,5 +1,0 @@
-layout:                # Configuración del diseño del iniciador de aplicaciones.
-  groups:              # Refereciar a la organización de las apps por grupos.
-    - name: marketing  # Se define un grupo llamado "marketing".
-      apps:            # Se dispone a especificar que apps van dentro del grupo de marketing.
-        - name: events # Dentro del grupo "marketing", hay una aplicación llamada "events".

@@ -10,9 +10,12 @@
     <li>${elem.title!}</li>
 [/#list]
 
-<!--  -->
+<!-- 
+  Este código maneja la posibilidad de que la colección devuelta por javaClass.getSomeCollection() esté vacía.
+  La directiva <#list> permite el uso de la cláusula [/#else], que se ejecuta cuando la colección está vacía.
+-->
 [#list javaClass.getSomeCollection() ]
-  //empty collection save
+    // empty collection save.
     [#items as elem]
       <li>${elem.title!}</li>
     [/#items]
