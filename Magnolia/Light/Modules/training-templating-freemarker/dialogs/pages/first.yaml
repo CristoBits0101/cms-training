@@ -1,19 +1,20 @@
-label: First Page Dialog                        # Título -> Ventana.
+label: First Page Dialog                        #   Título -> Ventana.
 
-form:                                           # Define -> Formulario.
-  properties:                                   # Define -> Campos.
+form:                                           #   Define -> Formulario.
+  properties:                                   #   Define -> Campos.
 
-    title:                                      # Define -> Campo.
-      $type: textField                          # Diseño -> textField.
-      label: Page Title                         # Título -> Campo.
-      description: "Define the Page's title."   #  Texto -> ?
+    title:                                      # Etiqueta -> ${content.title!}.
+      $type: textField                          #   Diseño -> textField.
+      label: Page Title                         #   Título -> Campo.
+      description: "Define the Page's title."   #    Texto -> ?
 
-    abstract:                                   # Define -> Campo.
-      $type: textField                          # Diseño -> textField.
-      label: Abstract                           # Título -> Campo.
-      description: Add an Abstract of the Page. #  Texto -> ?
+    abstract:                                   # Etiqueta -> ${content.abstract!}.
+      $type: textField                          #   Diseño -> textField.
+      label: Abstract                           #   Título -> Campo.
+      description: Add an Abstract of the Page. #    Texto -> ?
+      rows: 5                                   #    Filas -> Campo.
 
-    editor:                                     # Define -> Campo.
-      $type: textField                          # Diseño -> textField.
-      label: Editor Name                        # Título -> Campo.
-      description: "Nombre del editor"          #  Texto -> ?
+    editor:                                     # Etiqueta -> ${content.editor!}.
+      $type: textField                          #   Diseño -> textField.
+      label: Editor Name                        #   Título -> Campo.
+      description: "Nombre del editor"          #    Texto -> ?

@@ -1,44 +1,55 @@
 <head>
-    <#--  Comentarios en .ftl                                                                               -->
-    <#--  Directiva semántica que indica al CMS que es una plantilla de tipo página                         -->
-    <#--  Sin la directiva no aparecen las funcionalidades de página                                        -->
+
+    <#-- Template -> Page  -->
     [@cms.page /]
 
-    <#--  Después del href y antes de la ruta CSS se necesita la directiva ${ctx.contextPath}               -->
-    <#--  No se puede especificar la ruta directamente de un CSS estático                                   -->
-    <#--
-        <link
-            rel="stylesheet"
-            href="${ctx.contextPath}/.resources/training-templating-freemarker/webresources/css/bootstrap.css"
-            media="screen"
-        />
+    <#--  
+      CSS -> Estático
+      <link
+          rel="stylesheet"
+          href="${ctx.contextPath}/.resources/training-templating-freemarker/webresources/css/bootstrap.css"
+          media="screen"
+      />  
+    -->
+  
+    <#--  
+      CSS -> Dinámico
+      ${resfn.css("/training-templating-freemarker/webresources/css/.*css")}
+      ${resfn.js("/training-templating-freemarker/webresources/js/.*js")}  
     -->
 
-    <#--  Referenciar dinámicamente un CSS sin la etiqueta link y con la directiva resfn                    -->
-    <#--  ${resfn.css("/training-templating-freemarker/webresources/css/.*css")}                            -->
-    <#--  ${resfn.js("/training-templating-freemarker/webresources/js/.*js")}                               -->
+    <#--
+      CSS -> Doble
+      ${resfn.css(["/training-templating-freemarker/.*css", "/training-templating-website/.*css"])}
+    -->
 
-    <#--  Doble import                                                                                      -->
-    <#--  ${resfn.css(["/training-templating-freemarker/.*css", "/training-templating-website/.*css"])}     -->
-
-    <#--  Almacenar en caché la referencia del CSS                                                          -->
+    <#--  CSS -> Caché  -->
     ${resfn.cachedCss("/training-templating-freemarker/webresources/css/.*css")}
+    
 </head>
 
 <body>
- 
+
   <div class="container">
     <div class="panel panel-info">
  
       <div class="panel-heading">
-        <h1 class="panel-title">Hello Magnolia!</h1>
+        <#--  Etiqueta -> Diálogo  -->
+        <h1 class="panel-title">${content.title}</h1>                             
       </div>
- 
+
       <div class="panel-body">
-        <p>Today is a nice day.</p>
+        <#--  Etiqueta -> Diálogo  -->
+        <p>${content.editor}</p>
       </div>
  
     </div> 
   </div>
+
+  <#--  pages/first.yaml -> main  -->
+  [@cms.area name="main" /]
+
+  <#--  pages/first.yaml -> footer  -->
+  [@cms.area name="footer" /]
  
 </body>
