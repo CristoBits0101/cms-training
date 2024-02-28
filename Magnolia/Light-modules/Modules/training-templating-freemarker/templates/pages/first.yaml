@@ -1,0 +1,21 @@
+title: Training - My First Page                                           #      Nombre -> Plantilla.
+renderType: freemarker                                                    #        Tipo -> Plantilla.
+dialog: training-templating-freemarker:pages/first                        #     Diálogo -> Plantilla.
+templateScript: /training-templating-freemarker/templates/pages/first.ftl #        Ruta -> Plantilla.
+
+areas:                                                                    #       Áreas -> Plantilla.
+  main:                                                                   #      Nombre -> Área.
+    type: list                                                            #     Permite -> Componentes.
+    # type: single                                                        #     Permite -> Componente.
+    # type: noComponent                                                   #     Permite -> Script.
+    availableComponents:                                                  #        Tipo -> Componentes.
+      textImage:                                                          # 
+        id: training-templating-freemarker:components/textImage           #        Ruta -> Componente. 
+
+  footer:                                                                 #      Nombre -> Área.
+    type: list                                                            #     Permite -> Componentes.
+    # type: single                                                        #     Permite -> Componente.
+    # type: noComponent                                                   #     Permite -> Script.
+    availableComponents:                                                  # Componentes -> Accesibles.
+      textImage:                                                          #  Componente -> Accesible.
+        id: training-templating-freemarker:components/textImage           #        Ruta -> Componente. 

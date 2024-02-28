@@ -1,0 +1,9 @@
+# Configuración de mapeo de URI virtual en Magnolia.
+# Utilizando la clase DefaultVirtualUriMapping del paquete info.magnolia.virtualuri.mapping.
+class: info.magnolia.virtualuri.mapping.DefaultVirtualUriMapping
+
+# Definición del URI virtual de origen. Cuando se recibe una solicitud con este URI, se activa el mapeo.
+fromUri: /.events
+
+# Definición del URI de destino al que se redirige la solicitud. En este caso, se realiza un reenvío al URI /.rest/delivery/events.
+toUri: forward:/.rest/delivery/events

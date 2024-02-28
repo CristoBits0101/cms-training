@@ -1,0 +1,62 @@
+# security:
+subApps:                                    # Configuración específica para subaplicaciones o módulos dentro del sistema de seguridad.
+  users:                                    # Configuración específica para la subaplicación "users".
+    actions:                                # Configuración de acciones que los usuarios pueden realizar.
+      import:                               # Configuración para la acción de importación.
+        name: import                        # Nombre único de la acción.
+
+        # Clase que define la acción (apertura de un cuadro de diálogo para crear).
+        class: info.magnolia.ui.framework.action.OpenCreateDialogActionDefinition
+
+        label: Import                       # Etiqueta descriptiva de la acción que se mostrará en la interfaz.
+        icon: icon-import                   # Icono asociado con la acción.
+        dialogName: ui-admincentral:import  # Nombre del cuadro de diálogo que se abrirá al realizar la acción.
+        availability:                       # Configuración de disponibilidad de la acción.
+          root: true                        # La acción está disponible en la raíz del sistema.
+          nodeTypes:                        # Tipos de nodos donde la acción está disponible.
+            - mgnl:folder                   # Tipo de nodo: carpeta.
+          rules:                            # Reglas para determinar la disponibilidad.
+            isNotDeletedRule:               # Regla: el nodo no debe estar marcado como eliminado.
+
+              # Clase que implementa la regla.
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+
+      export:                               # Configuración para la acción de exportación.
+        name: export                        # Nombre único de la acción.
+
+        # Clase que define la acción de exportación.
+        class: info.magnolia.ui.framework.action.ExportActionDefinition
+
+        label: Export                       # Etiqueta descriptiva de la acción que se mostrará en la interfaz.
+        icon: icon-export                   # Icono asociado con la acción.
+        command: export                     # Comando asociado con la acción de exportación.
+        availability:                       # Configuración de disponibilidad de la acción.
+          nodeTypes:                        # Tipos de nodos donde la acción está disponible.
+            - mgnl:folder                   # Tipo de nodo: carpeta.
+            - mgnl:user                     # Tipo de nodo: usuario.
+          rules:                            # Reglas para determinar la disponibilidad.
+            isNotDeletedRule:               # Regla: el nodo no debe estar marcado como eliminado.
+
+              # Clase que implementa la regla.
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+
+    actionbar:                              # Configuración de la barra de acciones.
+      sections:                             # Secciones de la barra de acciones.
+        - name: root                        # Sección: root (raíz).
+          groups:                           # Grupos de acciones en la sección root.
+            - name: importExportActions     # Grupo de acciones para importar y exportar.
+              items:                        # Elementos del grupo de acciones.
+                - name: import              # Acción de importación.
+
+        - name: user                        # Sección: user (usuario).
+          groups:                           # Grupos de acciones en la sección user.
+            - name: importExportActions     # Grupo de acciones para importar y exportar.
+              items:                        # Elementos del grupo de acciones.
+                - name: export              # Acción de exportación.
+
+        - name: folder                      # Sección: folder (carpeta).
+          groups:                           # Grupos de acciones en la sección folder.
+            - name: importExportActions     # Grupo de acciones para importar y exportar.
+              items:                        # Elementos del grupo de acciones.
+                - name: export              # Acción de exportación.
+                - name: import              # Acción de importación.
