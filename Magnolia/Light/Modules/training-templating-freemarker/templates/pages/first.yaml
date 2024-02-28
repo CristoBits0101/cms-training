@@ -1,0 +1,4 @@
+title: Training - My First Page                                           #  Nombre de plantilla.
+renderType: freemarker                                                    #    Tipo de plantilla.
+dialog: training-templating-freemarker:pages/first                        # Diálogo de plantilla.
+templateScript: /training-templating-freemarker/templates/pages/first.ftl #    Ruta de plantilla.

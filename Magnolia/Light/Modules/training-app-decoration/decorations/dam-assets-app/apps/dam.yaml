@@ -1,0 +1,44 @@
+subApps:                                # Indica que se va a trabajar con una sub-app.
+  jcrDetail:                            # Que se va a modificar los detalles de JCR.
+    form:                               # Mediante la descripción en un formulario.
+      properties:                       # Que se va a añadir las siguientes propiedades al formulario.
+        name:                           # Campo name.
+          required: true                # El campo name es obligatorio.
+        additional:                     # Campo additional.
+          $type: richTextField          # Se especifica que el campo 'additional' es de tipo rich text.
+          label: Additional             # Se proporciona una etiqueta (label) para el campo 'additional'.
+                                        # Se proporciona una descripción para el campo 'additional', indicando que es un campo adicional añadido por el módulo 'training-events-contentapp'.
+          description: Additional field added by the training-events-contentapp module
+
+      layout:                           # Indica que se va a trabajar con un diseño.
+        $type: tabbedLayout             # Indica diseño con pestañas.
+        tabs:                           # Indica Pestañas.
+
+          asset:                        # Referencia a la información de las imagenes.
+            label: Asset data           # Nombre de la pestaña.
+            fields:                     # Indica que se va a añadir campos.
+              - name: upload            # Campo.
+              - name: name              # Campo.
+              - name: caption           # Campo.
+              - name: subject           # Campo.
+              - name: description       # Campo.
+              - name: additional        # Campo.
+              
+          rights:                       # Referencia a la información de los derechos.
+            label: Copyright & more     # Nombre de la pestaña.
+            fields:                     # Indica que se va a añadir campos.
+              - name: coverage          # Campo.
+              - name: copyright         # Campo.
+              - name: contributor       # Campo.
+              - name: source            # Campo.
+              - name: languages         # Campo.
+
+          meta:                         # Referencia a la información de los metadatos.
+            label: Meta information     # Nombre de la pestaña.
+            fields:                     # Indica que se va a añadir campos.
+              - name: mediaType         # Campo.
+              - name: publisher         # Campo.
+              - name: identifier        # Campo.
+              - name: metadataStandard  # Campo.
+              - name: mgnl:created      # Campo.
+              - name: mgnl:lastModified # Campo.
