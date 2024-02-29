@@ -21,3 +21,15 @@
 [#else]
   // On empty collection
 [/#list]
+
+<!-- Recorriendo la Jerarquía de JCR - Obtener Hijos -->
+<ul>
+  [#list cmsfn.children(paginaPrincipal) as child]
+    <li><a href="${cmsfn.link(child)!}">${child.title!child.@name}</a></li>
+  [/#list]
+</ul>
+
+<!-- Crear enlaces a nodos directamente desde el nodo -->
+[#list cmsfn.children(paginaPrincipal) as child]
+  <p>Enlace a la imagen del hijo: ${cmsfn.link(child.image)!}</p>
+[/#list]
