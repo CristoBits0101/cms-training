@@ -7,9 +7,3 @@
 <#list listaContentMap as contentMapItem>
   <p>Título del ContentMap: ${contentMapItem.title!contentMapItem.@name}</p>
 </#list>
-
-<!-- asNodeList - Transformar una lista de ContentMap a una colección de nodos -->
-<#assign listaContentMap = [
-  {"title": "Item 1", "@name": "item1"},
-  {"title": "Item 2", "@name": "item2"}
-]>
