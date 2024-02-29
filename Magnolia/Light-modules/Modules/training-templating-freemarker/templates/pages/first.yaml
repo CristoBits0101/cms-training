@@ -11,6 +11,8 @@ areas:                                                                    #     
     availableComponents:                                                  #        Tipo -> Componentes.
       textImage:                                                          # 
         id: training-templating-freemarker:components/textImage           #        Ruta -> Componente. 
+      teaser:
+        id: training-templating-freemarker:components/teaser
 
   footer:                                                                 #      Nombre -> Área.
     type: list                                                            #     Permite -> Componentes.
