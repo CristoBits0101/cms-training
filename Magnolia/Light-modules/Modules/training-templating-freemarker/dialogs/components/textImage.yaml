@@ -1,0 +1,24 @@
+label: Text and Image
+ 
+form: 
+  properties:
+
+    headline:
+      $type: textField
+      label: Headline
+      description: Enter a headline
+
+    text:
+      $type: richTextField
+      label: Text
+      description: Enter some text here.
+
+    imageLink:
+      $type: damLinkField
+      label: Image Link
+      description: Choose an Image from the Assets App.
+
+    imageCaption:
+      $type: textField
+      label: Image Caption
+      description: Define a caption for the image.
