@@ -2,3 +2,5 @@ version: 1.0.0
 dependencies:
   core:
     version: 6.2.0/* # Light module can only be used with Magnolia 6.2 or higher.
+  ui-framework-jcr:
+    version: 6.2/*
