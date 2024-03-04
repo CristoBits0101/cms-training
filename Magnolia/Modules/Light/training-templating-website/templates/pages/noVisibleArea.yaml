@@ -1,41 +1,49 @@
-title: Training - Home Page
-renderType: site
-type: training-home
-dialog: training-templating-website:pages/default
-templateScript: /training-templating-website/templates/pages/default.ftl
+dialog: training-templating-website:pages/defaultPageProperties
+templateScript: training-templating-website/templates/pages/defaultPageScript.ftl
+visible: false
+
 areas:
   htmlHeader:
     type: noComponent
     createAreaNode: false
     templateScript: /training-templating-website/templates/pages/areas/htmlHeaderArea.ftl
-    parameters:
-      resfnStrings:
-        resfnString1: "/training-templating-website.*css"
+
+  navigation:
+    type: noComponent
+    createAreaNode: false
+    templateScript: /training-templating-website/templates/pages/areas/navigationArea.ftl
+
+  pageHeader:
+    type: noComponent
+    createAreaNode: false
+    dialog: training-templating-website:pages/defaultPageHeader
+    templateScript: /training-templating-website/templates/pages/areas/pageHeaderArea.ftl
+
   main:
     type: list
     availableComponents:
       textImage:
-        id: training-templating-foundation:components/textImage
+        id: training-templating-website:components/textImage
       teaser:
         id: training-templating-foundation:components/teaser
+      twoColumns:
+        id: training-templating-essentials:components/twoColumns
+
   footer:
     type: list
     templateScript: /training-templating-website/templates/pages/areas/footerArea.ftl
     availableComponents:
       textImage:
-        id: training-templating-foundation:components/textImage
+        id: training-templating-website:components/textImage
       teaser:
         id: training-templating-foundation:components/teaser
     maxComponents: 4
-    editable: true
+    editable: false
     inheritance:
       enabled: true
       components: all
+
   endPageJsScripts:
     type: noComponent
     createAreaNode: false
     templateScript: /training-templating-website/templates/pages/areas/endPageJsScriptsArea.ftl
-    parameters:
-      resfnStrings:
-        resfnString1: "/training-templating-website.*jquery.*js"
-        resfnString2: "/training-templating-website.*bootstrap.*js"

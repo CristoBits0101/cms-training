@@ -21,4 +21,11 @@ areas:
     maxComponents: 4
     inheritance:
       enabled: false
+      # enabled: true
+      
       components: all
+
+      # components con la propiedad de herencia en modo true.
+      # components: filtered
+
+      # components: none

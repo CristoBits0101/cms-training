@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Importar con la aplicación de pages de Magnolia -->
+<node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" sv:name="training">
+	<property sv:name="jcr:primaryType" sv:type="Name">
+		<value>
+			mgnl:page
+		</value>
+	</property>
+	<property sv:name="jcr:uuid" sv:type="String">
+		<value>
+			d00c36a6-f40e-45e7-aa5b-2152b30b3350
+		</value>
+	</property>
+	<property sv:name="abstract" sv:type="String">
+		<value>
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+		</value>
+	</property>
+	<property sv:name="mgnl:created" sv:type="Date">
+		<value>
+			2015-08-06T12:17:45.484+02:00
+		</value>
+	</property>
+	<property sv:name="mgnl:createdBy" sv:type="String">
+		<value>
+			superuser
+		</value>
+	</property>
+	<property sv:name="mgnl:lastModified" sv:type="Date">
+		<value>
+			2023-09-06T20:41:47.817+02:00
+		</value>
+	</property>
+	<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+		<value>
+			superuser
+		</value>
+	</property>
+	<property sv:name="mgnl:template" sv:type="String">
+		<value>
+			training-templating-website:pages/default
+		</value>
+	</property>
+	<property sv:name="title" sv:type="String">
+		<value>
+			Training Home
+		</value>
+	</property>
+	<node sv:name="about">
+		<property sv:name="jcr:primaryType" sv:type="Name">
+			<value>
+				mgnl:page
+			</value>
+		</property>
+		<property sv:name="jcr:uuid" sv:type="String">
+			<value>
+				e53a15f3-6893-4003-b8aa-7e864a90de5d
+			</value>
+		</property>
+		<property sv:name="abstract" sv:type="String">
+			<value>
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			</value>
+		</property>
+		<property sv:name="mgnl:created" sv:type="Date">
+			<value>
+				2015-08-06T12:18:01.416+02:00
+			</value>
+		</property>
+		<property sv:name="mgnl:createdBy" sv:type="String">
+			<value>
+				superuser
+			</value>
+		</property>
+		<property sv:name="mgnl:lastModified" sv:type="Date">
+			<value>
+				2023-09-06T20:39:44.851+02:00
+			</value>
+		</property>
+		<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+			<value>
+				superuser
+			</value>
+		</property>
+		<property sv:name="mgnl:template" sv:type="String">
+			<value>
+				training-templating-website:pages/default
+			</value>
+		</property>
+		<property sv:name="title" sv:type="String">
+			<value>
+				About Us
+			</value>
+		</property>
+		<node sv:name="products">
+			<property sv:name="jcr:primaryType" sv:type="Name">
+				<value>
+					mgnl:page
+				</value>
+			</property>
+			<property sv:name="jcr:uuid" sv:type="String">
+				<value>
+					f3323fec-09b4-45ba-89e8-b99834ed3935
+				</value>
+			</property>
+			<property sv:name="abstract" sv:type="String">
+				<value>
+					The abstract of the Special Page, its page Content!
+					Also the image is page content!
+					
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				</value>
+			</property>
+			<property sv:name="imageLink" sv:type="String">
+				<value>
+					jcr:98d6c33f-ff8f-4869-9e1d-2775d2e63797
+				</value>
+			</property>
+			<property sv:name="mgnl:created" sv:type="Date">
+				<value>
+					2015-08-06T12:18:58.329+02:00
+				</value>
+			</property>
+			<property sv:name="mgnl:createdBy" sv:type="String">
+				<value>
+					superuser
+				</value>
+			</property>
+			<property sv:name="mgnl:lastModified" sv:type="Date">
+				<value>
+					2023-09-06T20:40:24.806+02:00
+				</value>
+			</property>
+			<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+				<value>
+					superuser
+				</value>
+			</property>
+			<property sv:name="mgnl:template" sv:type="String">
+				<value>
+					training-templating-website:pages/default
+				</value>
+			</property>
+			<property sv:name="title" sv:type="String">
+				<value>
+					Products
+				</value>
+			</property>
+			<node sv:name="main">
+				<property sv:name="jcr:primaryType" sv:type="Name">
+					<value>
+						mgnl:area
+					</value>
+				</property>
+				<property sv:name="jcr:uuid" sv:type="String">
+					<value>
+						3a8ed2c8-5884-4a25-9fa7-6f6dbcbfb2af
+					</value>
+				</property>
+				<property sv:name="mgnl:created" sv:type="Date">
+					<value>
+						2015-08-06T14:39:01.207+02:00
+					</value>
+				</property>
+				<property sv:name="mgnl:createdBy" sv:type="String">
+					<value>
+						superuser
+					</value>
+				</property>
+				<property sv:name="mgnl:lastModified" sv:type="Date">
+					<value>
+						2017-03-30T10:51:07.768+02:00
+					</value>
+				</property>
+				<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+					<value>
+						superuser
+					</value>
+				</property>
+				<node sv:name="00">
+					<property sv:name="jcr:primaryType" sv:type="Name">
+						<value>
+							mgnl:component
+						</value>
+					</property>
+					<property sv:name="jcr:uuid" sv:type="String">
+						<value>
+							011a9808-eba6-44a1-9a3a-c941c73d087b
+						</value>
+					</property>
+					<property sv:name="headline" sv:type="String">
+						<value>
+							The best products out there
+						</value>
+					</property>
+					<property sv:name="imageLink" sv:type="String">
+						<value>
+							jcr:7eeb9a4f-72ef-43f4-a392-5c1916b31e3a
+						</value>
+					</property>
+					<property sv:name="mgnl:created" sv:type="Date">
+						<value>
+							2017-03-30T10:51:01.898+02:00
+						</value>
+					</property>
+					<property sv:name="mgnl:createdBy" sv:type="String">
+						<value>
+							superuser
+						</value>
+					</property>
+					<property sv:name="mgnl:lastModified" sv:type="Date">
+						<value>
+							2017-03-30T10:51:01.898+02:00
+						</value>
+					</property>
+					<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+						<value>
+							superuser
+						</value>
+					</property>
+					<property sv:name="mgnl:template" sv:type="String">
+						<value>
+							training-templating-freemarker:components/textImage
+						</value>
+					</property>
+					<property sv:name="text" sv:type="String">
+						<value>
+							&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+						</value>
+					</property>
+				</node>
+			</node>
+		</node>
+		<node sv:name="main">
+			<property sv:name="jcr:primaryType" sv:type="Name">
+				<value>
+					mgnl:area
+				</value>
+			</property>
+			<property sv:name="jcr:uuid" sv:type="String">
+				<value>
+					b4ac1808-dccd-4890-b2f3-0b65aa5166c4
+				</value>
+			</property>
+			<property sv:name="mgnl:created" sv:type="Date">
+				<value>
+					2015-08-06T14:12:04.543+02:00
+				</value>
+			</property>
+			<property sv:name="mgnl:createdBy" sv:type="String">
+				<value>
+					superuser
+				</value>
+			</property>
+			<property sv:name="mgnl:lastModified" sv:type="Date">
+				<value>
+					2020-08-13T15:09:18.585+02:00
+				</value>
+			</property>
+			<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+				<value>
+					superuser
+				</value>
+			</property>
+			<node sv:name="00">
+				<property sv:name="jcr:primaryType" sv:type="Name">
+					<value>
+						mgnl:component
+					</value>
+				</property>
+				<property sv:name="jcr:uuid" sv:type="String">
+					<value>
+						b09a032c-f18e-486e-a154-762687ea8983
+					</value>
+				</property>
+				<property sv:name="headline" sv:type="String">
+					<value>
+						Read more about us here
+					</value>
+				</property>
+				<property sv:name="imageLink" sv:type="String">
+					<value>
+						jcr:f90c8094-542d-4037-a4f5-dcd634fd0393
+					</value>
+				</property>
+				<property sv:name="mgnl:created" sv:type="Date">
+					<value>
+						2017-03-30T10:43:25.108+02:00
+					</value>
+				</property>
+				<property sv:name="mgnl:createdBy" sv:type="String">
+					<value>
+						superuser
+					</value>
+				</property>
+				<property sv:name="mgnl:lastModified" sv:type="Date">
+					<value>
+						2017-03-30T10:43:25.108+02:00
+					</value>
+				</property>
+				<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+					<value>
+						superuser
+					</value>
+				</property>
+				<property sv:name="mgnl:template" sv:type="String">
+					<value>
+						training-templating-freemarker:components/textImage
+					</value>
+				</property>
+				<property sv:name="text" sv:type="String">
+					<value>
+						&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+					</value>
+				</property>
+			</node>
+			<node sv:name="0">
+				<property sv:name="jcr:primaryType" sv:type="Name">
+					<value>
+						mgnl:component
+					</value>
+				</property>
+				<property sv:name="jcr:uuid" sv:type="String">
+					<value>
+						c166e82a-d2dc-4b71-a36f-b59be792938e
+					</value>
+				</property>
+				<property sv:name="mgnl:created" sv:type="Date">
+					<value>
+						2020-08-13T15:09:18.585+02:00
+					</value>
+				</property>
+				<property sv:name="mgnl:createdBy" sv:type="String">
+					<value>
+						superuser
+					</value>
+				</property>
+				<property sv:name="mgnl:lastModified" sv:type="Date">
+					<value>
+						2020-08-13T15:09:18.585+02:00
+					</value>
+				</property>
+				<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+					<value>
+						superuser
+					</value>
+				</property>
+				<property sv:name="mgnl:template" sv:type="String">
+					<value>
+						training-templating-freemarker:components/teaser
+					</value>
+				</property>
+				<property sv:name="targetPageLink" sv:type="String">
+					<value>
+						f3323fec-09b4-45ba-89e8-b99834ed3935
+					</value>
+				</property>
+			</node>
+		</node>
+	</node>
+	<node sv:name="customers">
+		<property sv:name="jcr:primaryType" sv:type="Name">
+			<value>
+				mgnl:page
+			</value>
+		</property>
+		<property sv:name="jcr:uuid" sv:type="String">
+			<value>
+				8aa23305-7064-4b3b-ab39-923cbc9fed5a
+			</value>
+		</property>
+		<property sv:name="abstract" sv:type="String">
+			<value>
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			</value>
+		</property>
+		<property sv:name="mgnl:created" sv:type="Date">
+			<value>
+				2015-08-06T12:18:42.277+02:00
+			</value>
+		</property>
+		<property sv:name="mgnl:createdBy" sv:type="String">
+			<value>
+				superuser
+			</value>
+		</property>
+		<property sv:name="mgnl:lastModified" sv:type="Date">
+			<value>
+				2023-09-06T20:39:50.788+02:00
+			</value>
+		</property>
+		<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+			<value>
+				superuser
+			</value>
+		</property>
+		<property sv:name="mgnl:template" sv:type="String">
+			<value>
+				training-templating-website:pages/default
+			</value>
+		</property>
+		<property sv:name="title" sv:type="String">
+			<value>
+				Our Customers
+			</value>
+		</property>
+		<node sv:name="goverment">
+			<property sv:name="jcr:primaryType" sv:type="Name">
+				<value>
+					mgnl:page
+				</value>
+			</property>
+			<property sv:name="jcr:uuid" sv:type="String">
+				<value>
+					91d90360-471f-47aa-ba30-02e6ab4c5ad3
+				</value>
+			</property>
+			<property sv:name="abstract" sv:type="String">
+				<value>
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				</value>
+			</property>
+			<property sv:name="mgnl:created" sv:type="Date">
+				<value>
+					2015-08-06T12:19:08.851+02:00
+				</value>
+			</property>
+			<property sv:name="mgnl:createdBy" sv:type="String">
+				<value>
+					superuser
+				</value>
+			</property>
+			<property sv:name="mgnl:lastModified" sv:type="Date">
+				<value>
+					2023-09-06T20:40:05.815+02:00
+				</value>
+			</property>
+			<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+				<value>
+					superuser
+				</value>
+			</property>
+			<property sv:name="mgnl:template" sv:type="String">
+				<value>
+					training-templating-website:pages/default
+				</value>
+			</property>
+			<property sv:name="title" sv:type="String">
+				<value>
+					Goverment Customers
+				</value>
+			</property>
+			<node sv:name="main">
+				<property sv:name="jcr:primaryType" sv:type="Name">
+					<value>
+						mgnl:area
+					</value>
+				</property>
+				<property sv:name="jcr:uuid" sv:type="String">
+					<value>
+						0417af3e-1ded-448e-bf1f-8aea094e9baa
+					</value>
+				</property>
+				<property sv:name="mgnl:created" sv:type="Date">
+					<value>
+						2015-08-17T10:20:40.374+02:00
+					</value>
+				</property>
+				<property sv:name="mgnl:createdBy" sv:type="String">
+					<value>
+						superuser
+					</value>
+				</property>
+				<property sv:name="mgnl:lastModified" sv:type="Date">
+					<value>
+						2017-03-30T10:55:48.678+02:00
+					</value>
+				</property>
+				<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+					<value>
+						superuser
+					</value>
+				</property>
+				<node sv:name="00">
+					<property sv:name="jcr:primaryType" sv:type="Name">
+						<value>
+							mgnl:component
+						</value>
+					</property>
+					<property sv:name="jcr:uuid" sv:type="String">
+						<value>
+							d535017d-421c-4bf2-84bb-df0d8289e54b
+						</value>
+					</property>
+					<property sv:name="headline" sv:type="String">
+						<value>
+							Goverments that trust us
+						</value>
+					</property>
+					<property sv:name="imageLink" sv:type="String">
+						<value>
+							jcr:f62138ad-3498-4256-a552-6d5dfb958cc6
+						</value>
+					</property>
+					<property sv:name="mgnl:created" sv:type="Date">
+						<value>
+							2017-03-30T10:55:44.242+02:00
+						</value>
+					</property>
+					<property sv:name="mgnl:createdBy" sv:type="String">
+						<value>
+							superuser
+						</value>
+					</property>
+					<property sv:name="mgnl:lastModified" sv:type="Date">
+						<value>
+							2017-03-30T10:55:44.242+02:00
+						</value>
+					</property>
+					<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+						<value>
+							superuser
+						</value>
+					</property>
+					<property sv:name="mgnl:template" sv:type="String">
+						<value>
+							training-templating-freemarker:components/textImage
+						</value>
+					</property>
+					<property sv:name="text" sv:type="String">
+						<value>
+							&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+						</value>
+					</property>
+				</node>
+			</node>
+		</node>
+		<node sv:name="private-industry">
+			<property sv:name="jcr:primaryType" sv:type="Name">
+				<value>
+					mgnl:page
+				</value>
+			</property>
+			<property sv:name="jcr:uuid" sv:type="String">
+				<value>
+					c8c35091-f81c-4c86-8a89-a88678eba7d2
+				</value>
+			</property>
+			<property sv:name="abstract" sv:type="String">
+				<value>
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				</value>
+			</property>
+			<property sv:name="mgnl:created" sv:type="Date">
+				<value>
+					2015-08-06T12:19:44.500+02:00
+				</value>
+			</property>
+			<property sv:name="mgnl:createdBy" sv:type="String">
+				<value>
+					superuser
+				</value>
+			</property>
+			<property sv:name="mgnl:lastModified" sv:type="Date">
+				<value>
+					2023-09-06T20:39:56.793+02:00
+				</value>
+			</property>
+			<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+				<value>
+					superuser
+				</value>
+			</property>
+			<property sv:name="mgnl:template" sv:type="String">
+				<value>
+					training-templating-website:pages/default
+				</value>
+			</property>
+			<property sv:name="title" sv:type="String">
+				<value>
+					Private Industry
+				</value>
+			</property>
+			<node sv:name="main">
+				<property sv:name="jcr:primaryType" sv:type="Name">
+					<value>
+						mgnl:area
+					</value>
+				</property>
+				<property sv:name="jcr:uuid" sv:type="String">
+					<value>
+						0b71ed2d-54ee-47d5-95d1-9227b061ea0c
+					</value>
+				</property>
+				<property sv:name="mgnl:created" sv:type="Date">
+					<value>
+						2015-08-17T10:22:09.530+02:00
+					</value>
+				</property>
+				<property sv:name="mgnl:createdBy" sv:type="String">
+					<value>
+						superuser
+					</value>
+				</property>
+				<property sv:name="mgnl:lastModified" sv:type="Date">
+					<value>
+						2017-03-30T10:58:32.242+02:00
+					</value>
+				</property>
+				<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+					<value>
+						superuser
+					</value>
+				</property>
+				<node sv:name="00">
+					<property sv:name="jcr:primaryType" sv:type="Name">
+						<value>
+							mgnl:component
+						</value>
+					</property>
+					<property sv:name="jcr:uuid" sv:type="String">
+						<value>
+							454eb6f1-d790-4bdd-9662-f82bb1db8733
+						</value>
+					</property>
+					<property sv:name="headline" sv:type="String">
+						<value>
+							Proud to present our private industry customers
+						</value>
+					</property>
+					<property sv:name="imageLink" sv:type="String">
+						<value>
+							jcr:951fa74b-9309-400e-8959-e86b0c46321b
+						</value>
+					</property>
+					<property sv:name="mgnl:created" sv:type="Date">
+						<value>
+							2017-03-30T10:58:27.547+02:00
+						</value>
+					</property>
+					<property sv:name="mgnl:createdBy" sv:type="String">
+						<value>
+							superuser
+						</value>
+					</property>
+					<property sv:name="mgnl:lastModified" sv:type="Date">
+						<value>
+							2017-03-30T10:58:27.547+02:00
+						</value>
+					</property>
+					<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+						<value>
+							superuser
+						</value>
+					</property>
+					<property sv:name="mgnl:template" sv:type="String">
+						<value>
+							training-templating-freemarker:components/textImage
+						</value>
+					</property>
+					<property sv:name="text" sv:type="String">
+						<value>
+							&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+						</value>
+					</property>
+				</node>
+			</node>
+		</node>
+		<node sv:name="main">
+			<property sv:name="jcr:primaryType" sv:type="Name">
+				<value>
+					mgnl:area
+				</value>
+			</property>
+			<property sv:name="jcr:uuid" sv:type="String">
+				<value>
+					06bfafe2-7343-4e04-9359-56bb44a14069
+				</value>
+			</property>
+			<property sv:name="mgnl:created" sv:type="Date">
+				<value>
+					2015-08-17T00:27:45.930+02:00
+				</value>
+			</property>
+			<property sv:name="mgnl:createdBy" sv:type="String">
+				<value>
+					superuser
+				</value>
+			</property>
+			<property sv:name="mgnl:lastModified" sv:type="Date">
+				<value>
+					2017-03-30T11:01:05.660+02:00
+				</value>
+			</property>
+			<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+				<value>
+					superuser
+				</value>
+			</property>
+			<node sv:name="00">
+				<property sv:name="jcr:primaryType" sv:type="Name">
+					<value>
+						mgnl:component
+					</value>
+				</property>
+				<property sv:name="jcr:uuid" sv:type="String">
+					<value>
+						9e90e8f4-1094-4dae-ab3a-67d8fe2f7594
+					</value>
+				</property>
+				<property sv:name="headline" sv:type="String">
+					<value>
+						We are proud about our customers
+					</value>
+				</property>
+				<property sv:name="imageLink" sv:type="String">
+					<value>
+						jcr:950cc73c-1b12-4f2a-bba7-97ad9d171f5d
+					</value>
+				</property>
+				<property sv:name="mgnl:created" sv:type="Date">
+					<value>
+						2017-03-30T11:00:57.513+02:00
+					</value>
+				</property>
+				<property sv:name="mgnl:createdBy" sv:type="String">
+					<value>
+						superuser
+					</value>
+				</property>
+				<property sv:name="mgnl:lastModified" sv:type="Date">
+					<value>
+						2017-03-30T11:00:57.513+02:00
+					</value>
+				</property>
+				<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+					<value>
+						superuser
+					</value>
+				</property>
+				<property sv:name="mgnl:template" sv:type="String">
+					<value>
+						training-templating-freemarker:components/textImage
+					</value>
+				</property>
+				<property sv:name="text" sv:type="String">
+					<value>
+						&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+					</value>
+				</property>
+			</node>
+		</node>
+	</node>
+	<node sv:name="contact-us">
+		<property sv:name="jcr:primaryType" sv:type="Name">
+			<value>
+				mgnl:page
+			</value>
+		</property>
+		<property sv:name="jcr:uuid" sv:type="String">
+			<value>
+				8a537f9a-2fef-4689-a8b7-df6a66d750c6
+			</value>
+		</property>
+		<property sv:name="abstract" sv:type="String">
+			<value>
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+			</value>
+		</property>
+		<property sv:name="mgnl:created" sv:type="Date">
+			<value>
+				2015-08-06T12:18:17.185+02:00
+			</value>
+		</property>
+		<property sv:name="mgnl:createdBy" sv:type="String">
+			<value>
+				superuser
+			</value>
+		</property>
+		<property sv:name="mgnl:lastModified" sv:type="Date">
+			<value>
+				2023-09-06T20:40:14.946+02:00
+			</value>
+		</property>
+		<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+			<value>
+				superuser
+			</value>
+		</property>
+		<property sv:name="mgnl:template" sv:type="String">
+			<value>
+				training-templating-website:pages/default
+			</value>
+		</property>
+		<property sv:name="title" sv:type="String">
+			<value>
+				Contact Us
+			</value>
+		</property>
+		<node sv:name="main">
+			<property sv:name="jcr:primaryType" sv:type="Name">
+				<value>
+					mgnl:area
+				</value>
+			</property>
+			<property sv:name="jcr:uuid" sv:type="String">
+				<value>
+					45703115-e001-404f-b9cf-3c158266a7a1
+				</value>
+			</property>
+			<property sv:name="mgnl:created" sv:type="Date">
+				<value>
+					2015-08-17T00:27:50.613+02:00
+				</value>
+			</property>
+			<property sv:name="mgnl:createdBy" sv:type="String">
+				<value>
+					superuser
+				</value>
+			</property>
+			<property sv:name="mgnl:lastModified" sv:type="Date">
+				<value>
+					2017-03-30T10:45:52.161+02:00
+				</value>
+			</property>
+			<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+				<value>
+					superuser
+				</value>
+			</property>
+			<node sv:name="00">
+				<property sv:name="jcr:primaryType" sv:type="Name">
+					<value>
+						mgnl:component
+					</value>
+				</property>
+				<property sv:name="jcr:uuid" sv:type="String">
+					<value>
+						af0cdb2f-ee28-479b-a22d-604c2815b553
+					</value>
+				</property>
+				<property sv:name="mgnl:created" sv:type="Date">
+					<value>
+						2017-03-30T10:45:47.533+02:00
+					</value>
+				</property>
+				<property sv:name="mgnl:createdBy" sv:type="String">
+					<value>
+						superuser
+					</value>
+				</property>
+				<property sv:name="mgnl:lastModified" sv:type="Date">
+					<value>
+						2017-03-30T10:45:47.533+02:00
+					</value>
+				</property>
+				<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+					<value>
+						superuser
+					</value>
+				</property>
+				<property sv:name="mgnl:template" sv:type="String">
+					<value>
+						training-templating-freemarker:components/textImage
+					</value>
+				</property>
+				<property sv:name="text" sv:type="String">
+					<value>
+						&lt;p&gt;&lt;strong&gt;Magnolia International Ltd.&lt;/strong&gt;&lt;br /&gt;
+						St Johanns-Vorstadt 38&lt;br /&gt;
+						4056 Basel&lt;br /&gt;
+						&lt;u&gt;Switzerland&lt;/u&gt;&lt;br /&gt;
+						Office: +41 61 228 90 00&lt;br /&gt;
+						&lt;a href="http://www.magnolia-cms.com"&gt;www.magnolia-cms.com&lt;/a&gt;&lt;/p&gt;
+					</value>
+				</property>
+			</node>
+		</node>
+	</node>
+	<node sv:name="main">
+		<property sv:name="jcr:primaryType" sv:type="Name">
+			<value>
+				mgnl:area
+			</value>
+		</property>
+		<property sv:name="jcr:uuid" sv:type="String">
+			<value>
+				9b278912-e058-4385-b49d-df2e2f6ffdf2
+			</value>
+		</property>
+		<property sv:name="mgnl:created" sv:type="Date">
+			<value>
+				2015-08-06T13:25:36.109+02:00
+			</value>
+		</property>
+		<property sv:name="mgnl:createdBy" sv:type="String">
+			<value>
+				superuser
+			</value>
+		</property>
+		<property sv:name="mgnl:lastModified" sv:type="Date">
+			<value>
+				2023-09-06T20:41:47.817+02:00
+			</value>
+		</property>
+		<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+			<value>
+				superuser
+			</value>
+		</property>
+		<node sv:name="00">
+			<property sv:name="jcr:primaryType" sv:type="Name">
+				<value>
+					mgnl:component
+				</value>
+			</property>
+			<property sv:name="jcr:uuid" sv:type="String">
+				<value>
+					09f02d1d-3ac1-41d6-a238-b390c27343a4
+				</value>
+			</property>
+			<property sv:name="headline" sv:type="String">
+				<value>
+					Most flexible CMS out there
+				</value>
+			</property>
+			<property sv:name="imageLink" sv:type="String">
+				<value>
+					jcr:7eeb9a4f-72ef-43f4-a392-5c1916b31e3a
+				</value>
+			</property>
+			<property sv:name="mgnl:created" sv:type="Date">
+				<value>
+					2023-09-06T20:41:12.196+02:00
+				</value>
+			</property>
+			<property sv:name="mgnl:createdBy" sv:type="String">
+				<value>
+					superuser
+				</value>
+			</property>
+			<property sv:name="mgnl:lastModified" sv:type="Date">
+				<value>
+					2023-09-06T20:41:47.817+02:00
+				</value>
+			</property>
+			<property sv:name="mgnl:lastModifiedBy" sv:type="String">
+				<value>
+					superuser
+				</value>
+			</property>
+			<property sv:name="mgnl:template" sv:type="String">
+				<value>
+					training-templating-freemarker:components/textImage
+				</value>
+			</property>
+			<property sv:name="text" sv:type="String">
+				<value>
+					&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+				</value>
+			</property>
+		</node>
+		<node sv:name="0">
+			<property sv:name="jcr:primaryType" sv:type="Name">
+				<value>
+					mgnl:component
+				</value>
+			</property>
+			<property sv:name="jcr:uuid" sv:type="String">
+				<value>
+					68058276-7c84-4bb9-b372-4d4734fd546d
+				</value>
+			</property>
+			<property sv:name="mgnl:created" sv:type="Date">
+				<value>
+					2023-09-06T20:44:20.272+02:00
+				</value>
+			</property>
+			<property sv:name="mgnl:createdBy" sv:type="String">
+				<value>
+					superuser
+				</value>
+			</property>
+			<property sv:name="mgnl:template" sv:type="String">
+				<value>
+					training-templating-freemarker:components/teaser
+				</value>
+			</property>
+			<property sv:name="targetPageLink" sv:type="String">
+				<value>
+					f3323fec-09b4-45ba-89e8-b99834ed3935
+				</value>
+			</property>
+		</node>
+	</node>
+</node>

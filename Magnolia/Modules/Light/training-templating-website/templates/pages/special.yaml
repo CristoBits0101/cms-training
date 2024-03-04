@@ -1,0 +1,46 @@
+title: Training - Special Page
+dialog: training-templating-website:pages/special/specialPageProperties
+renderType: site
+visible: true
+
+# Here we are defining a special main area -> delegating to sub areas with config 'type: noComponent' & 'createAreaNode: false'.
+# It delegates to 'main' sub-area which then picks up the main-area content of the page.
+# Like this the main page script has not to be changed and the 'row' div can be added around the 'main' and 'side' areas.
+areas:
+  htmlHeader:
+    type: noComponent
+    createAreaNode: false
+    templateScript: /training-templating-website/templates/pages/areas/special/specialHtmlHeaderArea.ftl
+
+  pageHeader:
+    type: noComponent
+    createAreaNode: false
+    dialog: training-templating-website:pages/special/specialPageHeader
+    templateScript: /training-templating-website/templates/pages/areas/special/specialPageHeaderArea.ftl
+
+  main:
+    type: noComponent
+    createAreaNode: false
+    templateScript: /training-templating-website/templates/pages/areas/special/specialMainArea.ftl
+
+    # Here we are defining the 'side' and the 'main' sub-areas of the top 'main' area.
+    # Both define their width over the parameter 'divColClass' for the 'dynamicColumnArea.ftl' script.
+    areas:
+      main:
+        templateScript: /training-templating-website/templates/pages/areas/special/dynamicColumnArea.ftl
+        parameters:
+          divColClass: col-md-9
+      side:
+        templateScript: /training-templating-website/templates/pages/areas/special/dynamicColumnArea.ftl
+        parameters:
+          divColClass: col-md-3
+        availableComponents:
+          textImage:
+            id: training-templating-website:components/textImage
+          teaser:
+            id: training-templating-foundation:components/teaser
+
+  endPageJsScripts:
+    type: noComponent
+    createAreaNode: false
+    templateScript: /training-templating-website/templates/pages/areas/special/specialEndPageJsScriptsArea.ftl

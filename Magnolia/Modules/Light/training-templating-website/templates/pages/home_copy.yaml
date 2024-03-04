@@ -1,16 +1,8 @@
 title: Training - Home Page
-renderType: site
-type: training-home
+renderType: freemarker
 dialog: training-templating-website:pages/default
 templateScript: /training-templating-website/templates/pages/default.ftl
 areas:
-  htmlHeader:
-    type: noComponent
-    createAreaNode: false
-    templateScript: /training-templating-website/templates/pages/areas/htmlHeaderArea.ftl
-    parameters:
-      resfnStrings:
-        resfnString1: "/training-templating-website.*css"
   main:
     type: list
     availableComponents:
@@ -27,15 +19,6 @@ areas:
       teaser:
         id: training-templating-foundation:components/teaser
     maxComponents: 4
-    editable: true
     inheritance:
       enabled: true
       components: all
-  endPageJsScripts:
-    type: noComponent
-    createAreaNode: false
-    templateScript: /training-templating-website/templates/pages/areas/endPageJsScriptsArea.ftl
-    parameters:
-      resfnStrings:
-        resfnString1: "/training-templating-website.*jquery.*js"
-        resfnString2: "/training-templating-website.*bootstrap.*js"

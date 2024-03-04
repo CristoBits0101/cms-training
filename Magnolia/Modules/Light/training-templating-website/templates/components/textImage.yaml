@@ -1,0 +1,4 @@
+title: Text and Image                                                               #  Nombre -> Componente.
+renderType: freemarker                                                              #    Tipo -> Componente.
+dialog: training-templating-freemarker:components/textImage                         # Diálogo -> Componente.
+templateScript: /training-templating-freemarker/templates/components/textImage.ftl  #    Ruta -> Componente.
