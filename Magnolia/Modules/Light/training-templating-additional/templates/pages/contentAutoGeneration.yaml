@@ -11,6 +11,7 @@ areas:
         templateId: standard-templating-kit:components/features/stkSiteMap
         titleToUse: title
       generatorClass: info.magnolia.rendering.generator.CopyGenerator
+  # Considerado áreas opcionales.
   stage:
     availableComponents:
       eventsList:
