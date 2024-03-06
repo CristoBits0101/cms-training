@@ -1,0 +1,15 @@
+title: Text and Image
+renderType: freemarker
+dialog: training-templating-foundation:components/textImage
+templateScript: /training-templating-foundation/templates/components/textImage.ftl
+
+fields:
+  - name: imageLink
+    type: damLinkField
+    label: Image Link
+    description: Choose an Image from the Assets App.
+
+  - name: imageCaption
+    type: textField
+    label: Image Caption
+    description: Define a caption for the image.

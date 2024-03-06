@@ -1,0 +1,22 @@
+title: Two Columns
+renderType: freemarker
+dialog: training-templating-freemarker:components/optional/twoColumns
+templateScript: /training-templating-freemarker/templates/components/optional/twoColumns.ftl
+
+areas:
+  leftColumn:
+    type: list  
+    templateScript: /training-templating-freemarker/templates/components/optional/twoColumnsArea.ftl
+    availableComponents:
+      textImage:
+        id: training-templating-freemarker:components/textImage
+      twoColumns:
+        id: training-templating-freemarker:components/optional/twoColumns
+        
+  rightColumn:
+    type: list
+    availableComponents:
+      textImage:
+        id: training-templating-freemarker:components/textImage
+      twoColumns:
+        id: training-templating-freemarker:components/optional/twoColumns

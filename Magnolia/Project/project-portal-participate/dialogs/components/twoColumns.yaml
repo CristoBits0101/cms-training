@@ -1,0 +1,13 @@
+label: Two Columns
+
+form:
+  properties:
+    titleLeft:
+      $type: textField
+      label: Left Column Title
+      description: Enter title of the left column.
+
+    titleRight:
+      $type: textField
+      label: Right Column Title
+      description: Enter title of the right column.

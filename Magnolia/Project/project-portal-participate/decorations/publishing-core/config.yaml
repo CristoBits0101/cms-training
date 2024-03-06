@@ -1,0 +1,3 @@
+receivers:            # Configuración de receptores.
+  magnoliaPublic8080: # Receptor con el nombre "magnoliaPublic8080".
+    enabled: true     # Indica que el receptor está habilitado (true).

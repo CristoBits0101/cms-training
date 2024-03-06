@@ -1,0 +1,24 @@
+areas:
+  main:
+    renderType: freemarker
+    type: single
+    autoGeneration:
+      content:
+        singleton:
+        maxLevels: 3
+        nodeType: mgnl:component
+        showSiteMapRoot: true
+        templateId: standard-templating-kit:components/features/stkSiteMap
+        titleToUse: title
+      generatorClass: info.magnolia.rendering.generator.CopyGenerator
+  # Considerado áreas opcionales.
+  stage:
+    availableComponents:
+      eventsList:
+        id: training-events-contentapp:components/eventsList
+    description: areas.templates.stage.description
+    enabled: true
+    optional: true
+    templateScript: /training-events-contentapp/templates/pages/areas/stage.ftl
+    title: areas.templates.stage.title
+    type: single

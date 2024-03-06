@@ -1,0 +1,8 @@
+label: Featured Card
+
+form:
+  properties:
+    headline:
+      $type: textField
+      label: Headline
+      description: Enter a headline

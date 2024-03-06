@@ -1,1 +1,12 @@
-participapa
+# version: 1.0.0        # Versión de mí módulo ligero.
+# dependencies:         # Indicar que el modulo ligero es una dependencia.
+#   core:               # Especificar en que motor de magnolia se aplica la configuración.
+#     version: 6.2.0/*  # Asegura que este módulo ligero solo puede usarse con Magnolia 6.2 o superior.
+    
+#   # Para el ejercicio de decoración de la aplicación Assets. 
+#   # Es imprescindible: 
+#       # Sin que los decoradores se carguen en un orden incorrecto.
+#       # Que la aplicación de activos tenga un comportamiento extraño.
+#       # Abre una subaplicación de detalles vacía.
+#   dam-app-jcr:
+#     version: 3.0.0/*
