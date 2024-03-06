@@ -6914,8 +6914,53 @@ legend {
   color: #333333;
 }
 
-/* custom css */
-/**/
+/* Not original bootstrap css.
+   Added by us for better navigation behavior */
+.navbar-nav > li {
+  margin: 12.5px 6px;;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+.navbar-nav > li:hover,
+.navbar-nav > li.open {
+  border: 1px solid #ddd;
+}
+.navbar-nav > li > a {
+  margin: 0;
+  padding-right: 25px;
+  margin-right: 13px;
+}
+.navbar-nav > li > A.dropdown-toggle {
+  padding-right: 10px;
+  margin-right: 0;
+  margin-left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > li.open > a {
+  border: 1px solid transparent !important;
+}
+
+/* Not original bootstrap css.
+   Added by us for css image rezising. Physiacl resizing is learned on a different place in the training. */
+.content-image-wrapper .content-image-below, .content-image-wrapper .content-image-above{
+	max-width: 100%;
+}
+
+/* Not original bootstrap css.
+   Added by us for css image rezising. Physiacl resizing is learned on a different place in the training. */
+.default-text-image, .default-text-image img, .special-text-image, .special-text-image img{
+    max-width: 100%;
+}
+
+/* Not original bootstrap css.
+   Added by us for demonstrating the second textImage variation. */
+.special-text-image p{
+    color: #900000;
+}
+
 .default-teaser {
   clear: left;
 }
@@ -6929,8 +6974,3 @@ legend {
   margin: 0 20px 20px 0;
 }
 
-.cards-panel-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: inherit;
-}

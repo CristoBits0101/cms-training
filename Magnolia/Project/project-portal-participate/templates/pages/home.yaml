@@ -1,0 +1,24 @@
+title: Training - Home Page
+renderType: freemarker
+dialog: training-templating-website:pages/default
+templateScript: /training-templating-website/templates/pages/default.ftl
+areas:
+  main:
+    type: list
+    availableComponents:
+      textImage:
+        id: training-templating-foundation:components/textImage
+      teaser:
+        id: training-templating-foundation:components/teaser
+  footer:
+    type: list
+    templateScript: /training-templating-website/templates/pages/areas/footerArea.ftl
+    availableComponents:
+      textImage:
+        id: training-templating-foundation:components/textImage
+      teaser:
+        id: training-templating-foundation:components/teaser
+    maxComponents: 4
+    inheritance:
+      enabled: true
+      components: all
