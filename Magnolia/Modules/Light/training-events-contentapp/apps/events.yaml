@@ -12,7 +12,7 @@ subApps:
   browser:                                # Alguna configuración de subaplicaciones del 'navegador'.
     actionbar:                            # Modificar la barra de acciones del navegador de la sub-app.
       defaultAction: nonExistingAction    # Workaround needed to enable column's edition until MGNLUI-6259 is resolved.
-
+      class: 
     workbench:                            # Configuración del banco de trabajo.
       contentViews:                       # Vistas de contenido.
         tree:                             # Vista de árbol.
