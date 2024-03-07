@@ -61,5 +61,5 @@
   [/#if]
 </div>
 [#elseif cmsfn.editMode]
-<div>No Content defined for this text & image component.</div>
+  <div>No Content defined for this text & image component.</div>
 [/#if]
