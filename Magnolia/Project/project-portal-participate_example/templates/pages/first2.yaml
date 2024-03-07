@@ -2,9 +2,9 @@
 # dialog: training-templating-freemarker:pages/first                        #     Diálogo -> Plantilla.
 # templateScript: /training-templating-freemarker/templates/pages/first.ftl #        Ruta -> Plantilla.
 
-areas:                                                                    #       Áreas -> Plantilla.
+# areas:                                                                    #       Áreas -> Plantilla.
   main:                                                                   #      Nombre -> Área.
-    type: list                                                            #     Permite -> Componentes.
+    # type: list                                                            #     Permite -> Componentes.
     # type: single                                                        #     Permite -> Componente.
     # type: noComponent                                                   #     Permite -> Script.
     availableComponents:                                                  #        Tipo -> Componentes.
@@ -20,9 +20,7 @@ areas:                                                                    #     
         id: training-templating-freemarker:components/optional/documentDownloadList
 
   footer:                                                                 #      Nombre -> Área.
-    type: list                                                            #     Permite -> Componentes.
-    # type: single                                                        #     Permite -> Componente.
-    # type: noComponent                                                   #     Permite -> Script.
+    type: noComponent                                                   #     Permite -> Script.
     availableComponents:                                                  # Componentes -> Accesibles.
       textImage:                                                          #  Componente -> Accesible.
         id: training-templating-freemarker:components/textImage           #        Ruta -> Componente. 

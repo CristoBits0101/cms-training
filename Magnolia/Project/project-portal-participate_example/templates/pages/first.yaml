@@ -1,11 +1,11 @@
 # title: Training - My first Page
 # renderType: freemarker
-dialog: training-templating-foundation:pages/first
+# dialog: training-templating-foundation:pages/first
 # templateScript: /training-templating-foundation/templates/pages/first.ftl
 
-areas:
-  main:
-    type: list
+# areas:
+  # main:
+    # type: list
     availableComponents:
       recursivePageLinkList:
         id: training-templating-additional:components/recursivePageLinkList
