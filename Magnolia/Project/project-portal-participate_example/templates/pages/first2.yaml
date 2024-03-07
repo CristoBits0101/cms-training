@@ -1,26 +1,6 @@
-# renderType: freemarker                                                    #        Tipo -> Plantilla.
-# dialog: training-templating-freemarker:pages/first                        #     Diálogo -> Plantilla.
-# templateScript: /training-templating-freemarker/templates/pages/first.ftl #        Ruta -> Plantilla.
-
-# areas:                                                                    #       Áreas -> Plantilla.
-  main:                                                                   #      Nombre -> Área.
-    # type: list                                                            #     Permite -> Componentes.
-    # type: single                                                        #     Permite -> Componente.
-    # type: noComponent                                                   #     Permite -> Script.
-    availableComponents:                                                  #        Tipo -> Componentes.
-      textImage:                                                          # 
-        id: training-templating-freemarker:components/textImage           #        Ruta -> Componente. 
-      teaser:
-        id: training-templating-freemarker:components/teaser
-      featuredCards:
-        id: training-templating-freemarker:components/cards/featuredCards
-      twoColumns:
-        id: training-templating-freemarker:components/optional/twoColumns
-      documentDownloadList:
-        id: training-templating-freemarker:components/optional/documentDownloadList
-
-  footer:                                                                 #      Nombre -> Área.
-    type: noComponent                                                   #     Permite -> Script.
-    availableComponents:                                                  # Componentes -> Accesibles.
-      textImage:                                                          #  Componente -> Accesible.
-        id: training-templating-freemarker:components/textImage           #        Ruta -> Componente. 
+featuredCards:
+  id: training-templating-freemarker:components/cards/featuredCards
+twoColumns:
+  id: training-templating-freemarker:components/optional/twoColumns
+documentDownloadList:
+  id: training-templating-freemarker:components/optional/documentDownloadList
