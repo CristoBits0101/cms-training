@@ -1,7 +1,7 @@
-title: Training - My first Page
-renderType: freemarker
+# title: Training - My first Page
+# renderType: freemarker
 dialog: training-templating-foundation:pages/first
-templateScript: /training-templating-foundation/templates/pages/first.ftl
+# templateScript: /training-templating-foundation/templates/pages/first.ftl
 
 areas:
   main:

@@ -1,7 +1,6 @@
-title: Training - My First Page                                           #      Nombre -> Plantilla.
-renderType: freemarker                                                    #        Tipo -> Plantilla.
-dialog: training-templating-freemarker:pages/first                        #     Diálogo -> Plantilla.
-templateScript: /training-templating-freemarker/templates/pages/first.ftl #        Ruta -> Plantilla.
+# renderType: freemarker                                                    #        Tipo -> Plantilla.
+# dialog: training-templating-freemarker:pages/first                        #     Diálogo -> Plantilla.
+# templateScript: /training-templating-freemarker/templates/pages/first.ftl #        Ruta -> Plantilla.
 
 areas:                                                                    #       Áreas -> Plantilla.
   main:                                                                   #      Nombre -> Área.
