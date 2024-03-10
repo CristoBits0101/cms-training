@@ -17,6 +17,9 @@
     [#--  Cached CSS Styles --]
     ${resfn.cachedCss("/project-portal-participate/webresources/css/portalHome.css")}
 
+    [#--  Google Sans  --]
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" />
+
 </head>
 
 <body>

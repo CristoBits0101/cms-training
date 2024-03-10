@@ -1,11 +1,36 @@
-[#--  An attempt is made to assign the link of the selected image in long format  --]
-[#assign assetLink = damfn.getAssetLink(content.imageLink, "large")!]
+[#-- This conditional block checks if the 'assetLink' variable contains content --]
+[#if content.imageLink?has_content && content.title?has_content]
 
-[#--  This conditional block checks if the 'assetLink' variable contains content  --]
-[#if assetLink?has_content]
-    [#--  
-        <div style="background-image: url('${content.imageLink}');>
-            <img src="${assetLink}" alt="">
-        </div>  
-    --]
+    [#-- Banner Container --]
+    <div class="banner" style="background-image: url('${content.imageLink}');">
+
+        [#-- Banner title --]
+        <h1>${content.title}</h1>
+
+        [#-- Banner imagen --]
+        [#assign asset = damfn.getAsset(content.imageLink)!]
+        <img class="banner-image" src="${asset.link}">
+
+    </div>
+
+[#elseif content.title?has_content]
+
+    [#-- Banner Container --]
+    <div class="banner">
+
+        [#-- Banner title --]
+        <h1>${content.title}</h1>
+
+    </div>
+
+[#elseif cmsfn.editMode]
+
+        [#-- Banner Container --]
+    <div class="banner">
+
+        [#-- Banner Message --]
+        <p>There is no content defined for this banner component.</p>
+
+    </div>
+
 [/#if]
