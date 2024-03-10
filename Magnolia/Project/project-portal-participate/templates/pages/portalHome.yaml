@@ -8,10 +8,13 @@ areas:                                                                          
     type: list                                                                       #  Component -> Multicomponent.
     maxComponents: 2                                                                 #  Component -> Quantity.
     availableComponents:                                                             #  Component -> Availability.
-      NavigationBar:                                                                 #  Component -> Name.
-        id: project-portal-participate:components/header/navigationBar               #  Component -> Path.
       PresentationBanner:                                                            #  Component -> Name.
         id: project-portal-participate:components/header/presentationBanner          #  Component -> Path.
+  navigation:                                                                        #       Area -> Name.
+    editable: false                                                                  #       Area -> Static.
+    renderType: freemarker                                                           #       Area -> Type.
+    templateScript: /project-portal-participate/templates/pages/areas/navArea.ftl    #       Area -> Script.
+    type: noComponent                                                                #       Area -> Definition.
   main:                                                                              #       Area -> Name.
     type: Simple                                                                     #  Component -> Multicomponent.
     availableComponents:                                                             #  Component -> Availability.

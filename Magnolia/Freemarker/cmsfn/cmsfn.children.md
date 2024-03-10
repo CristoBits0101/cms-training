@@ -1,3 +1,10 @@
+[#assign portalParticipatePage = cmsfn.contentByPath("/portal-participate", "website")!]
+<ul>
+    [#list cmsfn.children(portalParticipatePage, "mgnl:page") as childNode]
+        <li><a href="${cmsfn.link(childNode)!}">${childNode.title!childNode.@name}</a></li>
+    [/#list]
+</ul>
+
 <!-- 
     Este código en FreeMarker está utilizando la función cmsfn.children(targetNode, "mgnl:page") para obtener los hijos del nodo targetNode que son de tipo "mgnl:page". 
     Luego, utiliza la directiva <#list> para iterar sobre estos hijos y generar una lista HTML (<ul>) de enlaces. 

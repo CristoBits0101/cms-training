@@ -19,7 +19,7 @@
         [#-- Header content --]
         <header>
             <nav>
-            
+                [@cms.area name="navigation"/]
             </nav>
             [@cms.area name="header" /]
         </header>
