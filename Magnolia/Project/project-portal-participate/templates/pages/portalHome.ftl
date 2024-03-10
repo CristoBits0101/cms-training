@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html xml:lang="${cmsfn.language()}" lang="${cmsfn.language()}">
 
-<head>
+    <head>
 
-    [#-- Page type template --]
-    [@cms.page /]
+        [#-- Meta information --]
+        [#include "/project-portal-participate/templates/pages/content/headContent.ftl"]
 
-    [#-- Meta information --]
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        [#-- Cached CSS Styles --]
+        ${resfn.cachedCss("/project-portal-participate/webresources/css/portalHome.css")}
 
-    [#-- Page title --]
-    <title></title>
+        [#-- Google Sans --]
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 
-    [#--  Cached CSS Styles --]
-    ${resfn.cachedCss("/project-portal-participate/webresources/css/portalHome.css")}
+    </head>
 
-    [#--  Google Sans  --]
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" />
+    <body>
 
-</head>
+        [#-- Header content --]
+        <header>
+            <nav>
+            
+            </nav>
+            [@cms.area name="header" /]
+        </header>
 
-<body>
+        [#-- Main content of the page --]
+        <main>
+            [@cms.area name="main" /]
+        </main>
 
-    [#-- Header content --]
-    <header>
-        [@cms.area name="header" /]
-    </header>
+        [#-- Related but independent content --]
+        <aside>
+            [@cms.area name="aside" /]
+        </aside>
 
-    [#-- Main content of the page --]
-    <main>
-        [@cms.area name="main" /]
-    </main>
+        [#-- Footer content --]
+        <footer>
+            [@cms.area name="footer" /]
+        </footer>
 
-    [#-- Related but independent content --]
-    <aside>
-        [@cms.area name="aside" /]
-    </aside>
+    </body>
 
-    [#-- Footer content --]
-    <footer>
-        [@cms.area name="footer" /]
-    </footer>
-
-</body>
+</html>

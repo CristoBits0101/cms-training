@@ -1,14 +1,14 @@
-label: Banner de Presentación                               # Tittle -> Windows
+label: Presentation Banner                             # Tittle -> Windows
 
-form:                                                       #   Form -> Definition
-  properties:                                               #   Form -> Fields
-    title:                                                  #  Field -> Name
-      $type: textField                                      #  Field -> Type
-      label: Título del banner                              #  Field -> label
-      description: Ingresa un título al banner              #  Field -> Description
-      required: true                                        #  Field -> Mandatory
+form:                                                  #   Form -> Definition
+  properties:                                          #   Form -> Fields
+    title:                                             #  Field -> Name
+      $type: textField                                 #  Field -> Type
+      label: Banner title                              #  Field -> label
+      description: Enter a banner title                #  Field -> Description
+      required: true                                   #  Field -> Mandatory
 
-    imageLink:                                              #   Form -> Definition                
-      $type: damLinkField                                   #  Field -> Type
-      label: Enlace de la imagen                            #  Field -> label
-      description: Elija una imagen de la aplicación Assets #  Field -> Description
+    imageLink:                                         #   Form -> Definition                
+      $type: damLinkField                              #  Field -> Type
+      label: Image link                                #  Field -> label
+      description: Choose an image from the Assets app #  Field -> Description

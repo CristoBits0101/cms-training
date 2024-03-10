@@ -16,12 +16,12 @@
 [#-------------- RENDERING --------------]
 <div class="row">
 
-    [#-- The system provides automatically to every Area script: All components of the area as a list 'components'. Therefore looping over each component. --]
+    [#-- The system provides automatically to every Area script: All components of the area as a list 'components'. Therefore looping over each component --]
     [#list components as component ]
 
         <div class="${divColClass}">
 
-            [#-- Triggering the rendering of each component node. --]
+            [#-- Triggering the rendering of each component node --]
             [@cms.component content=component /]
 
         </div>

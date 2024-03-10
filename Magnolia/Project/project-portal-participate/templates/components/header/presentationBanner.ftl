@@ -2,7 +2,7 @@
 [#if content.imageLink?has_content && content.title?has_content]
 
     [#-- Banner Container --]
-    <div class="banner" style="background-image: url('${content.imageLink}');">
+    <div class="banner">
 
         [#-- Banner title --]
         <h1>${content.title}</h1>
@@ -25,7 +25,7 @@
 
 [#elseif cmsfn.editMode]
 
-        [#-- Banner Container --]
+    [#-- Banner Container --]
     <div class="banner">
 
         [#-- Banner Message --]

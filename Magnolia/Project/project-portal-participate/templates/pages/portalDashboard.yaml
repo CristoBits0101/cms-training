@@ -1,0 +1,37 @@
+title: Portal Participate Dashboard                                                  #   Template -> Name.
+renderType: freemarker                                                               #   Template -> Type.
+dialog: project-portal-participate:pages/portalDashboard                             #   Template -> Dialog.
+templateScript: /project-portal-participate/templates/pages/portalDashboard.ftl      #   Template -> Path.
+
+areas:                                                                               #   Template -> Areas.
+  header:                                                                            #       Area -> Name.
+    type: list                                                                       #  Component -> Multicomponent.
+    maxComponents: 2                                                                 #  Component -> Quantity.
+    availableComponents:                                                             #  Component -> Availability.
+      NavigationBar:                                                                 #  Component -> Name.
+        id: project-portal-participate:components/header/navigationBar               #  Component -> Path.
+      PresentationBanner:                                                            #  Component -> Name.
+        id: project-portal-participate:components/header/presentationBanner          #  Component -> Path.
+  main:                                                                              #       Area -> Name.
+    type: Simple                                                                     #  Component -> Multicomponent.
+    availableComponents:                                                             #  Component -> Availability.
+      recentPosts:                                                                   #  Component -> Name.
+        id: project-portal-participate:components/main/recentPosts                   #  Component -> Path.
+  aside:                                                                             #       Area -> Name.
+    type: Simple                                                                     #  Component -> Multicomponent.
+    availableComponents:                                                             #  Component -> Availability.
+      highlightedTopics:                                                             #  Component -> Name.
+        id: project-portal-participate:components/aside/highlightedTopics            #  Component -> Path.
+  footer:                                                                            #       Area -> Name.
+    templateScript: /project-portal-participate/templates/pages/areas/footerArea.ftl #       Area -> Script.
+    type: list                                                                       #  Component -> Multicomponent.
+    maxComponents: 4                                                                 #  Component -> Quantity.
+    availableComponents:                                                             #  Component -> Availability.
+      followUs:                                                                      #  Component -> Name.
+        id: project-portal-participate:components/footer/followUs                    #  Component -> Path.
+      general:                                                                       #  Component -> Name.
+        id: project-portal-participate:components/footer/generalInformation          #  Component -> Path.
+      portalParticipate:                                                             #  Component -> Name.
+        id: project-portal-participate:components/footer/portalParticipate           #  Component -> Path.
+      services:                                                                      #  Component -> Name.
+        id: project-portal-participate:components/footer/aboutServices               #  Component -> Path.

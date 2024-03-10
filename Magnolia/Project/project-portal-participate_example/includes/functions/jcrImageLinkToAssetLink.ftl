@@ -18,19 +18,18 @@
     [/#if]
      
 [/#function]
- 
- 
+
 [#-- Function: jcrImageLinkToAsset --]
 [#function jcrImageLinkToAsset imageLinkValue=""]
- 
+
     [#if imageLinkValue?has_content]
         [#assign asset = damfn.getAsset(imageLinkValue)!]
     [/#if]
-     
+
     [#if asset?has_content]
         [#return asset]
     [#else]
         [#return null]
     [/#if]
-     
+
 [/#function]
