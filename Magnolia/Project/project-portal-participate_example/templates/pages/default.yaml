@@ -1,10 +1,4 @@
-
-dialog: training-templating-website:pages/default
-
-
-
-
-    maxComponents: 4
-    inheritance:
-      enabled: false
-      components: all
+maxComponents: 4
+inheritance:
+  enabled: false
+  components: all

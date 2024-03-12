@@ -1,4 +1,0 @@
-title: About Services                                                                     # Component -> Title
-renderType: freemarker                                                                    # Component -> Type
-dialog: project-portal-participate:components/footer/aboutServices                        # Component -> Dialog
-templateScript: /project-portal-participate/templates/components/footer/aboutServices.ftl # Component -> Path

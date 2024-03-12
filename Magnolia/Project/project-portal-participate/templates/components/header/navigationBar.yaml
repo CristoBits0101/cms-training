@@ -1,3 +1,0 @@
-title: Navigation Bar                                                                      # Component -> Title
-renderType: freemarker                                                                     # Component -> Type
-templateScript: /project-portal-participate/templates/components/header/navigationBar.ftl  # Component -> Path

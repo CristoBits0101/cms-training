@@ -1,4 +1,0 @@
-title: Portal Participate Dashboard                                                  #   Template -> Name.
-renderType: freemarker                                                               #   Template -> Type.
-dialog: project-portal-participate:pages/portalDashboard                             #   Template -> Dialog.
-templateScript: /project-portal-participate/templates/pages/portalDashboard.ftl      #   Template -> Path.

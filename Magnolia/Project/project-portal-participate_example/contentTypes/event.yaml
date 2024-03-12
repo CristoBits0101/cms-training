@@ -1,10 +1,3 @@
-# contentTypes                # Folder apps        
-# event                       # File.yaml       <!-- Refencia al YAML                       -->
-
-datasource:                   # Nodo 1          <!-- Define un workspace en el JCR          -->
-  workspace: events             # Key -> Value  <!-- Otorga un nombre al workspace          -->
-  autoCreate: true              # Key -> Value  <!-- Define la creación automatica          -->
-
 model:                        # Nodo 1          <!--             model = database           -->
   nodeType: event               # Key -> Value  <!--              nodo = tabla              -->
   properties:                 # Nodo 2          <!--        properties = columns            -->
@@ -12,22 +5,22 @@ model:                        # Nodo 1          <!--             model = databas
     - name: description       # Nodo 3          <!--        label name = column name        -->
       type: richText            # Key -> Value  <!--        label type = column data type   -->
       required: true            # Key -> Value  <!-- label restriction = column restriction -->
-    - name: eventType         # Nodo 3         
-      required: true            # Key -> Value 
+    - name: eventType         # Nodo 3
+      required: true            # Key -> Value
       options:                # Nodo 4          <!--     label options =   html select      -->
         workEvent:            # Nodo 5 + K -> V <!--     label options = select option      -->
           value: workEvent      # Key -> Value  <!--     label options = option value       -->
-          label: Work Event     # Key -> Value 
+          label: Work Event     # Key -> Value
         holiday:              # Nodo 5 + K -> V
-          value: holiday        # Key -> Value 
-          label: Holiday        # Key -> Value 
+          value: holiday        # Key -> Value
+          label: Holiday        # Key -> Value
         familyEvent:          # Nodo 5 + K -> V
-          value: familyEvent    # Key -> Value 
-          label: Family Event   # Key -> Value 
+          value: familyEvent    # Key -> Value
+          label: Family Event   # Key -> Value
         other:                # Nodo 5 + K -> V
-          value: other          # Key -> Value 
-          label: Other          # Key -> Value 
-    - name: date              # Nodo 3         
+          value: other          # Key -> Value
+          label: Other          # Key -> Value
+    - name: date              # Nodo 3
       required: true            # Key -> Value
       type: Date                # Key -> Value
     - name: imageLink         # Nodo 3
