@@ -1,8 +1,3 @@
-subApps:
-  browser:                                # Alguna configuración de subaplicaciones del 'navegador'.
-    actionbar:                            # Modificar la barra de acciones del navegador de la sub-app.
-      defaultAction: nonExistingAction    # Workaround needed to enable column's edition until MGNLUI-6259 is resolved.
-
     workbench:                            # Configuración del banco de trabajo.
       contentViews:                       # Vistas de contenido.
         tree:                             # Vista de árbol.
@@ -54,39 +49,7 @@ subApps:
             path:                         # Columna de ruta.
               expandRatio: 0.5            # Proporción de expansión.
 
-  detail:                                 # Detalles.
-    form:                                 # Formulario.
-      properties:                         # Columnas.
-        location:                         # Columna.
-          rows: 3                         # label propiedad.
-        date:                             # Columna.
-          time: true                      # label restricción.
-          timeFormat: HH:mm               # label formato.
-      layout:                             # Separa los datos de contacto y dirección en pestañas.
-        $type: tabbedLayout               # Diseño tabulado.
-        tabs:                             # Pestañas.
-          eventData:                      # Pestaña 1.
-            fields:                       # Campos.
-              - name: name                # Campo.
-              - name: location            # Campo.
-              - name: description         # Campo.
-              - name: date                # Campo.
-              - name: eventType           # Campo.
-              - name: imageLink           # Campo.
-          eventContacts:                  # Pestaña 2.
-            fields:                       # Campos.
-              - name: contacts            # Campo.
-          eventAddresses:                 # Pestaña 3.
-            fields:                       # Campos.
-              - name: addresses           # Campo.
 
-datasource:                               # Opcional ya que se crea automáticamente a partir del tipo de contenido.
-  $type: jcrDatasource                    # Tipo de datos.
-  workspace: events                       # Workspaces con el que trabaja.
-  includeProperties: false                # Sin coger las propiedades del JCR datasource.
   # previewDefinition:                    # Podría usarse si un binario se almacenó directamente en el nodo sin usar referencias de activos.
   # nodeName: image                       # Referencia al nodo de una imagen.
-  allowedNodeTypes:                       # Tipo de nodos permitidos.
-    - event                               # Nodos de tipo event.
-    - mgnl:folder                         # Nodos con la propiedad mgnl:folder.
-  describeByProperty: name                # Mostrará el nombre de un evento en lugar de su ruta JCR al vincularlo, p. 'Evento uno' en lugar de /Evento-uno
+ 
