@@ -1,0 +1,20 @@
+title: Portal Participate Dashboard                                                  #   Template -> Name
+renderType: freemarker                                                               #   Template -> Type
+dialog: project-portal-participate:pages/portalDashboard                             #   Template -> Dialog
+templateScript: /project-portal-participate/templates/pages/portalDashboard.ftl      #   Template -> Path
+
+areas:                                                                               #   Template -> Areas
+
+  nav:                                                                               #       Area -> Name
+    templateScript: /project-portal-participate/templates/pages/areas/adjustArea.ftl #       Area -> Script
+    editable: false
+    inheritance:
+      enabled: true
+      components: all
+
+  footer:                                                                            #       Area -> Name
+    templateScript: /project-portal-participate/templates/pages/areas/adjustArea.ftl #       Area -> Script
+    editable: false
+    inheritance:
+      enabled: true
+      components: all

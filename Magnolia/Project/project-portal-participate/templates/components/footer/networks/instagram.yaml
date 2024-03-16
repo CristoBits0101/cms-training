@@ -1,0 +1,3 @@
+title: Instagram                                                                               # Component -> Title
+renderType: freemarker                                                                         # Component -> Type
+templateScript: /project-portal-participate/templates/components/footer/networks/instagram.ftl # Component -> Path

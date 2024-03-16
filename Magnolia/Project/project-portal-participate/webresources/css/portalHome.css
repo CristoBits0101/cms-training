@@ -1,0 +1,65 @@
+/* Body Styles */
+body {
+    display: grid;
+
+    /* Number of columns and rows */
+    grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+
+    /* Width of each column */
+    grid-template-columns: 1fr 3fr;
+
+    background-color: #FFFFFF;
+}
+
+/* Header Styles */
+header {
+    margin: 0;
+    grid-area: header;
+}
+
+.banner {
+    width: 100%;
+    height: 15%;
+
+    /* If the banner div were not relative, the h1 would be centered to the center of the div and not to the center of itself */
+    position: relative;
+}
+
+.banner h1 {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2vw;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 2%;
+    padding: 0%;
+    text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.2rem;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Main Styles */
+main {
+    grid-area: main;
+}
+
+/* Aside Styles */
+aside {
+    grid-area: aside;
+}
+
+/* Footer Styles */
+footer {
+    grid-area: footer;
+}

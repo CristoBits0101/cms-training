@@ -1,0 +1,3 @@
+title: LinkedIn                                                                               # Component -> Title
+renderType: freemarker                                                                        # Component -> Type
+templateScript: /project-portal-participate/templates/components/footer/networks/linkedin.ftl # Component -> Path

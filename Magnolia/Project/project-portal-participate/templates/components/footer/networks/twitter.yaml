@@ -1,0 +1,3 @@
+title: Twitter                                                                               # Component -> Title
+renderType: freemarker                                                                       # Component -> Type
+templateScript: /project-portal-participate/templates/components/footer/networks/twitter.ftl # Component -> Path

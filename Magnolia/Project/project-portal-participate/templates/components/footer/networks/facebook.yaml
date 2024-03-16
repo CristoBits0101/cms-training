@@ -1,0 +1,3 @@
+title: Facebook                                                                               # Component -> Title
+renderType: freemarker                                                                        # Component -> Type
+templateScript: /project-portal-participate/templates/components/footer/networks/facebook.ftl # Component -> Path
