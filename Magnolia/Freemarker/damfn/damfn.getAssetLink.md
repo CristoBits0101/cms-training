@@ -7,7 +7,7 @@
 <!-- String getAssetLink (activo de activo, MediaType mediaType, String renditionName) -->
 [#assign assetLink = damfn.getAssetLink(content.imageLink, "small")!]
 
-<img alt="Using damfn object."src="${damfn.getAssetLink(content.linkToAsset, "small")}">
+<img alt="Using damfn object."src="${damfn.getAssetLink(content.linkToAsset}, "small")}">
 
 [#if content.imageLink?has_content]
   [#assign assetLink = damfn.getAssetLink(content.imageLink, "large")!]
