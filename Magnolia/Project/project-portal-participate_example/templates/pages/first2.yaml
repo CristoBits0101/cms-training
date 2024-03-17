@@ -1,6 +1,0 @@
-featuredCards:
-  id: training-templating-freemarker:components/cards/featuredCards
-twoColumns:
-  id: training-templating-freemarker:components/optional/twoColumns
-documentDownloadList:
-  id: training-templating-freemarker:components/optional/documentDownloadList
