@@ -1,0 +1,112 @@
+datasource:                      # Workspace -> Definition
+  workspace: news                # workspace -> Name
+  rootPath: /                    # workspace -> Root
+  autoCreate: true               # Workspace -> Autoconfigure
+
+model:                           #     Model -> Database
+
+  nodeType: news                 #      Node -> Table
+  properties:                    #     Table -> Columns
+
+    - name: name                 #    Column -> Name
+
+    - name: title                #    Column -> Name
+
+    - name: message              #    Column -> Name
+
+    - name: imageLink            #    Column -> Name
+      type: asset                #      Data -> Type
+
+    - name: category             #    Column -> Name
+      options:                   #     Input -> Select
+
+        travels:                 #    Select -> Option
+          value: travels         #    Option -> Value
+          label: Travels         #    Option -> Label
+
+        sports:                  #    Select -> Option
+          value: sports          #    Option -> Value
+          label: Sports          #    Option -> Label
+
+        events:                  #    Select -> Option
+          value: events          #    Option -> Value
+          label: Events          #    Option -> Label
+
+        services:                #    Select -> Option
+          value: services        #    Option -> Value
+          label: Services        #    Option -> Label
+
+        share:                   #    Select -> Option
+          value: share           #    Option -> Value
+          label: Share           #    Option -> Label
+
+    - name: location             #    Column -> Name
+
+    - name: starts               #    Column -> Name
+      type: Date                 #      Data -> Type
+
+    - name: ends                 #    Column -> Name
+      type: Date                 #      Data -> Type
+
+    - name: contacts             #    Column -> Name
+      label: Contact Information #    Column -> Label
+      type: contactData          #      Data -> Type
+      multiple: true             #      Data -> Quantity
+
+    - name: addresses            #    Column -> Name
+      label: Address Details     #    Column -> Label
+      type: addressData          #      Data -> Type
+      multiple: true             #      Data -> Quantity
+
+  subModels:                     # subModels -> Database
+
+    contactData:                 # Reference -> Type
+
+      nodeType: contact          #      Node -> Table
+      properties:                #     Table -> Columns
+
+        - name: firstName        #    Column -> Name
+          required: true         #      Data -> Mandatory
+          label: First name      #    Column -> Label
+          i18n: true             # Translate -> Active
+
+        - name: familyName       #    Column -> Name
+          label: Family name     #    Column -> Label
+          i18n: true             # Translate -> Active
+
+        - name: email            #    Column -> Name
+          label: Email           #    Column -> Label
+          i18n: true             # Translate -> Active
+
+        - name: mobileNumber     #    Column -> Name
+          label: Mobile number   #    Column -> Label
+          required: true         #      Data -> Mandatory
+          i18n: true             # Translate -> Active
+
+        - name: phoneNumber      #    Column -> Name
+          label: Phone number    #    Column -> Label
+          required: true         #      Data -> Mandatory
+          i18n: true             # Translate -> Active
+
+    addressData:                 # Reference -> Type
+
+      nodeType: address          #      Node -> Table
+      properties:                #     Table -> Columns
+
+        - name: street           #    Column -> Name
+          label: Street          #    Column -> Label
+          required: false        #      Data -> Mandatory
+          i18n: true             # Translate -> Active
+
+        - name: city             #    Column -> Name
+          label: City            #    Column -> Label
+          required: false        #      Data -> Mandatory
+          i18n: true             # Translate -> Active
+
+        - name: postalCode       #    Column -> Name
+          label: Postal code     #    Column -> Label
+          i18n: true             # Translate -> Active
+
+        - name: country          #    Column -> Name
+          label: Country         #    Column -> Label
+          i18n: true             # Translate -> Active
