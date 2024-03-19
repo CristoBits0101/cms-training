@@ -1,0 +1,3 @@
+title: infoNoticia
+renderType: freemarker
+templateScript: /proyecto-videojuegos/templates/components/infoNoticia.ftl

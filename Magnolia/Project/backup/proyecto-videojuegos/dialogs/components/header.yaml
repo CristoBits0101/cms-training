@@ -1,0 +1,28 @@
+form:
+  properties:
+    text:
+      $type: textField
+      label: Text
+      description: Enter some text here.
+      i18n: true
+      required: true
+    inicioLink: 
+      $type: pageLinkField
+      label: linkInicio
+      required: true
+    noticiasLink: 
+      $type: pageLinkField
+      label: linkNoticias
+      required: true
+    juegosLink: 
+      $type: pageLinkField
+      label: linkJuegos
+      required: true
+    infoNoticiaLink: 
+      $type: pageLinkField
+      label: linkInfoNoticia
+      required: true
+    infoJuegoLink: 
+      $type: pageLinkField
+      label: linkInfoJuego
+      required: true

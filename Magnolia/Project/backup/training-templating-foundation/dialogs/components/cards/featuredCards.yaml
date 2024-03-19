@@ -1,0 +1,12 @@
+label: Featured Card
+ 
+form: 
+  properties:
+    headline:
+      $type: textField
+      label: Headline
+      description: Enter a headline
+  parameters:
+  divClass: 'panel panel-info'
+  headingLevel: 'h3'
+  headingDivClass: 'cards-panel-title'

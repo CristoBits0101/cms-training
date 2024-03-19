@@ -1,0 +1,9 @@
+title: Videojuegos - infoJuego
+renderType: site
+templateScript: /proyecto-videojuegos/templates/pages/infoJuego.ftl
+areas:
+  main:
+    type: list
+    availableComponents:
+      infoJuego:  
+        id: proyecto-videojuegos:components/infoJuego

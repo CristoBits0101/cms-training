@@ -1,0 +1,39 @@
+appName: noticias-app
+label: Noticias
+icon: icon-news
+class: info.magnolia.ui.contentapp.ContentAppDescriptor
+subApps:
+  browser:
+    class: info.magnolia.ui.contentapp.browser.BrowserSubAppDescriptor
+    contentConnector:
+      class: info.magnolia.ui.vaadin.integration.contentconnector.JcrContentConnectorDefinition
+      workspace: noticias
+  detail:
+    class: info.magnolia.ui.contentapp.detail.DetailSubAppDescriptor
+    contentConnector:
+      class: info.magnolia.ui.vaadin.integration.contentconnector.JcrContentConnectorDefinition
+      workspace: noticias
+    form:
+      tabs:
+        - name: tabMain
+          label: Noticias
+          fields:
+            - name: nombre
+              class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+            - name: resumen
+              class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+            - name: imagen
+              class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+              targetWorkspace: dam
+              appName: assets
+            - name: fechaPublicacion
+              class: info.magnolia.ui.form.field.definition.DateFieldDefinition
+            - name: categoria
+              class: info.magnolia.ui.form.field.definition.SelectFieldDefinition
+              options:
+                - name: shooter
+                  value: Shooter
+                  label: Shooter
+                - name: aventura
+                  value: Aventura
+                  label: Aventura

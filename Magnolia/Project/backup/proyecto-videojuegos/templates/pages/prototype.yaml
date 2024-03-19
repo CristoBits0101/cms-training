@@ -1,0 +1,28 @@
+dialog: proyecto-videojuegos:pages/inicio
+templateScript: proyecto-videojuegos/templates/pages/defaultPageScript.ftl
+
+areas:
+  header:
+    type: list
+    renderType: freemarker
+    dialog: proyecto-videojuegos:components/header
+    templateScript: proyecto-videojuegos/templates/components/header.ftl
+    editable: false
+    inheritance:
+      enabled: true
+      components: all
+
+
+
+  main:
+    type: list
+
+  footer:
+    type: list
+    renderType: freemarker
+    templateScript: proyecto-videojuegos/templates/components/footer.ftl
+    editable: false
+    inheritance:
+      enabled: true
+      components: all
+  

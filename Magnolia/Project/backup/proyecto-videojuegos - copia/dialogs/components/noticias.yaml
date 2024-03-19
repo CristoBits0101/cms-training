@@ -1,0 +1,10 @@
+form:
+  properties:
+    cantidadNoticias:
+      $type: textField
+      type: java.lang.Long
+      label: Cantidad de noticias a mostrar
+      converterClass: com.vaadin.data.converter.StringToLongConverter
+      required: true
+
+

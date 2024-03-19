@@ -1,0 +1,26 @@
+title: Videojuegos - Inicio
+renderType: freemarker
+dialog: proyecto-videojuegos:pages/inicio
+templateScript: /proyecto-videojuegos/templates/pages/inicio.ftl
+areas:
+  header:
+    availableComponents:
+      header:
+        id: proyecto-videojuegos:components/header
+  banner:
+    type: single
+    availableComponents:
+      banner:  
+        id: proyecto-videojuegos:components/banner
+  main:
+    type: list
+    availableComponents:
+      noticias:  
+        id: proyecto-videojuegos:components/noticias
+      juegos:  
+        id: proyecto-videojuegos:components/juegos
+  footer:
+    type: list
+    availableComponents:
+      textImage:  
+        id: proyecto-videojuegos:components/footer

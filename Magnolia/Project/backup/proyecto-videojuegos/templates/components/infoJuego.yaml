@@ -1,0 +1,3 @@
+title: infoJuego
+renderType: freemarker
+templateScript: /proyecto-videojuegos/templates/components/infoJuego.ftl

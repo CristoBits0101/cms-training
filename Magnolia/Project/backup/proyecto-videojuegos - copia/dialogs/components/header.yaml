@@ -1,0 +1,9 @@
+form:
+  properties:
+    text:
+      $type: textField
+      label: Text
+      description: Enter some text here.
+      i18n: true
+      required: true
+    

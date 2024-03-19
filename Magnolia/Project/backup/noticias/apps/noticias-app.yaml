@@ -1,0 +1,46 @@
+label: noticias
+icon: icon-language-app
+subApps:
+  browser:
+    class: info.magnolia.ui.contentapp.browser.BrowserSubAppDescriptor
+    contentConnector:
+      class: info.magnolia.ui.vaadin.integration.contentconnector.JcrContentConnectorDefinition
+      workspace: noticias
+  detail:
+    class: info.magnolia.ui.contentapp.detail.DetailSubAppDescriptor
+    contentConnector:
+      class: info.magnolia.ui.vaadin.integration.contentconnector.JcrContentConnectorDefinition
+      workspace: noticias
+actions:
+  default:
+    availability:
+      rules:
+        isNodeType:
+          type: mgnl:content
+    class: info.magnolia.ui.admincentral.action.DeleteItemActionDefinition
+    successActionName: deleteItem
+    failureActionName: showDeleteItemFailed
+    confirmationHeader: dialogs.delete.confirmation.header
+    confirmationMessage: dialogs.delete.confirmation.message
+    label: action.delete.label
+    icon: icon-delete
+    i18n: true
+form:
+  tabs:
+    - name: tabMain
+      label: noticias
+      fields:
+        - name: nombre
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+        - name: resumen
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+        - name: imagen
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          targetWorkspace: dam
+          appName: assets
+        - name: tags
+          class: info.magnolia.module.content-tags.field.ContentTagsFieldDefinition
+          contentConnector:
+            class: info.magnolia.ui.vaadin.integration.contentconnector.JcrContentConnectorDefinition
+            workspace: tags
+            rootPath: /
