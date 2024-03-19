@@ -1,4 +1,0 @@
-title: Banner
-renderType: freemarker
-dialog: proyecto-videojuegos:components/banner
-templateScript: /proyecto-videojuegos/templates/components/banner.ftl

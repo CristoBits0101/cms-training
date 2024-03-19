@@ -1,4 +1,0 @@
-title: Header
-renderType: freemarker
-dialog: proyecto-videojuegos:components/header
-templateScript: /proyecto-videojuegos/templates/components/header.ftl
