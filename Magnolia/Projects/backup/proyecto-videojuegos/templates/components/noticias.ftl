@@ -1,11 +1,4 @@
-<div>
-    <div class="container mt-3">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="text-center">Últimas Noticias</h1>
-            </div>
-        </div>
-    </div>
+
     <div class="container">
         [#-- ****** main content ****** --]
         [#setting locale="es_ES"]
@@ -18,7 +11,6 @@
             [#list noticias[0..(limite-1)]as noticia]
                 [#assign jcrNode = cmsfn.asJCRNode(noticia)]
                 [#assign uuid = jcrNode.getIdentifier()]
-
             [/#if]
             <div class="${colClass} mt-4">
                 <div class="card h-100">

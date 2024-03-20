@@ -1,4 +1,0 @@
-title: Recent Posts                                                                    # Component -> Title
-renderType: freemarker                                                                 # Component -> Type
-dialog: project-portal-participate:components/aside/recentPosts                        # Component -> Dialog
-templateScript: /project-portal-participate/templates/components/aside/recentPosts.ftl # Component -> Path
