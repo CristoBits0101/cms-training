@@ -15,17 +15,10 @@
         [#-- Definir el límite como un parámetro --]
         [#assign limite = content.cantidadNoticias!3]
         <div class="row ">
-            [#list noticias[0..(limite-1)]
-            as noticia]
-            [#assign jcrNode = cmsfn.asJCRNode(noticia)]
-            [#assign uuid = jcrNode.getIdentifier()]
-            [#-- Determinar la clase de columna --]
-            [#if limite == 1]
-            [#assign colClass = "col-md-12"]
-            [#elseif limite == 2]
-            [#assign colClass = "col-md-6"]
-            [#else]
-            [#assign colClass = "col-md-4"]
+            [#list noticias[0..(limite-1)]as noticia]
+                [#assign jcrNode = cmsfn.asJCRNode(noticia)]
+                [#assign uuid = jcrNode.getIdentifier()]
+
             [/#if]
             <div class="${colClass} mt-4">
                 <div class="card h-100">
