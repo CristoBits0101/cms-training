@@ -1,0 +1,22 @@
+label: Recent Posts                                                                          # Tittle -> Windows
+
+form:                                                                                        #   Form -> Definition
+  properties:                                                                                #   Form -> Fields
+
+    folderName:                                                                              #  Field -> Name
+      $type: textField                                                                       #  Field -> Type
+      label: News folder name                                                                #  Field -> label
+      description: Indicate which type of node "folder" you want the news to be listed from. #  Field -> Description
+
+    targetWorkspace:                                                                         #  Field -> Name
+      $type: textField                                                                       #  Field -> Type
+      label: Application workspace                                                           #  Field -> label
+      description: Indicates the workspace where the application content is stored.          #  Field -> Description
+      required: true                                                                         #   Data -> Mandatory
+
+    newsNumber:                                                                              #  Field -> Name
+      $type: textField                                                                       #  Field -> Type
+      # type: java.lang.Long                                                                 #   Data -> Type
+      # converterClass: com.vaadin.data.converter.StringToLongConverter                      #   Type -> Dependence
+      label: Number of articles                                                              #  Field -> label
+      description: Indicate the number of articles you want to display                       #  Field -> Description

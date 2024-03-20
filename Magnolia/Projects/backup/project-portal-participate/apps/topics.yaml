@@ -1,0 +1,11 @@
+!content-type:topics     #     Content -> Theme
+
+name: topics             #        Name -> Internal
+label: Topics            #        Name -> Panel
+enabled: true            #      Usable -> True
+icon: icon-forums-app    #        Icon -> Style
+
+permissions:             # Permissions -> Handling
+  roles:                 #       Roles -> Allowed
+    superuser: superuser #   Superuser -> All
+    editors:             #     Editors -> All

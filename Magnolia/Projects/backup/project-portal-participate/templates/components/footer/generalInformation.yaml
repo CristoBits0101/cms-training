@@ -1,0 +1,3 @@
+title: General Information                                                                     # Component -> Title
+renderType: freemarker                                                                         # Component -> Type
+templateScript: /project-portal-participate/templates/components/footer/generalInformation.ftl # Component -> Path

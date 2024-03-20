@@ -1,0 +1,4 @@
+title: YouTube                                                                               # Component -> Title
+renderType: freemarker                                                                       # Component -> Type
+dialog: project-portal-participate:components/footer/networks                                # Component -> Dialog
+templateScript: /project-portal-participate/templates/components/footer/networks/youtube.ftl # Component -> Path
