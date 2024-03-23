@@ -1,5 +1,5 @@
 <!-- Cadena original -->
-${miCadena} <br>
+${miCadena}
 
 % Cadena en mayúsculas
 ${miCadena?upper_case}
