@@ -15,43 +15,43 @@
 
     [#-- Step 6: We iterate the inverted array of mgnlContentNodes --]
     [#list mgnlContentNodes as mgnlContentNode]
-        
+
         [#-- Step 7: Get a new array with all child nodes of type contact --]
         [#assign contactNodes = cmsfn.children(mgnlContentNode, "contact")]
-        
+
         [#-- Step 8: We iterate the array of contactNodes --]
         [#list contactNodes as contactNode]
 
             [#-- Step 9: We print the contacts that have information, the rest we show a warning --]
-            First Name: 
+            First name:
             [#if contactNode.firstName?has_content]
                 ${contactNode.firstName}<br>
             [#else]
                 <span style="color: red;">Missing</span><br>
             [/#if]
 
-            Last Name: 
+            Last name:
             [#if contactNode.familyName?has_content]
                 ${contactNode.familyName}<br>
             [#else]
                 <span style="color: red;">Missing</span><br>
             [/#if]
 
-            Mobile Number: 
+            Mobile number:
             [#if contactNode.mobileNumber?has_content]
                 ${contactNode.mobileNumber}<br>
             [#else]
                 <span style="color: red;">Missing</span><br>
             [/#if]
 
-            Phone Number: 
+            Phone number:
             [#if contactNode.phoneNumber?has_content]
                 ${contactNode.phoneNumber}<br>
             [#else]
                 <span style="color: red;">Missing</span><br>
             [/#if]
 
-            Email: 
+            Email:
             [#if contactNode.email?has_content]
                 ${contactNode.email}<br>
             [#else]
@@ -62,7 +62,7 @@
 
         [#-- Step 7: Get a new array with all child nodes of type address --]
         [#assign addressNodes = cmsfn.children(mgnlContentNode, "address")]
-        
+
         [#-- Step 8: We iterate the array of addressNodes --]
         [#list addressNodes as addressNode]
 
@@ -74,7 +74,7 @@
                 <span style="color: red;">Missing</span><br>
             [/#if]
 
-            Postal Code: 
+            Postal code: 
             [#if addressNode.postalCode?has_content]
                 ${addressNode.postalCode}<br>
             [#else]
