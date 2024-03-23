@@ -19,59 +19,80 @@
         [#-- Step 7: Get a new array with all child nodes of type contact --]
         [#assign contactNodes = cmsfn.children(mgnlContentNode, "contact")]
         
-        [#-- Step 8: Get a new array with all child nodes of type contact --]
+        [#-- Step 8: We iterate the array of contactNodes --]
         [#list contactNodes as contactNode]
 
+            [#-- Step 9: We print the contacts that have information, the rest we show a warning --]
+            First Name: 
             [#if contactNode.firstName?has_content]
-                First Name: ${contactNode.firstName}<br>
+                ${contactNode.firstName}<br>
             [#else]
-                First Name: ${contactNode.firstName}<br>
+                <span style="color: red;">Missing</span><br>
             [/#if]
 
-            First Name: ${contactNode.firstName}<br>
-            Last Name: ${contactNode.familyName}<br>
-            Mobile Number: ${contactNode.mobileNumber}<br>
-            Phone Number: ${contactNode.phoneNumber}<br>
-            Email: ${contactNode.email}<br>
+            Last Name: 
+            [#if contactNode.familyName?has_content]
+                ${contactNode.familyName}<br>
+            [#else]
+                <span style="color: red;">Missing</span><br>
+            [/#if]
+
+            Mobile Number: 
+            [#if contactNode.mobileNumber?has_content]
+                ${contactNode.mobileNumber}<br>
+            [#else]
+                <span style="color: red;">Missing</span><br>
+            [/#if]
+
+            Phone Number: 
+            [#if contactNode.phoneNumber?has_content]
+                ${contactNode.phoneNumber}<br>
+            [#else]
+                <span style="color: red;">Missing</span><br>
+            [/#if]
+
+            Email: 
+            [#if contactNode.email?has_content]
+                ${contactNode.email}<br>
+            [#else]
+                <span style="color: red;">Missing</span><br>
+            [/#if]
 
         [/#list]
 
-        [#-- Step 7: Get a new array with all child nodes of type contact --]
-        [#assign contactNodes = cmsfn.children(mgnlContentNode, "contact")]
+        [#-- Step 7: Get a new array with all child nodes of type address --]
+        [#assign addressNodes = cmsfn.children(mgnlContentNode, "address")]
         
-        [#-- Step 8: Get a new array with all child nodes of type contact --]
+        [#-- Step 8: We iterate the array of addressNodes --]
         [#list addressNodes as addressNode]
 
-            [#if contactNode.firstName?has_content]
-                Street: ${addressNode.street}
-                <br />
+            [#-- Step 9: We print the address that have information, the rest we show a warning --]
+            Street: 
+            [#if addressNode.street?has_content]
+                ${addressNode.street}<br>
             [#else]
-                Street: 
-                <br />
+                <span style="color: red;">Missing</span><br>
             [/#if]
 
-            [#if contactNode.firstName?has_content]
-                Postal Code: ${addressNode.postalCode}
-                <br />
+            Postal Code: 
+            [#if addressNode.postalCode?has_content]
+                ${addressNode.postalCode}<br>
             [#else]
-                Postal Code: 
-                <br />
+                <span style="color: red;">Missing</span><br>
             [/#if]
 
-            [#if contactNode.firstName?has_content]
-                Country: ${addressNode.country}
-                <br />
+            Country: 
+            [#if addressNode.country?has_content]
+                ${addressNode.country}<br>
             [#else]
-                Country: 
-                <br />
+                <span style="color: red;">Missing</span><br>
             [/#if]
 
-            [#if contactNode.firstName?has_content]
-                Province: ${addressNode.province}
-                <br />
+            Province: 
+            [#if addressNode.province?has_content]
+                ${addressNode.province}<br>
             [#else]
-                Province: 
-                <br />
+                <span style="color: red;">Missing</span><br>
             [/#if]
 
         [/#list]
