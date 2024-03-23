@@ -1,0 +1,27 @@
+label: Networks                                                              # Tittle -> Windows
+
+form:                                                                        #   Form -> Definition
+  properties:                                                                #   Form -> Fields
+    url:                                                                     #  Field -> Name
+      $type: textField                                                       #  Field -> Type
+      label: Paste the URL                                                   #  Field -> label
+      description: Copy and paste the URL of the social network into the box #  Field -> Description
+      required: true                                                         #  Field -> Mandatory
+
+    altText:                                                                 #  Field -> Name
+      $type: textField                                                       #  Field -> Type
+      label: Alternative text                                                #  Field -> label
+      description: Alternate text displayed if the icon failed to load       #  Field -> Description
+      required: true                                                         #  Field -> Mandatory
+
+    titleText:                                                               #  Field -> Name
+      $type: textField                                                       #  Field -> Type
+      label: Image title                                                     #  Field -> label
+      description: Text displayed when you hover over the icon               #  Field -> Description
+      required: true                                                         #  Field -> Mandatory
+
+    iconLink:                                                                #  Field -> Name             
+      $type: damLinkField                                                    #  Field -> Type
+      label: Icon link                                                       #  Field -> label
+      description: Choose an icon from the Assets app                        #  Field -> Description
+      required: true                                                         #  Field -> Mandatory

@@ -61,7 +61,8 @@ nav {
     justify-content: center;
 }
 
-nav ul, footer ul {
+nav ul,
+footer ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -92,8 +93,11 @@ a {
 /* Main Styles */
 main {
     grid-area: main;
-    padding: 5%;
-    text-align: center;
+    padding: 5% 2.2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 main h2 {
@@ -102,33 +106,40 @@ main h2 {
 }
 
 .containerPortalHome {
+    margin: 0;
+    padding: 0;
     display: flex;
+    align-items: stretch;
     flex-wrap: wrap;
     gap: 4.4rem;
     text-align: center;
 }
 
 .card-container {
+    margin: 0;
+    padding: 0;
     width: 18rem;
-    height: 25rem;
-    margin-bottom: 5%;
+    height: 28rem;
     border-radius: 2rem;
-    background: linear-gradient(-45deg, #1F1F1F, #1B233D, #171717);
+    background: linear-gradient(-45deg, #171717, #1B233D, #1F1F1F, #004958, #008094);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     clip-path: polygon(1.875rem 0%, 100% 0, 100% calc(100% - 1.875rem), calc(100% - 1.875rem) 100%, 0 100%, 0% 1.875rem);
     border-top-right-radius: 1.25rem;
     border-bottom-left-radius: 1.25rem;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -136,31 +147,40 @@ main h2 {
 
 .card-header {
     padding: 5%;
-    height: 35%;
+    height: 25%;
     display: flex;
     justify-content: center;
+    flex-grow: 1;
+    margin-bottom: 2%;
 }
 
-.card-header > img {
+.card-header>img {
     max-width: 100%;
 }
 
 .card-body {
-    padding: 5%;
-    height: 65%;
+    padding: 0% 5%;
+    max-height: 100%;
     color: #FFFFFF;
     font-size: 0.9rem;
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-body-head {
-    height: 50%;
+    padding-top: 2%;
+    height: 45%;
     overflow: auto;
+    flex-grow: 2;
 }
 
 .card-body-body {
     max-height: 100%;
     display: flex;
     overflow: auto;
+    flex-grow: 1;
 }
 
 .card-body h3 {
@@ -196,6 +216,13 @@ main h2 {
     font-size: 1.2rem;
 }
 
+.card-footer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
 
 /* Aside Styles */
 aside {
@@ -220,7 +247,6 @@ footer .component {
 
 footer h4 {
     margin: 1rem 0 1rem 0;
-    font-weight: 300;
     font-size: 1rem;
 }
 
@@ -238,7 +264,8 @@ footer ul {
     gap: 0.5rem;
 }
 
-footer a, footer p {
+footer a,
+footer p {
     color: #5A5B5D;
     font-size: 1rem;
     text-align: justify;
@@ -253,4 +280,65 @@ footer a, footer p {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 0.5rem
+}
+
+/* Button Styles for Cards */
+button {
+  --primary-color: #ffff;
+  --secondary-color: #002152;
+  --hover-color: #eceff2;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 50px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+}
+
+button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+button:hover .arrow:before {
+  right: 0;
 }

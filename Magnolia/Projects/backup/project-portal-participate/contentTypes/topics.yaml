@@ -1,5 +1,0 @@
-datasource:         # Workspace -> Definition
-  workspace: topics # workspace -> Name
-  autoCreate: true  # Workspace -> Autoconfigure
-
-model:              #     Model -> Database

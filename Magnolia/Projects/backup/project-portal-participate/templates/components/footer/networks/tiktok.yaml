@@ -1,4 +1,0 @@
-title: TikTok                                                                               # Component -> Title
-renderType: freemarker                                                                      # Component -> Type
-dialog: project-portal-participate:components/footer/networks                               # Component -> Dialog
-templateScript: /project-portal-participate/templates/components/footer/networks/tiktok.ftl # Component -> Path

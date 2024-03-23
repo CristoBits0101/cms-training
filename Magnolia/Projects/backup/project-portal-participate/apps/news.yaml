@@ -33,7 +33,6 @@ subApps:                                 #   Reference -> subApps
         message:                         #       Field -> Column
           label: Description             #       Field -> Name
           description: News message      #       Field -> Description
-          rows: 2                        #       Field -> Property
           $type: richTextField           #        Data -> Type
           type: java.lang.String         #        Data -> Typing
           required: false                #        Data -> Mandatory
@@ -115,6 +114,21 @@ subApps:                                 #   Reference -> subApps
             label: Address Details       #         Tab -> Name
             fields:                      #   Reference -> Fields
               - name: addresses          #       Field -> Column
+
+actions:
+  default:
+    availability:
+      rules:
+        isNodeType:
+          type: mgnl:content
+    class: info.magnolia.ui.admincentral.action.DeleteItemActionDefinition
+    successActionName: deleteItem
+    failureActionName: showDeleteItemFailed
+    confirmationHeader: dialogs.delete.confirmation.header
+    confirmationMessage: dialogs.delete.confirmation.message
+    label: action.delete.label
+    icon: icon-delete
+    i18n: true
 
 datasource:                              #  Datasource -> Definition
   $type: jcrDatasource                   #        Data -> Type

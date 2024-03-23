@@ -27,11 +27,6 @@
             [@cms.area name="main" /]
         </main>
 
-        [#-- Related but independent content --]
-        <aside>
-            [@cms.area name="aside" /]
-        </aside>
-
         [#-- Footer content --]
         <footer>
             [@cms.area name="footer" /]

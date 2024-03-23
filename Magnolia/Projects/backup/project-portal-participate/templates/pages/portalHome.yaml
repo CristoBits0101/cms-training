@@ -46,5 +46,4 @@ areas:                                                                          
         id: project-portal-participate:components/footer/generalInformation          #  Component -> Path
       portalParticipate:                                                             #  Component -> Name
         id: project-portal-participate:components/footer/portalParticipate           #  Component -> Path
-      services:                                                                      #  Component -> Name
-        id: project-portal-participate:components/footer/aboutServices               #  Component -> Path
+

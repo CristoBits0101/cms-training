@@ -1,13 +1,27 @@
-<h4>Portal Participate</h4>
+[#-- Column title --]
+<h4>${content.title}</h4>
 
-<p>This website is a showcase project built in Magnolia. Its goal is to apply the knowledge acquired during professional training.</p>
+[#-- Column message --]
+${cmsfn.decode(content).message!""}
 
 <p>&nbsp;</p>
 
 <p>
-    <a href="" target="_blank">Learn more</a>
+    [#if content.url?has_content]
+        [#-- We obtain the page identifier --]
+        [#assign targetPage = cmsfn.contentById(content.url)!]
+
+        [#-- We print the link to the identifier --]
+        <a href="${cmsfn.link(targetPage)!}" target="_blank">
+
+            [#-- Link message --]
+            👉 ${content.linkMessage!"Learn more"}
+        
+        </a>
+    [/#if]
 </p>
 
 <p>&nbsp;</p>
 
-<p>© 2023-2024 Portal Participate, Inc.</p>
+[#-- Column Companyt text --]
+<p>${content.CompanytText}</p>
