@@ -1,4 +1,5 @@
 [#list newsOrderReversed[0..(content.newsNumber!3)-1] as childNode]
+
     [#-- From each news item, we retrieve child nodes of type mgnl:contentNode --]
     [#assign mgnlContentNodes = cmsfn.children(childNode, "mgnl:contentNode")]
 
