@@ -1,0 +1,6 @@
+datasource:                      # Workspace -> Definition
+  workspace: products            # workspace -> Name
+  rootPath: /                    # workspace -> Root
+  autoCreate: true               # Workspace -> Autoconfigure
+
+model:                           #     Model -> Database

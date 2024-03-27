@@ -1,0 +1,9 @@
+label: Portal Participate Home
+
+form:
+  properties:
+    title:
+      $type: textField
+      label: Page title
+      description: Define the Page's title.
+      required: true
