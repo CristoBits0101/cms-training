@@ -1,0 +1,617 @@
+'portal-participate':
+  'jcr:primaryType': 'mgnl:page'
+  'jcr:uuid': 'dd9a9901-9ac0-41dd-8eca-82eb23b7eb27'
+  'mgnl:created': 2024-03-29T15:24:35.463Z
+  'mgnl:createdBy': 'superuser'
+  'mgnl:lastModified': 2024-03-29T21:58:33.778Z
+  'mgnl:lastModifiedBy': 'superuser'
+  'mgnl:template': 'project-portal-participate:pages/portalAuth'
+  'title': 'Portal Participate Welcome'
+  'portal-registration':
+    'jcr:primaryType': 'mgnl:page'
+    'jcr:uuid': '869ee421-f78b-400e-b2f8-a17295d3a158'
+    'mgnl:created': 2024-03-29T15:38:18.260Z
+    'mgnl:createdBy': 'superuser'
+    'mgnl:lastModified': 2024-03-29T22:56:35.492Z
+    'mgnl:lastModifiedBy': 'superuser'
+    'mgnl:template': 'project-portal-participate:pages/portalAuth'
+    'title': 'Portal Participate Registration'
+    'main':
+      'jcr:primaryType': 'mgnl:area'
+      'jcr:uuid': '4fcb0e4b-3381-4430-af22-a3f10fb399cc'
+      'mgnl:created': 2024-03-29T20:04:21.673Z
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2024-03-29T22:56:35.492Z
+      'mgnl:lastModifiedBy': 'superuser'
+      '0':
+        'confirmContentType': 'text'
+        'contentType': 'text'
+        'displayStepNavigation': false
+        'formText': 'Open a Portal Participate account.'
+        'formTitle': 'PORTAL PARTICIPATE REGISTRATION'
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': 'b9dc71a9-6c03-467c-b3e6-03aa0d3d1229'
+        'mgnl:created': 2024-03-29T20:05:12.789Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T22:56:35.492Z
+        'mgnl:lastModifiedBy': 'superuser'
+        'mgnl:template': 'public-user-registration:components/registration'
+        'requiredSymbol': '*'
+        'sendConfirmation': true
+        'trackMail': false
+        'fieldsets':
+          'jcr:primaryType': 'mgnl:area'
+          'jcr:uuid': 'ea19d6b2-d7b5-4f96-8bd1-14e6961ee0be'
+          'mgnl:created': 2024-03-29T20:05:13.202Z
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastModified': 2024-03-29T20:05:13.202Z
+          'mgnl:lastModifiedBy': 'superuser'
+    'footer':
+      'jcr:primaryType': 'mgnl:area'
+      'jcr:uuid': '63ce4a5d-24bf-4155-91d7-8564e0b72e78'
+      'mgnl:created': 2024-03-29T21:28:21.954Z
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2024-03-29T21:28:22.088Z
+      'mgnl:lastModifiedBy': 'superuser'
+      'footer1':
+        'jcr:primaryType': 'mgnl:area'
+        'jcr:uuid': '9b624bbb-6445-4218-a84d-d0ccc4904f10'
+        'mgnl:created': 2024-03-29T21:28:21.995Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T21:28:21.995Z
+        'mgnl:lastModifiedBy': 'superuser'
+      'footer2':
+        'jcr:primaryType': 'mgnl:area'
+        'jcr:uuid': '1e4db2aa-f1e0-4da0-ab55-65d1e0af9e3d'
+        'mgnl:created': 2024-03-29T21:28:22.023Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T21:28:22.023Z
+        'mgnl:lastModifiedBy': 'superuser'
+      'footer3':
+        'jcr:primaryType': 'mgnl:area'
+        'jcr:uuid': 'b382b36b-3e6d-4623-a3da-189af2bc6498'
+        'mgnl:created': 2024-03-29T21:28:22.060Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T21:28:22.060Z
+        'mgnl:lastModifiedBy': 'superuser'
+      'footer4':
+        'jcr:primaryType': 'mgnl:area'
+        'jcr:uuid': 'c6d99560-e490-4b9d-b3cc-dd980507efce'
+        'mgnl:created': 2024-03-29T21:28:22.094Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T21:28:22.094Z
+        'mgnl:lastModifiedBy': 'superuser'
+  'portal-login':
+    'jcr:primaryType': 'mgnl:page'
+    'jcr:uuid': 'e405fcd6-70a0-4795-b2a1-9ca3a75c0016'
+    'mgnl:created': 2024-03-29T17:08:35.865Z
+    'mgnl:createdBy': 'superuser'
+    'mgnl:lastModified': 2024-03-29T22:04:04.283Z
+    'mgnl:lastModifiedBy': 'superuser'
+    'mgnl:template': 'project-portal-participate:pages/portalAuth'
+    'title': 'Portal Participate Login'
+    'main':
+      'jcr:primaryType': 'mgnl:area'
+      'jcr:uuid': '18d989c5-e4df-4a2d-bc02-8540df1e42ff'
+      'mgnl:created': 2024-03-29T21:11:24.104Z
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2024-03-29T22:04:04.283Z
+      'mgnl:lastModifiedBy': 'superuser'
+      '0':
+        'forgottenPasswordPage': '9f5bff1b-ad52-4a9f-a332-485ead1674d7'
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': '5c6a4785-647c-47ba-a5c0-71fc896aabe9'
+        'mgnl:created': 2024-03-29T21:13:59.354Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T22:04:04.283Z
+        'mgnl:lastModifiedBy': 'superuser'
+        'mgnl:template': 'public-user-registration:components/login'
+        'registrationPage': '869ee421-f78b-400e-b2f8-a17295d3a158'
+        'targetPage': '831fe4e0-49a2-418e-a5f8-9b495ec62c84'
+        'text': 'Access exclusive Participa Portal news.'
+        'title': 'PORTAL PARTICIPATE LOGIN'
+    'footer':
+      'jcr:primaryType': 'mgnl:area'
+      'jcr:uuid': 'b48a20e5-0b02-4580-ae5a-c1989e106c41'
+      'mgnl:created': 2024-03-29T21:26:39.805Z
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2024-03-29T21:26:40.057Z
+      'mgnl:lastModifiedBy': 'superuser'
+      'footer1':
+        'jcr:primaryType': 'mgnl:area'
+        'jcr:uuid': 'acb931bd-5569-46c8-a188-80a5bf58da31'
+        'mgnl:created': 2024-03-29T21:26:39.943Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T21:26:39.943Z
+        'mgnl:lastModifiedBy': 'superuser'
+      'footer2':
+        'jcr:primaryType': 'mgnl:area'
+        'jcr:uuid': '1c3e1a74-99d9-461b-87b7-8cae53207988'
+        'mgnl:created': 2024-03-29T21:26:39.990Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T21:26:39.990Z
+        'mgnl:lastModifiedBy': 'superuser'
+      'footer3':
+        'jcr:primaryType': 'mgnl:area'
+        'jcr:uuid': 'a5560051-9cfc-49fd-85af-7285b0aea7f1'
+        'mgnl:created': 2024-03-29T21:26:40.025Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T21:26:40.025Z
+        'mgnl:lastModifiedBy': 'superuser'
+      'footer4':
+        'jcr:primaryType': 'mgnl:area'
+        'jcr:uuid': '84d80a25-03f8-4195-aedb-346fa4580450'
+        'mgnl:created': 2024-03-29T21:26:40.062Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T21:26:40.062Z
+        'mgnl:lastModifiedBy': 'superuser'
+  'update-user-profile':
+    'jcr:primaryType': 'mgnl:page'
+    'jcr:uuid': '579e00c2-6a53-4600-b884-6f040497f06f'
+    'mgnl:created': 2024-03-29T17:25:14.803Z
+    'mgnl:createdBy': 'superuser'
+    'mgnl:lastModified': 2024-03-29T22:06:10.743Z
+    'mgnl:lastModifiedBy': 'superuser'
+    'mgnl:template': 'project-portal-participate:pages/portalAuth'
+    'title': 'Portal Participate Update Profile'
+    'main':
+      'jcr:primaryType': 'mgnl:area'
+      'jcr:uuid': '7926268d-d9cd-45b2-8543-e78af61b74fa'
+      'mgnl:created': 2024-03-29T21:14:28.255Z
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2024-03-29T22:06:10.743Z
+      'mgnl:lastModifiedBy': 'superuser'
+      '0':
+        'confirmContentType': 'text'
+        'contentType': 'text'
+        'displayStepNavigation': false
+        'formText': 'Keep your Portal Participate profile information current and
+          accurate.'
+        'formTitle': 'UPDATE YOUR PROFILE'
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': '886dddcf-e8d3-4988-a2ff-4646d5f498d4'
+        'mgnl:created': 2024-03-29T21:14:52.312Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T22:06:10.743Z
+        'mgnl:lastModifiedBy': 'superuser'
+        'mgnl:template': 'public-user-registration:components/userUpdate'
+        'requiredSymbol': '*'
+        'sendConfirmation': false
+        'trackMail': false
+        'fieldsets':
+          'jcr:primaryType': 'mgnl:area'
+          'jcr:uuid': 'eadeda44-d719-4b7a-a5d9-858ede37c8ca'
+          'mgnl:created': 2024-03-29T21:14:52.582Z
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastModified': 2024-03-29T21:14:52.582Z
+          'mgnl:lastModifiedBy': 'superuser'
+  'update-user-password':
+    'jcr:primaryType': 'mgnl:page'
+    'jcr:uuid': 'dbe28a78-7dba-4faa-b20a-d5a14832cbbf'
+    'mgnl:created': 2024-03-29T17:30:29.825Z
+    'mgnl:createdBy': 'superuser'
+    'mgnl:lastModified': 2024-03-29T22:06:40.871Z
+    'mgnl:lastModifiedBy': 'superuser'
+    'mgnl:template': 'project-portal-participate:pages/portalAuth'
+    'title': 'Portal Participate Update Password'
+    'main':
+      'jcr:primaryType': 'mgnl:area'
+      'jcr:uuid': '2bf9e819-6189-4cc6-acf3-daabfc0d0b13'
+      'mgnl:created': 2024-03-29T21:15:24.035Z
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2024-03-29T22:06:40.871Z
+      'mgnl:lastModifiedBy': 'superuser'
+      '0':
+        'confirmContentType': 'text'
+        'contentType': 'text'
+        'displayStepNavigation': false
+        'formText': 'Update your Portal Participate login credentials securely.'
+        'formTitle': 'CHANGE YOUR PASSWORD'
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': '48e9b39d-0894-4768-a056-72f0f4b61554'
+        'mgnl:created': 2024-03-29T21:15:48.534Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T22:06:40.871Z
+        'mgnl:lastModifiedBy': 'superuser'
+        'mgnl:template': 'public-user-registration:components/passwordChange'
+        'requiredSymbol': '*'
+        'sendConfirmation': false
+        'trackMail': false
+        'fieldsets':
+          'jcr:primaryType': 'mgnl:area'
+          'jcr:uuid': '77f2dbb2-892a-422a-8b27-dae74faab8f4'
+          'mgnl:created': 2024-03-29T21:15:48.772Z
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastModified': 2024-03-29T21:15:48.772Z
+          'mgnl:lastModifiedBy': 'superuser'
+  'retrieve-user-password':
+    'jcr:primaryType': 'mgnl:page'
+    'jcr:uuid': '9f5bff1b-ad52-4a9f-a332-485ead1674d7'
+    'mgnl:created': 2024-03-29T19:29:19.885Z
+    'mgnl:createdBy': 'superuser'
+    'mgnl:lastModified': 2024-03-29T22:07:20.094Z
+    'mgnl:lastModifiedBy': 'superuser'
+    'mgnl:template': 'project-portal-participate:pages/portalAuth'
+    'title': 'Portal Participate Retrieve Password'
+    'main':
+      'jcr:primaryType': 'mgnl:area'
+      'jcr:uuid': '8be232c3-54c9-4fc3-a797-f8f1a7cbc16e'
+      'mgnl:created': 2024-03-29T21:16:46.371Z
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2024-03-29T22:07:20.094Z
+      'mgnl:lastModifiedBy': 'superuser'
+      '0':
+        'confirmContentType': 'text'
+        'contentType': 'text'
+        'displayStepNavigation': false
+        'formText': 'Regain access to your Portal Participate account with ease.'
+        'formTitle': 'RECOVER YOUR PASSWORD'
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': 'd034595c-d41a-4e36-80ce-255cca7b014c'
+        'mgnl:created': 2024-03-29T21:17:23.889Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T22:07:20.094Z
+        'mgnl:lastModifiedBy': 'superuser'
+        'mgnl:template': 'public-user-registration:components/forgottenPassword'
+        'requiredSymbol': '*'
+        'sendConfirmation': false
+        'trackMail': false
+        'fieldsets':
+          'jcr:primaryType': 'mgnl:area'
+          'jcr:uuid': '50afb5db-b7f7-4374-ba7b-a28b87341f1f'
+          'mgnl:created': 2024-03-29T21:17:24.074Z
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastModified': 2024-03-29T21:17:24.074Z
+          'mgnl:lastModifiedBy': 'superuser'
+  'home':
+    'jcr:primaryType': 'mgnl:page'
+    'jcr:uuid': '831fe4e0-49a2-418e-a5f8-9b495ec62c84'
+    'mgnl:created': 2024-03-11T10:19:10.767Z
+    'mgnl:createdBy': 'superuser'
+    'mgnl:lastModified': 2024-03-29T15:38:38.982Z
+    'mgnl:lastModifiedBy': 'superuser'
+    'mgnl:template': 'project-portal-participate:pages/portalHome'
+    'title': 'Portal Participate Home'
+    'navigation':
+      'jcr:primaryType': 'mgnl:area'
+      'jcr:uuid': '9113080d-ef95-4aad-a583-e815e48cbc63'
+      'mgnl:created': 2024-03-11T10:20:21.829Z
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2024-03-11T10:20:21.829Z
+      'mgnl:lastModifiedBy': 'superuser'
+    'header':
+      'jcr:primaryType': 'mgnl:area'
+      'jcr:uuid': '1633fc17-f4e9-43fb-8c48-42c85a94550e'
+      'mgnl:created': 2024-03-11T10:20:21.869Z
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2024-03-12T10:03:10.954Z
+      'mgnl:lastModifiedBy': 'superuser'
+      '0':
+        'imageLink': 'jcr:c6475ef7-2f3d-4b64-bb3c-0e7d02a5969e'
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': '0543bb6e-e6a8-42de-a3ea-f6fb7b8f9851'
+        'mgnl:created': 2024-03-11T12:53:48.665Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-12T10:03:10.954Z
+        'mgnl:lastModifiedBy': 'superuser'
+        'mgnl:template': 'project-portal-participate:components/header/presentationBanner'
+        'title': 'collect beautiful moments'
+    'main':
+      'jcr:primaryType': 'mgnl:area'
+      'jcr:uuid': 'dff6762a-5cb9-471f-bd91-631f9ab008fd'
+      'mgnl:created': 2024-03-11T10:20:21.907Z
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2024-03-27T21:30:23.761Z
+      'mgnl:lastModifiedBy': 'superuser'
+      '0':
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': '36242f08-3d93-4a60-b669-0f2f4a0f0305'
+        'mgnl:created': 2024-03-26T19:49:44.344Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-27T21:30:23.761Z
+        'mgnl:lastModifiedBy': 'superuser'
+        'mgnl:template': 'project-portal-participate:components/main/recentPosts'
+        'newsNumber': 6
+        'newsTitle': 'Read the latest global news of the week!'
+        'targetWorkspace': 'news'
+        'titleNews': 'Read the latest global news of the week!'
+    'aside':
+      'jcr:primaryType': 'mgnl:area'
+      'jcr:uuid': 'abef7d68-56d0-4bd5-b9e5-548495cd1f2c'
+      'mgnl:created': 2024-03-11T10:20:21.966Z
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2024-03-11T10:20:21.966Z
+      'mgnl:lastModifiedBy': 'superuser'
+    'footer':
+      'jcr:primaryType': 'mgnl:area'
+      'jcr:uuid': '555cb344-63d6-4a17-9e18-5d7b27411a29'
+      'mgnl:created': 2024-03-11T10:20:22.007Z
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2024-03-28T16:22:24.470Z
+      'mgnl:lastModifiedBy': 'superuser'
+      '0':
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': '960d2369-5e6a-4913-9586-d8e52edd197e'
+        'mgnl:created': 2024-03-15T13:22:27.975Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-20T22:50:19.930Z
+        'mgnl:lastModifiedBy': 'superuser'
+        'mgnl:template': 'project-portal-participate:components/footer/followUs'
+        'networks':
+          'jcr:primaryType': 'mgnl:area'
+          'jcr:uuid': '08d523c4-239a-4f5e-a556-509df169ab5b'
+          'mgnl:created': 2024-03-16T14:52:07.721Z
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastModified': 2024-03-20T22:50:19.930Z
+          'mgnl:lastModifiedBy': 'superuser'
+          '0':
+            'altText': 'Facebook icon could not be loaded.'
+            'iconLink': 'jcr:20984dc5-5c2e-486b-a79a-00a59fb8759c'
+            'jcr:primaryType': 'mgnl:component'
+            'jcr:uuid': '54057a68-9940-4faa-9a9b-92b65fcef66a'
+            'mgnl:created': 2024-03-20T22:38:10.586Z
+            'mgnl:createdBy': 'superuser'
+            'mgnl:lastModified': 2024-03-20T22:50:19.930Z
+            'mgnl:lastModifiedBy': 'superuser'
+            'mgnl:template': 'project-portal-participate:components/footer/networks/socialNetworks'
+            'titleText': 'Facebook'
+            'url': 'https://www.facebook.com/?locale=es_ES'
+          '00':
+            'altText': 'Instagram icon could not be loaded.'
+            'iconLink': 'jcr:c3bf852f-c896-4684-9962-ec4ec4d15f03'
+            'jcr:primaryType': 'mgnl:component'
+            'jcr:uuid': '532ac0b2-c7e3-4d98-9f6d-bd0163e9e9f3'
+            'mgnl:created': 2024-03-20T22:40:40.583Z
+            'mgnl:createdBy': 'superuser'
+            'mgnl:lastModified': 2024-03-20T22:50:14.695Z
+            'mgnl:lastModifiedBy': 'superuser'
+            'mgnl:template': 'project-portal-participate:components/footer/networks/socialNetworks'
+            'titleText': 'Instagram'
+            'url': 'https://www.instagram.com/'
+          '01':
+            'altText': 'TikTok icon could not be loaded.'
+            'iconLink': 'jcr:82329747-f089-4c8f-a63a-9db423ed3d06'
+            'jcr:primaryType': 'mgnl:component'
+            'jcr:uuid': 'be5b3a80-af7b-42c2-991b-c5af1e024f43'
+            'mgnl:created': 2024-03-20T22:41:45.915Z
+            'mgnl:createdBy': 'superuser'
+            'mgnl:lastModified': 2024-03-20T22:50:10.212Z
+            'mgnl:lastModifiedBy': 'superuser'
+            'mgnl:template': 'project-portal-participate:components/footer/networks/socialNetworks'
+            'titleText': 'TikTok'
+            'url': 'https://www.tiktok.com/es/'
+          '02':
+            'altText': 'The YouTube icon could not be loaded.'
+            'iconLink': 'jcr:9dd42ff5-e88b-4f74-997f-f2b9e7938dcd'
+            'jcr:primaryType': 'mgnl:component'
+            'jcr:uuid': 'a63089e0-5c1a-4868-bbae-bca0197f9346'
+            'mgnl:created': 2024-03-20T22:43:40.291Z
+            'mgnl:createdBy': 'superuser'
+            'mgnl:lastModified': 2024-03-20T22:49:30.476Z
+            'mgnl:lastModifiedBy': 'superuser'
+            'mgnl:template': 'project-portal-participate:components/footer/networks/socialNetworks'
+            'titleText': 'YouTube'
+            'url': 'https://www.youtube.com/?gl=ES&hl=es'
+          '03':
+            'altText': 'LinkedIn icon could not be loaded.'
+            'iconLink': 'jcr:b7b55be3-f3a8-4470-9c3e-f4dab925336a'
+            'jcr:primaryType': 'mgnl:component'
+            'jcr:uuid': '94485020-e0ac-4070-b82c-0c012bde3677'
+            'mgnl:created': 2024-03-20T22:45:10.144Z
+            'mgnl:createdBy': 'superuser'
+            'mgnl:lastModified': 2024-03-20T22:49:25.788Z
+            'mgnl:lastModifiedBy': 'superuser'
+            'mgnl:template': 'project-portal-participate:components/footer/networks/socialNetworks'
+            'titleText': 'LinkedIn '
+            'url': 'https://www.linkedin.com/feed/'
+          '04':
+            'altText': 'The Twitter icon could not be loaded.'
+            'iconLink': 'jcr:3719d66f-bdc2-4419-ada1-a9d564a55913'
+            'jcr:primaryType': 'mgnl:component'
+            'jcr:uuid': 'c467e6c2-cb5d-47bc-b6f7-eac04117f4a4'
+            'mgnl:created': 2024-03-20T22:47:33.960Z
+            'mgnl:createdBy': 'superuser'
+            'mgnl:lastModified': 2024-03-20T22:49:55.273Z
+            'mgnl:lastModifiedBy': 'superuser'
+            'mgnl:template': 'project-portal-participate:components/footer/networks/socialNetworks'
+            'titleText': 'The Twitter icon could not be loaded.'
+            'url': 'https://twitter.com/?lang=es'
+      '00':
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': 'cc17ce43-be2f-4111-b31a-3ef1ce5382ae'
+        'mgnl:created': 2024-03-28T15:14:17.925Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-28T16:21:57.342Z
+        'mgnl:lastModifiedBy': 'superuser'
+        'mgnl:template': 'project-portal-participate:components/footer/generalInformation'
+        'title': 'GENERAL'
+        'multi':
+          'jcr:uuid': 'b1db8485-9b63-428a-907c-b8081a9b7c35'
+          'mgnl:created': 2024-03-28T15:38:21.606Z
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastModified': 2024-03-28T16:21:57.342Z
+          'mgnl:lastModifiedBy': 'superuser'
+          'multi0':
+            'article': 'About Portal Participate'
+            'jcr:uuid': '3d690b3d-a2f5-4845-a777-2f209e40ee1e'
+            'mgnl:created': 2024-03-28T15:38:21.688Z
+            'mgnl:createdBy': 'superuser'
+            'mgnl:lastModified': 2024-03-28T16:21:57.342Z
+            'mgnl:lastModifiedBy': 'superuser'
+            'targetPage': '831fe4e0-49a2-418e-a5f8-9b495ec62c84'
+          'multi1':
+            'article': 'Contact'
+            'jcr:uuid': '688ade71-6b42-4171-8c26-03c84dc7001e'
+            'mgnl:created': 2024-03-28T16:21:57.337Z
+            'mgnl:createdBy': 'superuser'
+            'mgnl:lastModified': 2024-03-28T16:21:57.337Z
+            'mgnl:lastModifiedBy': 'superuser'
+            'targetPage': '831fe4e0-49a2-418e-a5f8-9b495ec62c84'
+      '01':
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': '4b3b1272-49eb-4022-a580-11b329ee666e'
+        'mgnl:created': 2024-03-28T15:14:38.146Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-28T16:22:24.470Z
+        'mgnl:lastModifiedBy': 'superuser'
+        'mgnl:template': 'project-portal-participate:components/footer/generalInformation'
+        'title': 'SERVICES'
+        'multi':
+          'jcr:uuid': '4b692e14-56d5-462d-b4e5-3863b7121c40'
+          'mgnl:created': 2024-03-28T16:22:24.470Z
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastModified': 2024-03-28T16:22:24.470Z
+          'mgnl:lastModifiedBy': 'superuser'
+          'multi0':
+            'article': 'About this demo'
+            'jcr:uuid': '55ab7dbb-92b6-4fd5-89d7-13abdd6d5a99'
+            'mgnl:created': 2024-03-28T16:22:24.472Z
+            'mgnl:createdBy': 'superuser'
+            'mgnl:lastModified': 2024-03-28T16:22:24.472Z
+            'mgnl:lastModifiedBy': 'superuser'
+            'targetPage': '831fe4e0-49a2-418e-a5f8-9b495ec62c84'
+      '02':
+        'CompanytText': '© 2023-2024 Portal Participate, Inc.'
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': '46dca35e-0981-4b58-9a87-ba3c41086e62'
+        'linkMessage': 'Read more!'
+        'message': '<p>This is a sample project to put into practice the training
+          of Magnolia CMS and show the problem-solving in programming abilities gained
+          during the higher-level vocational training cycle of DAW, it also serves
+          as a final career project.</p>
+
+          '
+        'mgnl:created': 2024-03-28T15:21:29.256Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-28T16:00:06.877Z
+        'mgnl:lastModifiedBy': 'superuser'
+        'mgnl:template': 'project-portal-participate:components/footer/portalParticipate'
+        'title': 'PORTAL PARTICIPATE'
+        'url': '831fe4e0-49a2-418e-a5f8-9b495ec62c84'
+    'nav':
+      'jcr:primaryType': 'mgnl:area'
+      'jcr:uuid': '53f99d68-b183-4ce7-b55c-a49cff7294c0'
+      'mgnl:created': 2024-03-12T09:50:27.126Z
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2024-03-29T15:26:58.367Z
+      'mgnl:lastModifiedBy': 'superuser'
+      '00':
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': '21c59abd-b566-4906-a968-b26377927d0b'
+        'logoLink': 'jcr:4c044dba-6a83-4d71-b977-713bb6cc27ce'
+        'mgnl:created': 2024-03-12T11:14:20.095Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-12T11:44:20.249Z
+        'mgnl:lastModifiedBy': 'superuser'
+        'mgnl:template': 'project-portal-participate:components/header/portalLogo'
+      '0':
+        'homeIconLink': 'jcr:191499b4-6f98-4e4b-a4be-81b0c07b55f0'
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': '1a0ea76f-925c-49be-ba62-53df3a90bb0d'
+        'mgnl:created': 2024-03-12T09:51:17.304Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T15:26:58.367Z
+        'mgnl:lastModifiedBy': 'superuser'
+        'mgnl:template': 'project-portal-participate:components/header/navigationBar'
+        'page': 'portal-participate/home'
+    'news':
+      'jcr:primaryType': 'mgnl:page'
+      'jcr:uuid': '6facc20d-5508-4d28-92b8-95c2ac52b120'
+      'mgnl:created': 2024-03-29T14:26:57.129Z
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2024-03-29T15:24:45.231Z
+      'mgnl:lastModifiedBy': 'superuser'
+      'mgnl:template': 'project-portal-participate:pages/portalContent'
+      'title': 'Portal Participate News'
+      'nav':
+        'jcr:primaryType': 'mgnl:area'
+        'jcr:uuid': '52b89a29-a644-40e2-bbe0-2f2e4397a7b0'
+        'mgnl:created': 2024-03-29T14:29:24.232Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T14:29:24.232Z
+        'mgnl:lastModifiedBy': 'superuser'
+      'main':
+        'jcr:primaryType': 'mgnl:area'
+        'jcr:uuid': 'cbdfb27c-bb8e-4836-b633-0e2546b7c074'
+        'mgnl:created': 2024-03-29T14:29:24.332Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T14:31:44.043Z
+        'mgnl:lastModifiedBy': 'superuser'
+        '0':
+          'jcr:primaryType': 'mgnl:component'
+          'jcr:uuid': '03c49796-73ed-4b32-9681-9a7a38299027'
+          'mgnl:created': 2024-03-29T14:31:29.255Z
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastModified': 2024-03-29T14:31:44.043Z
+          'mgnl:lastModifiedBy': 'superuser'
+          'mgnl:template': 'project-portal-participate:components/main/recentPosts'
+          'newsNumber': 6
+          'newsTitle': 'Read the latest global news of the week!'
+          'targetWorkspace': 'news'
+      'footer':
+        'jcr:primaryType': 'mgnl:area'
+        'jcr:uuid': 'b31b331b-5787-4b04-80d5-5f8484d4c8e6'
+        'mgnl:created': 2024-03-29T14:29:24.362Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T14:29:24.362Z
+        'mgnl:lastModifiedBy': 'superuser'
+    'products':
+      'jcr:primaryType': 'mgnl:page'
+      'jcr:uuid': 'c9d79b64-34cb-42c4-be80-a0186f4e7615'
+      'mgnl:created': 2024-03-29T14:27:46.390Z
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2024-03-29T15:24:45.231Z
+      'mgnl:lastModifiedBy': 'superuser'
+      'mgnl:template': 'project-portal-participate:pages/portalContent'
+      'title': 'Portal Participate Products'
+      'nav':
+        'jcr:primaryType': 'mgnl:area'
+        'jcr:uuid': '244eaf67-203a-4162-ae54-d0a244cfdf55'
+        'mgnl:created': 2024-03-29T14:29:26.485Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T14:29:26.485Z
+        'mgnl:lastModifiedBy': 'superuser'
+      'main':
+        'jcr:primaryType': 'mgnl:area'
+        'jcr:uuid': '09f1e0c1-1b03-4ec7-b08c-6a0a48ad87f7'
+        'mgnl:created': 2024-03-29T14:29:26.533Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T14:29:26.533Z
+        'mgnl:lastModifiedBy': 'superuser'
+      'footer':
+        'jcr:primaryType': 'mgnl:area'
+        'jcr:uuid': '2edebba0-20a8-40be-ad35-4ab0416c3160'
+        'mgnl:created': 2024-03-29T14:29:26.556Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T14:29:26.556Z
+        'mgnl:lastModifiedBy': 'superuser'
+    'community':
+      'jcr:primaryType': 'mgnl:page'
+      'jcr:uuid': '57b356e8-2042-498e-8e75-13955758d707'
+      'mgnl:created': 2024-03-29T14:28:29.508Z
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2024-03-29T15:24:45.231Z
+      'mgnl:lastModifiedBy': 'superuser'
+      'mgnl:template': 'project-portal-participate:pages/portalCommunity'
+      'title': 'Portal Participate Community'
+      'nav':
+        'jcr:primaryType': 'mgnl:area'
+        'jcr:uuid': '4d5bd7c2-0d6c-424f-b362-440c28dc58a5'
+        'mgnl:created': 2024-03-29T14:29:27.924Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T14:29:27.924Z
+        'mgnl:lastModifiedBy': 'superuser'
+      'footer':
+        'jcr:primaryType': 'mgnl:area'
+        'jcr:uuid': '7a0979cc-ea35-4fbd-a45c-5d3963f7c084'
+        'mgnl:created': 2024-03-29T14:29:27.976Z
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-03-29T14:29:27.976Z
+        'mgnl:lastModifiedBy': 'superuser'
+  'main':
+    'jcr:primaryType': 'mgnl:area'
+    'jcr:uuid': 'a5f5d025-5611-4cd7-b3ef-846edf882378'
+    'mgnl:created': 2024-03-29T21:58:33.785Z
+    'mgnl:createdBy': 'superuser'
+    'mgnl:lastModified': 2024-03-29T21:58:33.785Z
+    'mgnl:lastModifiedBy': 'superuser'
