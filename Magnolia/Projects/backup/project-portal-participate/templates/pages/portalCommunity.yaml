@@ -1,0 +1,20 @@
+title: Portal Participate Community                                                  #   Template -> Name
+renderType: freemarker                                                               #   Template -> Type
+dialog: project-portal-participate:pages/standardDialog                              #   Template -> Dialog
+templateScript: /project-portal-participate/templates/pages/portalCommunity.ftl      #   Template -> Path
+
+areas:                                                                               #   Template -> Areas
+
+  nav:                                                                               #       Area -> Name
+    templateScript: /project-portal-participate/templates/pages/areas/adjustArea.ftl #       Area -> Script
+    editable: false                                                                  #     Modify -> Restricted
+    inheritance:                                                                     #    Inherit -> Father
+      enabled: true                                                                  #    Inherit -> Enable
+      components: all                                                                # Components -> All
+
+  footer:                                                                            #       Area -> Name
+    templateScript: /project-portal-participate/templates/pages/areas/adjustArea.ftl #       Area -> Script
+    editable: false                                                                  #     Modify -> Restricted
+    inheritance:                                                                     #    Inherit -> Father
+      enabled: true                                                                  #    Inherit -> Enable
+      components: all                                                                # Components -> All
