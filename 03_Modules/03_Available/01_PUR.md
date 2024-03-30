@@ -8,6 +8,6 @@
     2.2. Añadir en las áreas de las páginas los componentes PUR correspondientes: página de login -> componente de login.
 
 # PASO 3:
-    3.1. Configura la estrategia de registro (por ejemplo, Always para habilitar a los usuarios de forma inmediata).
-    3.2. Configura la recuperación de contraseña y el grupo predeterminado.
-    3.3. Establece permisos en la instancia pública para restringir el acceso anónimo al contenido reservado para usuarios registrados y otorgar acceso a este contenido a usuarios registrados.
+    3.1. project-portal-participate\decorations\public-user-registration\config.configurations.participate.yaml
+    3.2. project-portal-participate\templates\components\main\form.yaml
+    3.3. project-portal-participate\templates\components\main\form.ftl
