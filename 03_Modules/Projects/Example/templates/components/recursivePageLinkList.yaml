@@ -1,4 +1,0 @@
-title: Recursive Page Link List
-renderType: freemarker
-dialog: training-templating-additional:components/recursivePageLinkList
-templateScript: /training-templating-additional/templates/components/recursivePageLinkList.ftl

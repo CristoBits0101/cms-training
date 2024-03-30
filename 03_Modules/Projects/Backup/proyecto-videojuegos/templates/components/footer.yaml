@@ -1,3 +1,0 @@
-title: Footer
-renderType: freemarker
-templateScript: /proyecto-videojuegos/templates/components/footer.ftl

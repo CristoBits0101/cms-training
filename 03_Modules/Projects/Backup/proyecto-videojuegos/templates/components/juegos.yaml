@@ -1,4 +1,0 @@
-title: Juegos
-renderType: freemarker
-dialog: proyecto-videojuegos:components/juegos
-templateScript: /proyecto-videojuegos/templates/components/juegos.ftl

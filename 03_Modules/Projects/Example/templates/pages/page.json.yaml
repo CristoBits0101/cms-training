@@ -1,6 +1,0 @@
-# title: My page
-# renderType: freemarker
-# templateScript: /my-lm/templates/pages/page.ftl
-variations:
-  json:
-    templateScript: /my-lm/templates/pages/page.json.ftl

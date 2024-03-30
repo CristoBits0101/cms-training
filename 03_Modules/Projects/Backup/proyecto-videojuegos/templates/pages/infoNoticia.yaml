@@ -1,9 +1,0 @@
-title: Videojuegos - infoNoticia
-renderType: site
-templateScript: /proyecto-videojuegos/templates/pages/infoNoticia.ftl
-areas:
-  main:
-    type: list
-    availableComponents:
-      infoNoticia:  
-        id: proyecto-videojuegos:components/infoNoticia
