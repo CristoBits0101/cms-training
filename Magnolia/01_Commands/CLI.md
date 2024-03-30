@@ -2,7 +2,7 @@
 magnolia-community-webapp
     -> cd C:\Users\reuda\Desktop\magnolia\light-modules
     -> mgnl jumpstart
-    -> mgnl start
+    -> mgnl start + Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
     -> mgnl create-light-module
     -> mgnl create-page
     -> mgnl create-component
