@@ -1,0 +1,33 @@
+label: Portal Participate                                        # Tittle -> Windows
+
+form:                                                            #   Form -> Definition
+  properties:                                                    #   Form -> Fields
+    title:                                                       #  Field -> Name
+      $type: textField                                           #  Field -> Type
+      label: Column title                                        #  Field -> label
+      description: Add a descriptive title for the column.       #  Field -> Description
+      required: true                                             #  Field -> Mandatory
+
+    message:                                                     #  Field -> Name
+      $type: richTextField                                       #  Field -> Type
+      label: Column message                                      #  Field -> label
+      description: Add a descriptive message for the column.     #  Field -> Description
+      required: true                                             #  Field -> Mandatory
+
+    url:                                                         #  Field -> Name
+      $type: pageLinkField                                       #  Field -> Type
+      label: Select a page                                       #  Field -> label
+      description: Select the page you want to be redirected to. #  Field -> Description
+      required: true                                             #  Field -> Mandatory
+
+    linkMessage:                                                 #  Field -> Name
+      $type: textField                                           #  Field -> Type
+      label: Link message                                        #  Field -> label
+      description: Add a message to the link.                    #  Field -> Description
+      required: true                                             #  Field -> Mandatory
+
+    CompanytText:                                                #  Field -> Name
+      $type: textField                                           #  Field -> Type
+      label: Company text                                        #  Field -> label
+      description: Add a company message.                        #  Field -> Description
+      required: true                                             #  Field -> Mandatory

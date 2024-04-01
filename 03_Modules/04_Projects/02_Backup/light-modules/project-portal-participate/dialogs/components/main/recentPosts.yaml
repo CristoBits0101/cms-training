@@ -1,0 +1,32 @@
+label: Recent Posts                                                                 #      Tittle -> Windows
+
+form:                                                                               #        Form -> Definition
+  properties:                                                                       #        Form -> Fields
+
+    newsTitle:                                                                      #       Field -> Name
+      $type: textField
+      label: Title news                                                             #       Field -> label
+      description: Write a title for all the news.                                  #       Field -> Description
+
+    targetWorkspace:                                                                #       Field -> Name
+      $type: comboBoxField                                                          #       Field -> Type
+      type: java.lang.String                                                        #        Data -> Typing
+      label: Application workspace                                                  #       Field -> label
+      required: true                                                                #        Data -> Mandatory
+      description: Indicates the workspace where the application content is stored. #       Field -> Description
+      datasource:                                                                   #  Datasource -> Definition
+        $type: optionListDatasource                                                 #        Data -> Type
+        options:                                                                    #        Data -> Options
+          - name: news                                                              #       Field -> Column
+            label: News                                                             #       Field -> Label
+            value: news                                                             #       Field -> Value
+          - name: topics                                                            #       Field -> Column
+            label: Topics                                                           #       Field -> Label
+            value: topics                                                           #       Field -> Value
+
+    newsNumber:                                                                     #       Field -> Name
+      $type: textField                                                              #       Field -> Type
+      type: java.lang.Long                                                          #        Data -> Type
+      converterClass: com.vaadin.data.converter.StringToLongConverter               #        Type -> Dependence
+      label: Number of articles                                                     #       Field -> label
+      description: Indicate the number of articles you want to display              #       Field -> Description

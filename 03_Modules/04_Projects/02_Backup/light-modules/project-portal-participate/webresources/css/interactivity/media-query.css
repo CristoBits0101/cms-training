@@ -1,0 +1,19 @@
+/*  */
+@media only screen and (max-width: 768px) {
+
+    .logo-image {
+        max-width: 15rem;
+        margin: 0.5rem;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .row .component {
+        margin: 0 auto;
+    }
+}

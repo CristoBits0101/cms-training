@@ -1,0 +1,50 @@
+label: General Information                                 #    Tittle -> Windows
+
+form:                                                      #      Form -> Definition
+  properties:                                              #      Form -> Fields
+
+    title:                                                 #     Field -> Name
+      $type: textField                                     #     Field -> Type
+      label: Column title                                  #     Field -> label
+      description: Add a descriptive title for the column. #     Field -> Description
+      required: true                                       #     Field -> Mandatory
+      i18n: true                                           #     
+
+    multi:                                                 #     Field -> Definition
+      i18n: true                                           #     
+      $type: jcrMultiField                                 #     
+      label: Article list                                  #     
+      field:                                               #     
+        $type: compositeField                              #     
+        label: Item details                                #     
+        properties:                                        #     
+
+          article:                                         #     
+            $type: textField                               #     
+            label: Article name                            #     
+            required: true                                 #     Field -> Mandatory
+
+          targetPage:                                      #     
+            $type: linkField                               #     
+            label: Landing page                            #     
+            required: true                                 #     Field -> Mandatory
+            field:                                         # 
+              $type: linkField                             # 
+              label: Landing page                          # 
+              datasource:                                  # 
+                $type: jcrDatasource                       # 
+                workspace: website                         # 
+
+  layout:                                                  # Reference -> Design
+    $type: tabbedLayout                                    # Reference -> Tabbed
+    tabs:                                                  # Reference -> Tabs
+
+      Column title:                                        # Reference -> Tab
+        label: Column Title                                #       Tab -> Name
+        fields:                                            # Reference -> Fields
+          - name: title                                    #     Field -> Column
+
+      Column article:                                      # Reference -> Tab
+        label: Column Article                              #       Tab -> Name
+        fields:                                            # Reference -> Fields
+          - name: multi                                    #     Field -> Column

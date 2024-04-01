@@ -1,0 +1,30 @@
+title: Portal Participate Authentication                                   # Template -> Name
+renderType: freemarker                                                     # Template -> Type
+dialog: project-portal-participate:pages/standardDialog                    # Template -> Dialog
+templateScript: /project-portal-participate/templates/pages/portalAuth.ftl # Template -> Path
+
+# dialog: mtk2:pages/basic                                                 # 
+# class: info.magnolia.module.site.templates.PageTemplateDefinition        # 
+# renderType: site                                                         # 
+# type: feature                                                            # 
+
+areas:                                                                     # 
+  main:                                                                    # 
+    parameters:                                                            # 
+      cssClass: container                                                  # 
+    type: list                                                             # 
+    availableComponents:                                                   # 
+        login:                                                             # 
+          id: public-user-registration:components/login                    # 
+        registration:                                                      # 
+          id: public-user-registration:components/registration             # 
+        userUpdate:                                                        # 
+          id: public-user-registration:components/userUpdate               # 
+        passwordChange:                                                    # 
+          id: public-user-registration:components/passwordChange           # 
+        forgottenPassword:                                                 # 
+          id: public-user-registration:components/forgottenPassword        # 
+        enableUser:                                                        # 
+          id: public-user-registration:components/enableUser               # 
+        textImage:                                                         # 
+           id: travel-demo:components/textImage                            # 

@@ -1,0 +1,14 @@
+label: Navigation Bar                                                            # Tittle -> Windows
+
+form:                                                                            #   Form -> Definition
+  properties:                                                                    #   Form -> Fields
+    page:                                                                        #  Field -> Name
+      $type: textField                                                           #  Field -> Type
+      label: Root page name                                                      #  Field -> label
+      description: For example -> root-page-name or root-page-name/sub-page-name #  Field -> Description
+      required: true                                                             #  Field -> Mandatory
+
+    homeIconLink:                                                                #  Field -> Name               
+      $type: damLinkField                                                        #  Field -> Type
+      label: Icon link                                                           #  Field -> label
+      description: Choose an icon from the Assets app                            #  Field -> Description
