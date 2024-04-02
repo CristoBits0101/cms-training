@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat con WebSockets</title>
+</head>
+
+<body>
+
+    <!-- Div para mostrar los mensajes del chat -->
+    <div id="chat-box"></div>
+
+    <!-- Input para que el usuario escriba su mensaje -->
+    <input type="text" id="message-input">
+
+    <!-- Botón para enviar el mensaje -->
+    <button onclick="sendMessage()">Enviar</button>
+
+    <script>
+
+        // Solicitar al usuario su nombre.
+        const userName = prompt("Por favor, ingresa tu nombre:");
+
+        // Crear una nueva conexión WebSocket.
+        const webSocket = new WebSocket("ws://localhost:8080/chat");
+
+        // Función que se ejecuta cuando la conexión WebSocket se abre.
+        webSocket.onopen = function (event) {
+            console.log("Conexión establecida");
+        };
+
+        // Función que se ejecuta cuando se recibe un mensaje del servidor.
+        webSocket.onmessage = function (event) {
+
+            // Obtener el elemento de chat-box
+            const chatBox = document.getElementById('chat-box');
+
+            // Crear un nuevo elemento para mostrar el mensaje recibido.
+            const newMessage = document.createElement('div');
+
+            // Establecer el texto del nuevo elemento como el mensaje recibido.
+            newMessage.textContent = event.data;
+
+            // Agregar el nuevo mensaje al chat-box.
+            chatBox.appendChild(newMessage);
+
+        };
+
+        // Función para enviar un mensaje al servidor
+        function sendMessage() {
+
+            // Obtener el mensaje escrito por el usuario.
+            const messageInput = document.getElementById('message-input');
+            const message = messageInput.value;
+
+            // Crear un objeto JSON con el nombre de usuario y el mensaje.
+            const data = { user: userName, message: message };
+
+            // Enviar el mensaje al servidor como una cadena JSON.
+            webSocket.send(JSON.stringify(data));
+
+            // Limpiar el input del mensaje después de enviarlo.
+            messageInput.value = '';
+
+        }
+        
+    </script>
+</body>
+
+</html>
