@@ -1,3 +1,4 @@
+[#-- Limit news --]
 [#list newsOrderReversed[0..(content.newsNumber!3)-1] as childNode]
 
     [#-- From each news item, we retrieve child nodes of type mgnl:contentNode --]
@@ -7,7 +8,7 @@
     [#assign allContactNodes = []]
     [#assign allAddressesNodes = []]
 
-        [#list mgnlContentNodes as mgnlContentNode]
+    [#list mgnlContentNodes as mgnlContentNode]
 
         [#-- Stores all folders with contact node type --]
         [#assign contacts = cmsfn.children(mgnlContentNode, "contact")]

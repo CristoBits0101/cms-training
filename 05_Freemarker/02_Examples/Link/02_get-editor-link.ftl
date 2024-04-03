@@ -1,3 +1,4 @@
+[#-- Link --]
 [#if content.url?has_content]
 
     [#-- We obtain the page identifier --]

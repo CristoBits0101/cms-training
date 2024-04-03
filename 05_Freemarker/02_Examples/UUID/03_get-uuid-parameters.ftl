@@ -1,24 +1,13 @@
-[#-- Set UUID --]
-[#list newsOrderReversed[0..(content.newsNumber!3)-1] as childNode]
-
-    [#-- Get the children jcrNode --]
-    [#assign jcrNode = cmsfn.asJCRNode(childNode)]
-
-    [#-- Get the jcrNode UUID --]
-    [#assign uuid = jcrNode.getIdentifier()]
-
-[/#list]
-
 [#-- Get UUID --]
 [#assign uuidNoticia = ctx.getParameter("uuid")!]
 [#if uuidNoticia?? && uuidNoticia != ""]
+
 <div class="container">
     [#-- ****** main content ****** --]
     [#setting locale="es_ES"]
     [#assign noticiasRoot = cmsfn.contentByPath("/", "noticias-app")]
     [#assign noticias = cmsfn.children(noticiasRoot, "mgnl:content")]
-    [#assign noticia = (noticias?filter(n -> cmsfn.asJCRNode(n).getIdentifier() == uuidNoticia))[0]
-    ]
+    [#assign noticia = (noticias?filter(n -> cmsfn.asJCRNode(n).getIdentifier() == uuidNoticia))[0]]
     [#if noticia??]
     <div class="row">
         <div class="col-md-12 mt-4">
