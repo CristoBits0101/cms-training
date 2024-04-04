@@ -1,0 +1,147 @@
+!content-type:products                                                     # apps/products -> contentTypes/products
+
+name: products                                                             #          Name -> Internal
+label: Products                                                            #          Name -> Panel
+enabled: true                                                              #       Visible -> True
+icon: icon-tasks-app                                                       #          Icon -> Style
+
+permissions:                                                               #   Permissions -> Handling
+  roles:                                                                   #         Roles -> Allowed
+    superuser: superuser                                                   #     Superuser -> All
+    editors: superuser                                                     #       Editors -> All
+
+subApps:                                                                   #     Reference -> subApps
+
+  browser:                                                                 #     Reference -> Browser
+
+  detail:                                                                  #     Reference -> Details
+    label: Details of the products                                         #         Field -> Name
+    i18n: true                                                             #     Translate -> Active
+
+    form:                                                                  #     Reference -> Form
+      properties:                                                          #     Reference -> Fields
+
+        name:                                                              #         Field -> Column
+          label: Name                                                      #         Field -> Name
+          required: true                                                   #          Data -> Mandatory
+          i18n: true                                                       #     Translate -> Active
+
+        title:                                                             #         Field -> Column
+          label: Title                                                     #         Field -> Name
+          description: Trade name of the product.                          #         Field -> Description
+          required: true                                                   #          Data -> Mandatory
+          i18n: true                                                       #     Translate -> Active
+
+        message:                                                           #         Field -> Column
+          label: Product description                                       #         Field -> Name
+          description: Describe the characteristics of the product.        #         Field -> Description
+          $type: richTextField                                             #          Data -> Type
+          type: java.lang.String                                           #          Data -> Typing
+          required: false                                                  #          Data -> Mandatory
+          i18n: true                                                       #     Translate -> Active
+
+        imageLink:                                                         #         Field -> Column
+          fieldType: link                                                  #          Data -> Link
+          targetWorkspace: dam                                             #     Workspace -> Storage
+          appName: assets                                                  #           App -> Link
+          label: Product image                                             #         Field -> Name
+          description: Select an image for the product.                    #         Field -> Description
+          required: false                                                  #          Data -> Mandatory
+          i18n: true                                                       #     Translate -> Active
+
+        category:                                                          #         Field -> Column
+          label: Product category                                          #         Field -> Name
+          description: Product tag.                                        #         Field -> Description
+          required: true                                                   #          Data -> Mandatory
+          i18n: true                                                       #     Translate -> Active
+
+        location:                                                          #         Field -> Column
+          label: Product location                                          #         Field -> Property
+          description: Area from which the product comes.                  #         Field -> Description
+          i18n: true                                                       #     Translate -> Active
+          required: true                                                   #          Data -> Mandatory
+          $type: textField                                                 #          Data -> Type 
+          type: java.lang.String                                           #          Data -> Typing
+
+        starts:                                                            #         Field -> Column
+          label: Sales starts                                              #         Field -> Name
+          description: Start of product sales.                             #         Field -> Description
+          required: false                                                  #          Data -> Mandatory
+          time: true                                                       #          Hour -> Active
+          timeFormat: HH:mm                                                #          Hour -> Format
+          i18n: true                                                       #     Translate -> Active
+
+        ends:                                                              #         Field -> Column
+          label: Sales ends                                                #         Field -> Name
+          description: Ends of product sales.                              #         Field -> Description
+          required: false                                                  #          Data -> Mandatory
+          time: true                                                       #          Hour -> Active
+          timeFormat: HH:mm                                                #          Hour -> Format
+          i18n: true                                                       #     Translate -> Active
+
+        contacts:                                                          #         Field -> Column
+          label: Contact the seller                                        #         Field -> Name
+          required: true                                                   #          Data -> Mandatory
+          description: People who can provide product information.         #         Field -> Description
+          i18n: true                                                       #     Translate -> Active
+
+        addresses:                                                         #         Field -> Column
+          label: Product address                                           #         Field -> Name
+          description: Where the product is manufactured.                  #         Field -> Description
+          required: false                                                  #          Data -> Mandatory
+          i18n: true                                                       #     Translate -> Active
+
+      layout:                                                              #     Reference -> Design
+        $type: tabbedLayout                                                #     Reference -> Tabbed
+        tabs:                                                              #     Reference -> Tabs
+
+          productData:                                                     #     Reference -> Tab
+            label: Product Data                                            #           Tab -> Name
+            i18n: true                                                     #     Translate -> Active
+            fields:                                                        #     Reference -> Fields
+              - name: name                                                 #         Field -> Column
+              - name: title                                                #         Field -> Column
+              - name: message                                              #         Field -> Column
+              - name: imageLink                                            #         Field -> Column
+              - name: category                                             #         Field -> Column
+              - name: location                                             #         Field -> Column
+              - name: starts                                               #         Field -> Column
+              - name: ends                                                 #         Field -> Column
+
+          productContacts:                                                 #     Reference -> Tab
+            label: Contact Information                                     #           Tab -> Name
+            i18n: true                                                     #     Translate -> Active
+            fields:                                                        #     Reference -> Fields
+              - name: contacts                                             #         Field -> Column
+
+          productAddresses:                                                #     Reference -> Tab
+            label: Address Details                                         #           Tab -> Name
+            i18n: true                                                     #     Translate -> Active
+            fields:                                                        #     Reference -> Fields
+              - name: addresses                                            #         Field -> Column
+
+actions:                                                                   #       Actions -> Reference
+  default:                                                                 #       Default -> Reference
+    availability:                                                          #  Availability -> Reference
+      rules:                                                               #         Rules -> Conditions
+        isNodeType:                                                        #         Check -> isNodeType
+          type: mgnl:content                                               #          Type -> mgnl:content
+    class: info.magnolia.ui.admincentral.action.DeleteItemActionDefinition #         Class -> DeleteItemActionDefinition
+    successActionName: deleteItem                                          #       Success -> Delete
+    failureActionName: showDeleteItemFailed                                #       Failure -> Inform
+    confirmationHeader: dialogs.delete.confirmation.header                 #        Header -> Confirmation
+    confirmationMessage: dialogs.delete.confirmation.message               #       Message -> Confirmation
+    label: action.delete.label                                             #         Label -> Delete
+    icon: icon-delete                                                      #          Icon -> Delete
+    i18n: true                                                             #     Translate -> Active
+
+datasource:                                                                #    Datasource -> Definition
+  $type: jcrDatasource                                                     #          Data -> Type
+  workspace: products                                                      #     Workspace -> Name
+  includeProperties: false                                                 #        Import -> Properties 
+  allowedNodeTypes:                                                        #         Nodes -> Allowed
+    - products                                                             #          Node -> Allowed
+    - contact                                                              #          Node -> Allowed
+    - address                                                              #          Node -> Allowed
+    - mgnl:folder                                                          #          Node -> Allowed
+  describeByProperty: name                                                 #     /pathName -> lastName

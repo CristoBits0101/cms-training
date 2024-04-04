@@ -1,0 +1,497 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Google Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #1F1F1F;
+    line-height: 1.15rem;
+}
+
+/* Body Styles */
+body {
+    display: grid;
+    background-color: #FFFFFF;
+}
+
+/* Header Styles */
+header {
+    margin: 0;
+}
+
+.navbar-container {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    box-shadow: 0 0.625rem 0.9375rem -0.625rem rgba(0, 0, 0, 0.1);
+}
+
+.banner {
+    width: 100%;
+    height: 15%;
+
+    /* If the banner div were not relative, the h1 would be centered to the center of the div and not to the center of itself */
+    position: relative;
+}
+
+.banner h1 {
+    width: 80%;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2vw;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 2.5%;
+    padding: 0%;
+    text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navbar Styles */
+.logo-image {
+    max-width: 12rem;
+    margin: 0.5rem 0.5rem 0.5rem 5rem;
+}
+
+nav {
+    width: 100%;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul,
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+nav a {
+    text-transform: capitalize;
+    color: #1F1F1F;
+}
+
+a {
+    text-decoration: none;
+}
+
+.asset-logo {
+    width: 2.5rem;
+}
+
+/* adjustArea Styles */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.component {
+    flex: 1;
+}
+
+/* Main Styles */
+main {
+    grid-area: main;
+    max-width: 100%;
+    height: min-content;
+    padding: 2.5% 2.5% 0 2.5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+main>h2 {
+    margin: 0.5% 0 3% 0;
+    padding: 0;
+    font-size: 2.2vw;
+    background-image: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    background-size: 250% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 2%;
+    animation: moveGradient 1s ease infinite;
+}
+
+.containerPortalHome {
+    margin: 0 auto;
+    max-width: 100%;
+    height: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5%;
+}
+
+.card-container {
+    margin: 0 0 5% 0;
+    padding: 0;
+    width: 18rem;
+    height: 27rem;
+    border-radius: 2rem;
+    background: linear-gradient(-45deg, #171717, #1B233D, #1F1F1F, #004958, #008094);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    clip-path: polygon(1.875rem 0%, 100% 0, 100% calc(100% - 1.875rem), calc(100% - 1.875rem) 100%, 0 100%, 0% 1.875rem);
+    border-top-right-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-grow: 1;
+    height: 30%;
+    margin-bottom: 2%;
+}
+
+.card-header>img {
+    max-width: 100%;
+    aspect-ratio: 4/3;
+    border-radius: 1rem;
+    box-shadow: 0 4px 35px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 0 4px 35px rgba(0, 0, 0, .1);
+}
+
+.card-body {
+    margin: 0;
+    padding: 0% 5%;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    flex-grow: 1;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body-head {
+    padding-top: 2% 0;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.card-body-body {
+    flex-grow: 1;
+    display: flex;
+    align-content: center;
+    overflow: auto;
+}
+
+.card-body h3 {
+    color: #FFFFFF;
+    margin: 0 5%;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.card-body p {
+    margin: 5%;
+    padding: 0;
+    color: rgba(170, 222, 243, 0.721);
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+.card-body ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 0.15rem;
+    align-items: start;
+    margin-left: 5%;
+}
+
+.card-body ul li {
+    color: #FFFFFF;
+}
+
+.card-body ul li span {
+    font-size: 1.2rem;
+}
+
+.card-footer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    margin: 5%;
+}
+
+/* Aside Styles */
+aside {
+    grid-area: aside;
+    padding: 2%;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #F0F4F9;
+}
+
+footer .row {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+footer .component {
+    padding: 0 3.8rem 1rem 3.8rem;
+}
+
+footer h4 {
+    margin: 1rem 0 1rem 0;
+    font-size: 0.9rem;
+    color: rgb(31, 31, 31);
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 0.5rem;
+}
+
+footer li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: min-content;
+}
+
+footer li a:hover {
+    color: #BC4E5B;
+}
+
+footer p a:hover {
+    color: #BC4E5B;
+}
+
+footer a,
+footer p {
+    color: #5A5B5D;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+.list-image {
+    max-width: 2rem;
+}
+
+.networks {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.5rem
+}
+
+/* Button Styles for Cards */
+.button-card {
+    --primary-color: #FFFFFF;
+    --secondary-color: #002152;
+    --hover-color: #ECEFF2;
+    --arrow-width: 0.625rem;
+    --arrow-stroke: 0.125rem;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 50px;
+    color: var(--secondary-color);
+    padding: 0.758em 1.516em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.5em;
+    font-weight: inherit;
+    cursor: pointer;
+}
+
+.button-card .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-card .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+}
+
+.button-card .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+.button-card:hover {
+    background-color: var(--hover-color);
+}
+
+.button-card:hover .arrow {
+    background: var(--secondary-color);
+}
+
+.button-card:hover .arrow:before {
+    right: 0;
+}
+
+/* Show Details */
+#show-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    line-height: 1.2rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#show-details h2 {
+    margin: 0 0 2rem 0;
+    padding: 0;
+    text-align: center;
+    color: #F0F4F9;
+}
+
+#show-details p {
+    line-height: 2rem;
+    color: #F0F4F9;
+}
+
+/* Hide News Details */
+.container-button {
+    display: flex;
+    justify-content: end;
+    background-color: #1F1F1F10;
+}
+
+.hideNewsDetails {
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    background-image: linear-gradient(to top, #D8D9DB 0%, #FFFFFF 80%, #FDFDFD 100%);
+    border-radius: 1rem;
+    border: 0.1rem solid #8F9092;
+    transition: all 0.2s ease;
+    text-shadow: 0 0.1rem #FFFFFF;
+}
+
+.hideNewsDetails:hover {
+    box-shadow: 0 0.25rem 0.1875rem 0.0625rem #FCFCFC, 0 0.375rem 0.5rem 0.0625rem #D6D7D9, 0 -0.25rem 0.25rem 0.0625rem #CECFD1, 0 -0.375rem 0.25rem 0.0625rem #FEFEFE, inset 0 0 0.1875rem 0.1875rem #CECFD1;
+}
+
+.hideNewsDetails:active {
+    box-shadow: 0 0.25rem 0.1875rem 0.0625rem #FCFCFC, 0 0.375rem 0.5rem 0.0625rem #D6D7D9, 0 -0.25rem 0.25rem 0.0625rem #CECFD1, 0 -0.375rem 0.25rem 0.0625rem #FEFEFE, inset 0 0 0.3125rem 0.1875rem #999, inset 0 0 0.625rem 0.1875rem #aaa;
+}
+
+.hideNewsDetails:focus {
+    box-shadow: 0 0.25rem 0.1875rem 0.0625rem #FCFCFC, 0 0.375rem 0.5rem 0.0625rem #D6D7D9, 0 -0.25rem 0.25rem 0.0625rem #CECFD1, 0 -0.375rem 0.25rem 0.0625rem #FEFEFE, inset 0 0 0.3125rem 0.1875rem #999, inset 0 0 0.625rem 0.1875rem #aaa;
+}
+
+.initially-hidden {
+    display: none;
+}
+
+/* Contacts and Addresses Section */
+.combined-section {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    margin: auto 0;
+}
+
+.combined-section article {
+    box-shadow: 0rem 0.5rem 1rem 0rem rgb(0 0 0 / 3%);
+    border-radius: 1.875rem;
+    height: 12rem;
+    width: 17rem;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(-45deg, #171717, #1B233D, #1F1F1F, #004958, #008094);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    clip-path: polygon(1.875rem 0%, 100% 0, 100% calc(100% - 1.875rem), calc(100% - 1.875rem) 100%, 0 100%, 0% 1.875rem);
+    border-top-right-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Style to hide the body scroll bar */
+.hide-scrollbar {
+    overflow: hidden;
+}
+
+/* Style to hide the window scroll bar */
+.hide-window-scrollbar {
+
+    /* For Firefox */
+    scrollbar-width: none;
+
+    /* For Internet Explorer and Edge */
+    -ms-overflow-style: none;
+
+}
+
+/* Specific style for vertical scrolling */
+.hide-window-scrollbar::-webkit-scrollbar {
+
+    /* For WebKit-based browsers like Chrome and Safari */
+    display: none;
+
+}
