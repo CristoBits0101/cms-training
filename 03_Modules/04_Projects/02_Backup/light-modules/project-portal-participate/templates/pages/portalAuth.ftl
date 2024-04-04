@@ -26,7 +26,7 @@
 
         [#-- Cached JS scripts --]
         ${resfn.cachedJs("/project-portal-participate/webresources/js/forms/modify-pur-form.js")}
-        ${resfn.cachedJs("/project-portal-participate/webresources/js/forms/add-svg-submit-button.js")}
+        ${resfn.cachedJs("/project-portal-participate/webresources/js/forms/add-submit-button.js")}
 
     </body>
 

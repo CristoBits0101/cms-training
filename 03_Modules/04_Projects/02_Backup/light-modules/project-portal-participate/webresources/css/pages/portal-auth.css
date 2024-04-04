@@ -4,7 +4,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #E8E8E8;
+    background-color: #E5EDF590;
     color: #1F1F1F;
     font-family: "Google Sans", sans-serif;
     font-weight: 500;
@@ -80,14 +80,14 @@ p {
 fieldset {
     margin: 0;
     border-radius: 1.875rem;
-    border: 0.05rem solid #E0E0E0;
+    border: 0.05rem solid #E0E8EF;
     padding: 1.875rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1.875rem;
-    background-color: #E0E0E0;
+    background-color: #E0E8EF;
     box-shadow: 0.9375rem 0.9375rem 1.875rem #BEBEBE, -0.9375rem -0.9375rem 1.875rem #FFFFFF;
 }
 
@@ -191,47 +191,56 @@ label {
     }
 }
 
-/* Input submit */
-input[type="submit"] {
+/* Button Submit */
+button {
     font-family: inherit;
-    font-size: 1.10rem;
+    font-size: 1.125rem;
     background: linear-gradient(to bottom, #4dc7d9 0%, #66a6ff 100%);
-    color: #FFFFFF;
-    padding: 0.6rem 0.9rem;
+    color: white;
+    padding: 0.45rem 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
     border-radius: 1.5625rem;
-    box-shadow: 0px 0.3125rem 0.625rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
+}
+
+button:hover {
+    transform: translateY(-0.1875rem);
+    box-shadow: 0px 0.5rem 0.9375rem rgba(0, 0, 0, 0.3);
+    padding: 0;
+    background: linear-gradient(to bottom, #5BD9EC 0%, #97C3FF 100%);
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
-    transform: translateY(-0.1875rem);
-    box-shadow: 0px 0.5rem 0.9375rem rgba(0, 0, 0, 0.3);
-}
-
-input[type="submit"]:active {
+button:active {
     transform: scale(0.95);
-    box-shadow: 0px 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
 }
 
-input[type="submit"] span {
+button span {
     display: block;
-    margin-left: 0.25rem;
+    margin-left: 0.4em;
     transition: all 0.3s;
 }
 
-input[type="submit"] svg {
+button:hover span {
+    scale: 0;
+    font-size: 0%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+button svg {
     width: 1.125rem;
     height: 1.125rem;
     fill: white;
     transition: all 0.3s;
 }
 
-input[type="submit"] .svg-wrapper {
+button .svg-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -239,14 +248,18 @@ input[type="submit"] .svg-wrapper {
     height: 1.875rem;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.2);
-    margin-right: 0.3125rem;
     transition: all 0.3s;
 }
 
-input[type="submit"]:hover .svg-wrapper {
-    background-color: rgba(255, 255, 255, 0.5);
+button:hover .svg-wrapper {
+    background-color: rgba(43, 169, 228, 0.897);
+    width: 3.375rem;
+    height: 3.375rem;
 }
 
-input[type="submit"]:hover svg {
+button:hover svg {
+    width: 1.5625rem;
+    height: 1.5625rem;
+    margin-right: 0.3125rem;
     transform: rotate(45deg);
 }
