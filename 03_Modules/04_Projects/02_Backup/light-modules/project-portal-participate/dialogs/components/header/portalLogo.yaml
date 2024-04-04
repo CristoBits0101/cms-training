@@ -1,0 +1,8 @@
+label: Portal Logo                               # Tittle -> Windows
+
+form:                                            #   Form -> Definition
+  properties:                                    #   Form -> Fields
+    logoLink:                                    #   Form -> Definition                
+      $type: damLinkField                        #  Field -> Type
+      label: Logo link                           #  Field -> label
+      description: Select a logo for your portal #  Field -> Description
