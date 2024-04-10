@@ -1,0 +1,21 @@
+PASO 1) CONFIGURAR JETTY BASE CON EL COMANDO.
+PS C:\Users\reuda\Downloads\jetty-home-11.0.20\jetty-home-11.0.20> java -jar start.jar jetty.base=C:\Users\reuda\Downloads\jetty-base --add-module=server,http,deploy,annotations
+
+PASO 2) ARRANCAR EL JAR start.jar
+PS C:\Users\reuda\Downloads\jetty-base> java -jar C:\Users\reuda\Downloads\jetty-home-11.0.20\jetty-home-11.0.20\start.jar
+
+PASO 3) METER EL CÓDIGO DEL CHAT EN UNA CARPETA Y PEGARLA DENTRO DE WEBAPPS.
+C:\Users\reuda\Downloads\jetty-base\webapps\chat\ChatServer.java
+C:\Users\reuda\Downloads\jetty-base\webapps\chat\ChatWebSocket.java
+C:\Users\reuda\Downloads\jetty-base\webapps\chat\websocket-client.html
+
+PASO 4) DESCARGAR LAS DEPENDENCIAS JETTY desde MVN REPOSITORY:
+jetty-server.jar:
+jetty-servlet.jar:
+jetty-servlets.jar:
+Jetty :: Websocket :: Server:
+Jetty :: Websocket :: Servlet:
+Jetty :: Websocket :: API:
+
+PASO 5) COMPILAR LOS ARCHIVOS JAVA A .CLASS
+PS C:\Users\reuda\Downloads\jetty-base\webapps\chat> javac *.java

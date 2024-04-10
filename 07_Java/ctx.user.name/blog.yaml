@@ -1,0 +1,633 @@
+name: blog
+label: Blog
+enabled: true ## Optional: Default is 'true'
+icon: icon-forums-app
+class: info.magnolia.ui.contentapp.ContentAppDescriptor
+appClass: info.magnolia.ui.framework.app.BaseApp
+datasource:
+  $type: jcrDatasource
+  workspace: entries
+  rootPath: /entries
+  includeProperties: false
+  allowedNodeTypes:
+    - entries
+
+subApps:
+  browser:
+    class: info.magnolia.ui.contentapp.configuration.BrowserDescriptor
+    label: Entries
+
+    datasource:
+      $type: jcrDatasource
+      workspace: entries
+      rootPath: /entries
+      includeProperties: false
+      allowedNodeTypes:
+        - entries
+        - comments
+
+    workbench:
+      contentViews:
+        - name: tree
+          $type: treeView
+          dropConstraint:
+            $type: alwaysTrueDropConstraint
+          columns: &myColumns
+            - name: name
+              editable: true
+              $type: textField
+              expandRatio: 1.0
+        - name: list
+          $type: listView
+          dropConstraint:
+            $type: alwaysTrueDropConstraint
+          columns: *myColumns
+
+    actionbar:
+      defaultAction: editPost
+      sections:
+        - name: prueba
+          groups:
+            - name: editActions
+              items:
+                - name: addPost
+                - name: editPost
+                - name: deletePost
+                - name: addComment
+
+            - name: publishActions
+              items:
+                - name: publishPostDeletion
+            - name: impexpActions
+              items:
+                - name: exportPost
+                - name: importPost
+          availability:
+            root: true
+            nodeTypes:
+              - entries
+          label: Entries
+        - name: lamron
+          groups:
+            - name: editActions
+              items:
+                - name: addComment
+                - name: editComment
+                - name: deleteComment
+
+            - name: publishActions
+              items:
+                - name: publishPostDeletion
+            - name: impexpActions
+              items:
+                - name: exportPost
+                - name: importPost
+          availability:
+            root: true
+            nodeTypes:
+              - comments
+          label: Comments
+
+    actions:
+      addPost:
+        icon: icon-add-item
+        $type: openDetailSubappAction
+        appName: blog
+        subAppName: postsDetail
+        label: Create entry
+        viewType: add
+        availability:
+          root: true
+          node: false
+          writePermissionRequired: true
+          nodeTypes:
+            entries: entries
+            folder: mgnl:folder
+      editPost:
+        icon: icon-edit
+        $type: openDetailSubappAction
+        appName: blog
+        subAppName: postsDetail
+        label: Edit entry
+        viewType: edit
+        availability:
+          root: false
+          node: true
+          writePermissionRequired: true
+          nodeTypes:
+            entries: entries
+            folder: mgnl:folder
+      addComment:
+        icon: icon-add-item
+        label: Add comment
+        $type: openDetailSubappAction
+        appName: blog
+        subAppName: commentDetail
+        viewType: add
+        availability:
+          root: true
+          node: false
+          writePermissionRequired: true
+          nodeTypes:
+            comments: comments
+            entries: entries
+            folder: mgnl:folder
+      editComment:
+        icon: icon-edit
+        label: Edit comment
+        $type: openDetailSubappAction
+        appName: blog
+        subAppName: commentDetail
+        viewType: edit
+        availability:
+          root: false
+          node: true
+          writePermissionRequired: true
+          nodeTypes:
+            comments: comments
+            folder: mgnl:folder
+      deleteComment:
+        icon: icon-trash
+        $type: openDialogAction
+        class: info.magnolia.module.dependencies.action.DependencyAwareConfirmationActionDefinition
+        confirmationHeader: do you want to remove it?
+        confirmationMessage: if you delete what you shouldn't you are fucked up
+        cancelLabel: "no"
+        proceedLabel: "yes"
+        label: Delete Comment
+        successActionName: deleteYesComment
+        availability:
+          root: false
+          node: true
+          multiple: true
+          rules:
+            isNotDeleted:
+              $type: jcrIsDeletedRule
+              negate: true
+      deleteYesComment:
+        asynchronous: true
+        $type: jcrCommandAction
+        command: delete
+      deletePost:
+        icon: icon-trash
+        $type: openDialogAction
+        class: info.magnolia.module.dependencies.action.DependencyAwareConfirmationActionDefinition
+        confirmationHeader: do you want to remove it?
+        confirmationMessage: if you delete what you shouldn't you are fucked up
+        cancelLabel: "no"
+        proceedLabel: "yes"
+        label: Delete entry
+        successActionName: deleteYesPost
+        availability:
+          root: false
+          node: true
+          multiple: true
+          rules:
+            isNotDeleted:
+              $type: jcrIsDeletedRule
+              negate: true
+      deleteYesPost:
+        asynchronous: true
+        $type: jcrCommandAction
+        command: delete
+      publishPostDeletion:
+        icon: icon-publish
+        $type: jcrCommandAction
+        label: Publish
+        command: publish
+        availability:
+          root: false
+          node: true
+          multiple: true
+      duplicatePost:
+        $type: duplicateNodeAction
+        label: Duplicate
+        icon: icon-duplicate
+        availability:
+          multiple: true
+          root: false
+          node: true
+      exportPost:
+        icon: icon-export
+        $type: exportAction
+        label: Export
+        availability:
+          root: false
+          node: true
+      importPost:
+        icon: icon-import
+        $type: openDialogAction
+        label: Import
+        dialogId: ui-framework-jcr:import
+        availability:
+          root: true
+  postsDetail:
+    class: info.magnolia.ui.contentapp.detail.DetailDescriptor
+    datasource:
+      $type: jcrDatasource
+      workspace: entries
+      rootPath: /entries
+      includeProperties: true
+      nodeNameProperty: name
+      allowedNodeTypes:
+        - entries
+    itemProvider:
+      $type: jcrNodeFromLocationProvider
+      nodeType: entries
+    form:
+      properties:
+        name:
+          required: true
+          $type: textField
+        thumbnail:
+          required: true
+          $type: damLinkField
+        body:
+          required: true
+          $type: richTextField
+        author:
+          $type: linkField
+          datasource:
+              $type: jcrDatasource
+              workspace: entries
+              rootPath: /entryAuthors
+        hightlighted:
+          $type: checkBoxField
+          label: highlighted
+          buttonLabel: highligth or unhighlight the entry
+        category:
+          $type: jcrMultiValueField
+          field:
+            $type: linkField
+            datasource:
+                $type: jcrDatasource
+                workspace: entries
+                rootPath: /categories
+          
+  authors:
+    class: info.magnolia.ui.contentapp.configuration.BrowserDescriptor
+    label: Authors
+
+    datasource:
+      $type: jcrDatasource
+      workspace: entries
+      rootPath: /entryAuthors
+      includeProperties: false
+      allowedNodeTypes:
+        - entryAuthors
+
+    workbench:
+      contentViews:
+        - name: tree
+          $type: treeView
+          dropConstraint:
+            $type: alwaysTrueDropConstraint
+          columns: &myAuthorColumns
+            - name: name
+              editable: true
+              $type: textField
+              expandRatio: 1.0
+        - name: list
+          $type: listView
+          dropConstraint:
+            $type: alwaysTrueDropConstraint
+          columns: *myAuthorColumns
+
+    actionbar:
+      defaultAction: editAuthor
+      sections:
+        - name: prueba
+          groups:
+            - name: editActions
+              items:
+                - name: addAuthor
+                - name: editAuthor
+                - name: deleteAuthor
+
+            - name: publishActions
+              items:
+                - name: publishAuthorDeletion
+            - name: impexpActions
+              items:
+                - name: exportAuthor
+                - name: importAuthor
+          availability:
+            root: true
+          label: Authors
+
+    actions:
+      addAuthor:
+        icon: icon-add-item
+        label: Add author
+        $type: openDetailSubappAction
+        appName: blog
+        subAppName: authorDetail
+        viewType: add
+        availability:
+          root: true
+          node: false
+          writePermissionRequired: true
+          nodeTypes:
+            entryAuthors: entryAuthors
+            folder: mgnl:folder
+      editAuthor:
+        icon: icon-edit
+        label: Edit author
+        $type: openDetailSubappAction
+        appName: blog
+        subAppName: authorDetail
+        viewType: edit
+        availability:
+          root: false
+          node: true
+          writePermissionRequired: true
+          nodeTypes:
+            entryAuthors: entryAuthors
+            folder: mgnl:folder
+      deleteAuthor:
+        icon: icon-trash
+        $type: openDialogAction
+        class: info.magnolia.module.dependencies.action.DependencyAwareConfirmationActionDefinition
+        confirmationHeader: do you want to remove it?
+        confirmationMessage: if you delete what you shouldn't you are fucked up
+        cancelLabel: "no"
+        proceedLabel: "yes"
+        label: Delete Author
+        successActionName: deleteYesAuthor
+        availability:
+          root: false
+          node: true
+          multiple: true
+          rules:
+            isNotDeleted:
+              $type: jcrIsDeletedRule
+              negate: true
+      deleteYesAuthor:
+        asynchronous: true
+        $type: jcrCommandAction
+        command: delete
+      publishAuthorDeletion:
+        icon: icon-publish
+        label: Publish author
+        $type: jcrCommandAction
+        command: publish
+        availability:
+          root: false
+          node: true
+          multiple: true
+      duplicateAuthor:
+        $type: duplicateNodeAction
+        label: Duplicate author
+        icon: icon-duplicate
+        availability:
+          multiple: true
+          root: false
+          node: true
+      exportAuthor:
+        icon: icon-export
+        label: Export author
+        $type: exportAction
+        availability:
+          root: false
+          node: true
+      importAuthor:
+        icon: icon-import
+        label: Import author
+        $type: openDialogAction
+        dialogId: ui-framework-jcr:import
+        availability:
+          root: true
+  authorDetail:
+    class: info.magnolia.ui.contentapp.detail.DetailDescriptor
+    label: Author detail
+    datasource:
+      $type: jcrDatasource
+      workspace: entries
+      rootPath: /entryAuthors
+      includeProperties: true
+      nodeNameProperty: name
+      allowedNodeTypes:
+        - entryAuthors
+    itemProvider:
+      $type: jcrNodeFromLocationProvider
+      nodeType: entryAuthors
+    form:
+      properties:
+        name:
+          required: true
+          $type: textField
+        lastname:
+          required: true
+          label: Last Name
+          $type: textField
+        picture:
+          required: true
+          label: Thumbnail
+          $type: damLinkField
+        abstract:
+          required: true
+          label: Abstract
+          $type: richTextField
+          
+  categories:
+    class: info.magnolia.ui.contentapp.configuration.BrowserDescriptor
+    label: Categories
+
+    datasource:
+      $type: jcrDatasource
+      workspace: entries
+      rootPath: /categories
+      includeProperties: false
+      allowedNodeTypes:
+        - entryCategories
+
+    workbench:
+      contentViews:
+        - name: tree
+          $type: treeView
+          dropConstraint:
+            $type: alwaysTrueDropConstraint
+          columns: &myCategoryColumns
+            - name: name
+              editable: true
+              $type: textField
+              expandRatio: 1.0
+        - name: list
+          $type: listView
+          dropConstraint:
+            $type: alwaysTrueDropConstraint
+          columns: *myCategoryColumns
+
+    actionbar:
+      defaultAction: editCategory
+      sections:
+        - name: prueba
+          groups:
+            - name: editActions
+              items:
+                - name: addCategory
+                - name: editCategory
+                - name: deleteCategory
+
+            - name: publishActions
+              items:
+                - name: publishCategoryDeletion
+            - name: impexpActions
+              items:
+                - name: exportCategory
+                - name: importCategory
+          availability:
+            root: true
+          label: Categories
+
+    actions:
+      addCategory:
+        icon: icon-add-item
+        $type: openDetailSubappAction
+        label: Add category
+        appName: blog
+        subAppName: categoryDetail
+        viewType: add
+        availability:
+          root: true
+          node: false
+          writePermissionRequired: true
+          nodeTypes:
+            entryCategories: entryCategories
+            folder: mgnl:folder
+      editCategory:
+        icon: icon-edit
+        $type: openDetailSubappAction
+        label: Edit category
+        appName: blog
+        subAppName: authorDetail
+        viewType: edit
+        availability:
+          root: false
+          node: true
+          writePermissionRequired: true
+          nodeTypes:
+            entryAuthors: entryAuthors
+            folder: mgnl:folder
+      deleteCategory:
+        icon: icon-trash
+        $type: openDialogAction
+        class: info.magnolia.module.dependencies.action.DependencyAwareConfirmationActionDefinition
+        confirmationHeader: do you want to remove it?
+        confirmationMessage: if you delete what you shouldn't you are fucked up
+        cancelLabel: "no"
+        proceedLabel: "yes"
+        label: Delete Category
+        successActionName: deleteYesCategory
+        availability:
+          root: false
+          node: true
+          multiple: true
+          rules:
+            isNotDeleted:
+              $type: jcrIsDeletedRule
+              negate: true
+      deleteYesCategory:
+        asynchronous: true
+        $type: jcrCommandAction
+        command: delete
+      publishCategoryDeletion:
+        icon: icon-publish
+        $type: jcrCommandAction
+        label: Publish category
+        command: publish
+        availability:
+          root: false
+          node: true
+          multiple: true
+      duplicateCategory:
+        $type: duplicateNodeAction
+        label: Duplicate category
+        icon: icon-duplicate
+        availability:
+          multiple: true
+          root: false
+          node: true
+      exportCategory:
+        icon: icon-export
+        $type: exportAction
+        label: Export category
+        availability:
+          root: false
+          node: true
+      importCategory:
+        icon: icon-import
+        $type: openDialogAction
+        label: Import category
+        dialogId: ui-framework-jcr:import
+        availability:
+          root: true
+  categoryDetail:
+    class: info.magnolia.ui.contentapp.detail.DetailDescriptor
+    label: Category Detail
+    datasource:
+      $type: jcrDatasource
+      workspace: entries
+      rootPath: /categories
+      includeProperties: true
+      nodeNameProperty: name
+      allowedNodeTypes:
+        - entryCategories
+    itemProvider:
+      $type: jcrNodeFromLocationProvider
+      nodeType: entryCategories
+    form:
+      properties:
+        name:
+          required: true
+          $type: textField
+        thumbnail:
+          required: true
+          label: thumbnail
+          $type: damLinkField
+        description:
+          required: true
+          label: description
+          $type: richTextField
+        daughterOf:
+          $type: linkField
+          label: Daughter of
+          datasource:
+              $type: jcrDatasource
+              workspace: entries
+              rootPath: /categories
+              
+  commentDetail:
+    class: info.magnolia.ui.contentapp.detail.DetailDescriptor
+    label: Comment detail
+    datasource:
+      $type: jcrDatasource
+      workspace: entries
+      rootPath: /comments
+      includeProperties: true
+      nodeNameProperty: name
+      allowedNodeTypes:
+        - comments
+    itemProvider:
+      $type: jcrNodeFromLocationProvider
+      nodeType: comments
+    form:
+      properties:
+        name:
+          required: true
+          label: name
+          defaultValue: "kay kay"
+          class: info.magnolia.training.fullstack.admincentral.mycustomFields.MillisField
+          type: java.lang.String
+        comment:
+          required: true
+          label: Abstract
+          $type: richTextField
+        userUUID:
+          $type: linkField
+          label: user
+          required: true
+          datasource:
+              $type: jcrDatasource
+              workspace: users
+              rootPath: /
