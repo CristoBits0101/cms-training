@@ -1,3 +1,7 @@
+PASO 0) VER QUE SE ESTA EJECUTANDO EN EL 8080 Y PARARLO.
+netstat -ano | findstr :8080
+En el administrador de tareas con el numero de proceso pararlo.
+
 PASO 1) CONFIGURAR JETTY BASE CON EL COMANDO.
 PS C:\Users\reuda\Downloads\jetty-home-11.0.20\jetty-home-11.0.20> java -jar start.jar jetty.base=C:\Users\reuda\Downloads\jetty-base --add-module=server,http,deploy,annotations
 
