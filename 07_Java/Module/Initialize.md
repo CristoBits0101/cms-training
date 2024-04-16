@@ -1,5 +1,3 @@
-
-
 C:\MagnoliaCMS\02_Repository>mvn archetype:generate -DarchetypeGroupId=info.magnolia.maven.archetypes -DarchetypeArtifactId=magnolia-module-archetype -DarchetypeVersion=RELEASE
 
 Define value for property 'module-class-name': ChatConfig
