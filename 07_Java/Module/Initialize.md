@@ -1,4 +1,4 @@
-C:\MagnoliaCMS\02_Repository>mvn archetype:generate -DarchetypeGroupId=info.magnolia.maven.archetypes -DarchetypeArtifactId=magnolia-module-archetype -DarchetypeVersion=RELEASE
+mvn archetype:generate -DarchetypeGroupId=info.magnolia.maven.archetypes -DarchetypeArtifactId=magnolia-module-archetype -DarchetypeVersion=RELEASE
 
 Define value for property 'module-class-name': ChatConfig
 Define value for property 'magnolia-bundle-version': 6.2
