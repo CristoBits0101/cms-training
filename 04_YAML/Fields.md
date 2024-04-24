@@ -72,3 +72,32 @@ form:
             field:
               $type: damLinkField
               label: Asset
+
+# Selected
+category:                                                          #         Field -> Column
+  $type: comboBoxField                                             #          Type -> Input
+  type: java.lang.String                                           #          Data -> Type
+  required: false                                                  #          Data -> Mandatory
+  i18n: true                                                       #     Translate -> Active
+  datasource:                                                      #    Datasource -> Definition
+    $type: optionListDatasource                                    #    Datasource -> Type
+    options:                                                       #         Input -> Select
+
+      travels:                                                     #        Select -> Option 
+        value: travels                                             #        Option -> Value
+
+      sports:                                                      #        Select -> Option 
+        value: sports                                              #        Option -> Value
+
+      events:                                                      #        Select -> Option 
+        value: events                                              #        Option -> Value
+        selected: true                                             #      Selected -> Default
+
+      services:                                                    #        Select -> Option 
+        value: services                                            #        Option -> Value
+
+      share:                                                       #        Select -> Option 
+        value: share                                               #        Option -> Value
+
+      games:                                                       #        Select -> Option 
+        value: games                                               #        Option -> Value
