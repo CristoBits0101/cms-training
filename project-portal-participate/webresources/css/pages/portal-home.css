@@ -1,0 +1,34 @@
+/* Body Styles */
+body {
+    grid-template-areas:
+        "navbar navbar"
+        "header header"
+        "aside main"
+        "footer footer";
+    grid-template-columns: 1fr 3fr;
+}
+
+/* Navbar Styles */
+.navbar-container {
+    grid-area: navbar;
+}
+
+/* Header Styles */
+header {
+    grid-area: header;
+}
+
+/* Main Styles */
+main {
+    grid-area: main;
+}
+
+/* Aside Styles */
+aside {
+    grid-area: aside;
+}
+
+/* Footer Styles */
+footer {
+    grid-area: footer;
+}

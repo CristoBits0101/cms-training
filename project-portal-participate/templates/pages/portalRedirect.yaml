@@ -1,0 +1,5 @@
+title: Training - Redirect Template                                      # Template -> Name
+renderType: freemarker                                                   # Template -> Type
+dialog: project-portal-participate:pages/redirect                        # Template -> Dialog
+templateScript: /project-portal-participate/templates/pages/redirect.ftl # Template -> Path
+modelClass: altia.bilbomatica.portalparticipate.websocket.ChatConfig     # Template -> JAR

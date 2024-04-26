@@ -1,0 +1,4 @@
+title: Session Buttons                                                                     # Component -> Title
+renderType: freemarker                                                                     # Component -> Type
+dialog: project-portal-participate:components/header/sessionButtons                        # Component -> Dialog
+templateScript: /project-portal-participate/templates/components/header/sessionButtons.ftl # Component -> Path

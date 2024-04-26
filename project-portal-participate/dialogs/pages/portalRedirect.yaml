@@ -1,0 +1,6 @@
+form:                                                                                                     #  Form -> Definition
+  properties:                                                                                             #  Form -> Fields
+
+    targetPageLink:                                                                                       # Field -> Page Title
+      $type: pageLinkField                                                                                # Field -> Type
+      description: Link to a Page to redirect to. Leave empty and first child will be used automatically. # Field -> Description
