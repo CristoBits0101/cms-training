@@ -1,4 +1,0 @@
-title: Portal Participate Welcome                                             # Template -> Name
-renderType: freemarker                                                        # Template -> Type
-dialog: project-portal-participate:pages/portalWelcome                        # Template -> Dialog
-templateScript: /project-portal-participate/templates/pages/portalWelcome.ftl # Template -> Path
